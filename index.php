@@ -1,7 +1,48 @@
 <?php
-
-
-//**************** Start COMMENTING STRUCTURE ******************//
+/***************************************************************************
+ * 
+ * @project			Custom Codeigniter V3
+ * @description		Standard Framework in PHP with codeigniter framework
+ * @author			Francisco Abayon
+ * @url				[N/A]
+ * @version			0.0.1
+ *
+ * @credentials		[N/A]
+ * @legend			[N/A] 		=> Not available as for now, but added data in the future
+ * @legend	 		[external] 	=> under category at sources/url of the code
+ * @legend	 		[internal] 	=> personal modifications
+ * @legend	 		[mix] 		=> combination of a lot codes, custom and resources
+ * 
+ * @todo			still in progress
+ * @todo			add comment and SOP of inflector_helper.php, controller
+ * @tod				usage of inflector in codeigniter
+ * @todo			session of multilingual
+ * @todo			adding unit test using pharunit.phar https://github.com/kenjis/ci-phpunit-test
+ * @todo			still beta testing for possible CLI and needs to modify about @ExtendUntiTest package
+ * @todo			custom site under maintenance
+ * @todo			custom 404
+ * @todo			E-commerce setup
+ * @todo			PAYPAL payment
+ * @todo			geolocation
+ * @todo			sync github,twitter,fb,gmail,linked-in,pinterest,stack-overflow,instagram, amazon
+ * @todo			sync chat functionality support, forums,wikis, blogs,news,
+ * @todo			cron jobs
+ * @todo			search engine, google, yandex,yahoo,bing
+ * @todo			refactore code
+ * @todo			the hooks
+ * @todo			codegniter epic helpers, libraries, unit testing, cookies,templating,profiling, debubgging
+ * @todo			modify the check controller
+ * @todo			fix doctrine https://github.com/kenjis/codeigniter-doctrine
+ * @todo			fix tools class
+ * @todo			fix comment and unccoment from 2 profiler
+ * @todo			https://gist.github.com/csasbach/2421513
+ * @todo			read https://github.com/philsturgeon/phptherightway-book
+ * @todo			add dynamic multiple theme like Wordpress and call multiple themes at the same time
+ *
+ * @title 			 Environment_pac
+ *
+ ***************************************************************************/
+/**************** Start COMMENTING STRUCTURE ******************/
 
 //======================================================================
 // CATEGORY LARGE FONT
@@ -28,11 +69,43 @@
 
 ## Tricks for commenting/uncomment code
 //*
-##codes goes here for comment and uncommnet
+##codes goes here for comment and uncomment
 // */
 
 
 //Now by taking out one / on the first line..
+
+
+/********* Commenting Tags
+ * Here are the tags:
+ * Name of tags
+ * @abstract
+ * @access       	public or private
+ * @author       	author name <author@email>
+ * @copyright    	name date
+ * @deprecated   	description
+ * @example      	/path/to/example
+ * @exception    	Javadoc-compatible, use as needed
+ * @global       	type description of global variable usage in a function
+ * @ignore
+ * @internal    	private information for advanced developers only
+ * @param       	type [$varname] description
+ * @return      	type description
+ * @link         	URL
+ * @name         	$globalvaralias or procpagealias
+ * @magic        	phpdoc.de compatibility
+ * @package      	package name
+ * @see          	name of another element that can be documented,
+ *                	produces a link to it in the documentation
+ * @since        	a version or a date
+ * @static
+ * @staticvar    	type description of static variable usage in a function
+ * @subpackage   	sub package name, groupings inside of a project
+ * @throws       	Javadoc-compatible, use as needed
+ * @todo         	phpdoc.de compatibility
+ * @var        		type    a data type for a class variable
+ * @version    		version
+**********/
 //****************End COMMENTING STRUCTURE******************//
 
 /**
@@ -89,8 +162,21 @@
  *
  * NOTE: If you change these, also change the error_reporting() code below
  */
-	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
-
+	
+/***************************************************************************
+ * 
+ * @description  	Custom environment load and dynamic lookup of the root file
+ * 
+ * @package	    	Environment_pac
+ * @author  		Francisco Abayon 
+ * @source  		[mix]
+ * @version  		0.1.0
+ * @dependency		environment_data (./Environments.php)
+ * @code			define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
+ * 					
+ ***************************************************************************/
+ REQUIRE_ONCE 'environment.php';	
+ 
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING
