@@ -24,6 +24,15 @@
 */
 
 // This is a single line quote.
+
+
+## Tricks for commenting/uncomment code
+//*
+##codes goes here for comment and uncommnet
+// */
+
+
+//Now by taking out one / on the first line..
 //****************End COMMENTING STRUCTURE******************//
 
 /**
