@@ -42,7 +42,54 @@
  * @title 			 Environment_pac
  *
  ***************************************************************************/
-/**************** Start COMMENTING STRUCTURE ******************/
+
+ 
+/******************** Start Coding STRUCTURE *******************************
+ *
+ * PHP Closing Tag  			- Is not required on the php files on the end.
+ * File Naming					- Class files must be named in a Ucfirst-like manner.
+								- Other file name (configurations, generic scripts) should be in all lowercase.
+ * Class and Method Naming		- Class names should always start with an uppercase letter. 
+								- Multiple words should be separated with an underscore, and not CamelCased.
+								- Class methods should be entirely lowercased .
+								- Named to clearly indicate their function, preferably including a verb. 
+								- Try to avoid overly long and verbose names. 
+								- Multiple words should be separated with an underscore.
+ * Variable Names				- Variables should contain only lowercase letters ,underscore
+								- And be reasonably named to indicate their purpose and contents. 
+								- Very short, non-word variables should only be used as iterators in for() loops.
+ * Commenting					- See at Start COMMENTING STRUCTURE
+ * Constants					- Constants should always be fully uppercase. 
+								- Always use CodeIgniter constants when appropriate.
+ * TRUE, FALSE, and NULL		- TRUE, FALSE, and NULL keywords should always be fully uppercase.
+ * Logical Operators			- Use of the || “or” comparison operator is discouraged.
+								- Clarity on some output devices is low (looking like the number 11, for   instance). 
+								- && is preferred over AND but either are acceptable, and a space should always  precede and follow !
+ * Debugging Code				- Do not leave debugging code in your submissions, even when commented out. 	
+								- Things such as var_dump(), print_r(), die()/exit() should not be included   in your code unless it serves a specific purpose other than debugging
+ * Whitespace in Files			- No whitespace can precede the opening PHP tag or follow the closing PHP tag. 
+								- Output is buffered, so whitespace in your files can cause output to begin before CodeIgniter outputs its content, leading to errors and an inability for  CodeIgniter to send proper headers.
+ * One File per Class			- Use separate files for each class, unless the classes are closely related.
+ * Whitespace					- Use tabs for whitespace in your code, not spaces.
+ * 								- To (slightly) more compact files, storing one tab character
+ * Line Breaks					- Files must be saved with Unix line breaks.
+ * Code Indenting				- Use Allman style indenting.
+								- With the exception of Class declarations, braces are always placed on a line by themselves
+ * Bracket and Parenthetic Spacing 		- parenthesis and brackets should not use any additional spaces. 
+ * Localized Text						- By Default should take advantage of corresponding language files.
+ * Private Methods and Variables		- Methods and variables that are only accessed internally,
+ * PHP Errors							- Code must run error free.
+										- Not rely warnings and notices to be hidden to meet this requirement. 
+ * Short Open Tags						- Not to use shorthand						
+ * One Statement Per Line				- Never combine statements on one line.
+ * Strings								- Always use single quoted strings unless you need variables parsed		
+ * SQL Queries							- SQL keywords are always capitalized
+ * Default Function Arguments			- prevent PHP errors with mistaken calls and provides common fallback
+ * 
+ ******************** End Coding STRUCTURE *********************************/
+
+ 
+/********************* Start COMMENTING STRUCTURE **************************/
 
 //======================================================================
 // CATEGORY LARGE FONT
@@ -106,7 +153,7 @@
  * @var        		type    a data type for a class variable
  * @version    		version
 **********/
-//****************End COMMENTING STRUCTURE******************//
+/********************* End COMMENTING STRUCTURE ***************************/
 
 /**
  * CodeIgniter
@@ -172,10 +219,11 @@
  * @source  		[mix]
  * @version  		0.1.0
  * @dependency		environment_data (./Environments.php)
+ * @filesource		[N/A]
  * @code			define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
  * 					
  ***************************************************************************/
- REQUIRE_ONCE 'environment.php';	
+ require_once 'environment.php';	
  
 /*
  *---------------------------------------------------------------
