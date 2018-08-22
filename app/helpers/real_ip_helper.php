@@ -39,11 +39,11 @@ if (!function_exists('visitors_ip')){
  * @author			Francisco Abayon
  * @url				https://stackoverflow.com/questions/37921803/how-to-get-my-site-visitors-ip-address-in-php
  * @version  		0.0.1
- * 
+ * @todo			Fix and find the error of this function
  ***************************************************************************/
 if (!function_exists('visitors_ip_short')){
 	function  visitors_ip_short(){
-		return $_SERVER["HTTP_X_REAL_IP"] ?? $_SERVER["HTTP_X_FORWARDED_FOR"] ?? $_SERVER["HTTP_CLIENT_IP"] ?? $_SERVER["REMOTE_ADDR"] ?? null:''; 
+		//return $_SERVER["HTTP_X_REAL_IP"] ?? $_SERVER["HTTP_X_FORWARDED_FOR"] ?? $_SERVER["HTTP_CLIENT_IP"] ?? $_SERVER["REMOTE_ADDR"] ?? null:''; 
 	}
 	
 }
