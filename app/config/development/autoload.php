@@ -88,8 +88,9 @@ $autoload['drivers'] = array();
 | Prototype:
 |
 |	$autoload['helper'] = array('url', 'file');
+| 	@see 		Maintenance_Mode
 */
-$autoload['helper'] = array();
+$autoload['helper'] = array('real_ip');
 
 /*
 | -------------------------------------------------------------------

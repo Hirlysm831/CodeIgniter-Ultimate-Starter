@@ -4,6 +4,8 @@
  * @package    		Environment_pac
  * @description 	Dynamic Environment detection for codeigniter code and 
  *					being access via Command Line Interface(CLI).
+ * @author			Francisco Abayon
+ * @version			0.0.1
  * @see				Root of the index.php file
  *
  * @url  			http://codebyjeff.com/blog/2013/10/setting-environment-vars-for-codeigniter-commandline
