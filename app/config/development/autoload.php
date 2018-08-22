@@ -88,7 +88,7 @@ $autoload['drivers'] = array();
 | Prototype:
 |
 |	$autoload['helper'] = array('url', 'file');
-| 	@see 		Maintenance_Mode
+| 	@subpackage			Maintenance_Mode
 */
 $autoload['helper'] = array('real_ip');
 
@@ -103,8 +103,9 @@ $autoload['helper'] = array('real_ip');
 | NOTE: This item is intended for use ONLY if you have created custom
 | config files.  Otherwise, leave it blank.
 |
+| 	@subpackage			Maintenance_Mode
 */
-$autoload['config'] = array();
+$autoload['config'] = array('maintenance_config');
 
 /*
 | -------------------------------------------------------------------

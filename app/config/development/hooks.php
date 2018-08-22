@@ -17,10 +17,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * @description 	Detecting the system if it is on Maintenance mode or not
  *					Also lood on the post controller(before reading the controller)
  * @author			Francisco Abayon
- * @version			0.0.1				
+ * @url 			https://www.codeigniter.com/user_guide/general/hooks.html
+ * @version			0.0.1	
+ * @internal 		 Must post_controller_constructor because:
  *
+ *					- 	pre_system  is not applicable . Only the benchmark and hooks class have
+ *						been loaded at this point. No routing or other processes have happened.
+ *					- 	pre_controller   is not applicable . O All base classes, routing,and
+ *						security checks have been done. Also helper is not called as its process.
+ *  				-	post_controller_constructor after controller is instantiated,
+ *						but prior to any method calls happening
  ***************************************************************************/
  
+
 $hook['post_controller_constructor'][] = array(
   'class' => 'maintenance',
   'function' => 'maintenance_mode',
@@ -28,3 +37,6 @@ $hook['post_controller_constructor'][] = array(
   'filepath' => 'hooks',
   'params'   => array('error_maintenance')	//filename from error file
 );
+
+/* End of file hooks.php */
+/* Location: ./application/config/developement/hooks.php */

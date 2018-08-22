@@ -16,6 +16,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * @source			[custom][mix]
  * @version  		0.0.1
  * @see				../config/ENVIRONMENT/autoload.php
+ * @see				../config/ENVIRONMENT/config.php
  * @see				../config/mainteance_config.php
  * @see				../app/helper/real_ip_helper.php
  * @see				../app/views/errors/html/error_maintenance.php
