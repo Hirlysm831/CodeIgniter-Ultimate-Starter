@@ -114,7 +114,7 @@ $config['enable_hooks'] = TRUE;
 | https://codeigniter.com/user_guide/general/creating_libraries.html
 |
 */
-$config['subclass_prefix'] = 'MY_';
+$config['subclass_prefix'] = 'ST_';
 
 /*
 |--------------------------------------------------------------------------
@@ -519,5 +519,14 @@ $config['rewrite_short_tags'] = FALSE;
 |
 | Comma-separated:	'10.0.1.200,192.168.5.0/24'
 | Array:		array('10.0.1.200', '192.168.5.0/24')
+|
+| @subpackage	    Maintenance_Mode
+| @description		Need to determine on what are the proxy ip need especially on PAAS
+|					,AWS or dynamic IP generated on the load balancer
+| @author			Francisco Abayon
+| @url 				https://forum.codeigniter.com/archive/index.php?thread-64427.html
+| @url			 	https://expressionengine.com/forums/archive/topic/185751/amazon-load-balancing-and-codeigniter-configproxy_ips#925678
+| @source			[custom][mix]
+| @version  		0.0.2
 */
-$config['proxy_ips'] = '';
+$config['proxy_ips'] = $_SERVER["HTTP_X_REAL_IP"] ?? $_SERVER["HTTP_X_FORWARDED_FOR"] ?? $_SERVER["HTTP_CLIENT_IP"] ?? $_SERVER["REMOTE_ADDR"] ?? NULL;
