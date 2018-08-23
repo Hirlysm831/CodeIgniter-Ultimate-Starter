@@ -48,7 +48,7 @@ class Maintenance {
 	//////////*/
   public function maintenance_mode($params) {
     self::__construct();
-    $user_ip = visitors_ip();
+    $user_ip  = $this->CI->input->ip_address();
 
     if( ! in_array($user_ip, $this->CI->config->item('allowed_maintenance_ips')) && 
      ENVIRONMENT !== 'production') {

@@ -1,34 +1,15 @@
 <?php
 /***************************************************************************
-* 
-* @package(s) 		MaintenanceMode
-* @title  			view_error_maintenance_html
-* @sources(s)		https://aftabmuni.wordpress.com/2016/07/06/setup-maintenance-mode-using-hooks-in-codeigniter/
-*					http://www.roytuts.com/display-site-maintenence-message-using-codeigniter/
-* 					[custom][mix]
-* 
-* @version  		0.1.0
-* @description(s)  	Display site under maintenance via html with SEO
-* @author(s)  		Francisco Abayon 
-* @dateadded  		December 07, 2017
-* @dateupdated  	[N/A]
-* @numberoftime(s)  1
-* @originalcode  	[N/A]
-* 
-***************************************************************************/
+ * 
+ * @subpackage 		Maintenance_Mode
+ * @description 	Display site under maintenance via html with SEO
+ * @author			Francisco Abayon
+ * @url				https://aftabmuni.wordpress.com/2016/07/06/setup-maintenance-mode-using-hooks-in-codeigniter/
+ * @url				http://www.roytuts.com/display-site-maintenence-message-using-codeigniter/
+ * @version  		0.1.0
+ * 
+ ***************************************************************************/
 
-/**
- * Community Auth - Maintenance Mode Page
- *
- * Community Auth is an open source authentication application for CodeIgniter 2.2.2
- *
- * @package     Community Auth
- * @author      Robert B Gottier
- * @copyright   Copyright (c) 2011 - 2015, Robert B Gottier. (http://brianswebdesign.com/)
- * @license     BSD - http://www.opensource.org/licenses/BSD-3-Clause
- * @link        http://community-auth.com
- */
- 
 header('HTTP/1.1 503 Service Temporarily Unavailable', true, 503);
 header('Status: 503 Service Temporarily Unavailable');
 header('Retry-After: 7200');

@@ -45,6 +45,8 @@
  * @todo 			at Maintenance_Mode, use dynamic query of the Ip Address
  * @todo 			at Maintenance_Mode, need to Fix and find the error of this function
  * @todo 			at Maintenance_Mode, need to Fix the ip is not working here in RMF
+ * @todo 			at Maintenance_Mode, need to study the log_message function
+ * @todo 			at Maintenance_Mode, need to enhance the views both in html and cli access of the maintenance mode
  ***************************************************************************/
 
  

@@ -43,8 +43,100 @@ if (!function_exists('visitors_ip')){
  ***************************************************************************/
 if (!function_exists('visitors_ip_short')){
 	function  visitors_ip_short(){
-		//return $_SERVER["HTTP_X_REAL_IP"] ?? $_SERVER["HTTP_X_FORWARDED_FOR"] ?? $_SERVER["HTTP_CLIENT_IP"] ?? $_SERVER["REMOTE_ADDR"] ?? null:''; 
+		return $_SERVER["HTTP_X_REAL_IP"] ?? $_SERVER["HTTP_X_FORWARDED_FOR"] ?? $_SERVER["HTTP_CLIENT_IP"] ?? $_SERVER["REMOTE_ADDR"] ?? null;
 	}
 	
 }
 
+if (!function_exists('getClientIp')){
+	function getClientIp() {
+
+	$result = null;
+
+	$ipSourceList = array(
+	'HTTP_CLIENT_IP','HTTP_X_FORWARDED_FOR',
+	'HTTP_X_FORWARDE', 'HTTP_FORWARDED_FOR',
+	'HTTP_FORWARDED', 'REMOTE_ADDR'
+	);
+
+	foreach($ipSourceList as $ipSource){
+
+	if ( isset($_SERVER[$ipSource]) ){
+	$result = $_SERVER[$ipSource];
+			echo $result ."\t".$ipSource." \n";
+	break;
+	}
+	}
+	return $result;
+	}
+	
+}
+
+if (!function_exists('getrealip')){
+	function getrealip(){
+		if (isset($_SERVER)){
+			if(isset($_SERVER["	"])){
+				$ip = $_SERVER["HTTP_X_FORWARDED_FOR"];
+					if(strpos($ip,",")){
+					$exp_ip = explode(",",$ip);
+						$ip = $exp_ip[0];
+					}
+			}else if(isset($_SERVER["HTTP_CLIENT_IP"])){
+				$ip = $_SERVER["HTTP_CLIENT_IP"];
+			}else{
+				$ip = $_SERVER["REMOTE_ADDR"];
+			}
+			
+		}else{
+			if(getenv("HTTP_X_FORWARDED_FOR")){
+				$ip = getenv("HTTP_X_FORWARDED_FOR");
+					if(strpos($ip,",")){
+					$exp_ip=explode(",",$ip);
+					$ip = $exp_ip[0];
+					}
+			}else if(getenv("HTTP_CLIENT_IP")){
+				$ip = getenv("HTTP_CLIENT_IP");
+			}else {
+				$ip = getenv("REMOTE_ADDR");
+			}
+		}
+	return $ip;
+	}
+}
+
+
+if (!function_exists('get_real_IP')){
+function get_real_IP($void=null) {
+
+$headers = array(
+"HTTP_VIA",
+"HTTP_X_FORWARDED_FOR",
+"HTTP_FORWARDED_FOR",
+"HTTP_X_FORWARDED",
+"HTTP_FORWARDED",
+"HTTP_CLIENT_IP",
+"HTTP_HTTP_CLIENT_IP",
+"HTTP_FORWARDED_FOR_IP",
+"VIA",
+"X_FORWARDED_FOR",
+"FORWARDED_FOR",
+"X_FORWARDED",
+"FORWARDED",
+"CLIENT_IP",
+"FORWARDED_FOR_IP",
+"HTTP_XPROXY_CONNECTION",
+"HTTP_PROXY_CONNECTION",
+"HTTP_X_REAL_IP",
+"HTTP_X_PROXY_ID",
+"HTTP_USERAGENT_VIA",
+"HTTP_HTTP_PC_REMOTE_ADDR",
+"HTTP_X_CLUSTER_CLIENT_IP"
+);
+
+foreach ($headers as $header) if (isset($_SERVER[$header]) && !empty($_SERVER[$header])) return $_SERVER[$header];
+
+if (trim($_SERVER["SERVER_ADDR"])==trim($_SERVER["REMOTE_ADDR"])) return $_SERVER["SERVER_ADDR"];
+
+return $_SERVER["REMOTE_ADDR"];
+}
+}

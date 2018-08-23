@@ -11,7 +11,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * 
  ***************************************************************************/
 $config['allowed_maintenance_ips'] = array(
-		'103.44.235.210',	// Francisco Abayon Laptop Workstation
-		'203.177.158.155',	// Francisco Abayon Laptop Workstation
-		'::1'					// Localhost in XAMPP
+		'192.168.195.69',	// Francisco Abayon Laptop Workstation  based on internet connectivity
+		'169.254.95.228',	// Francisco Abayon Laptop Workstation  based on internet connectivity
+		'203.177.158.155',	// Francisco Abayon Laptop Workstation on whats my ip
+		'49.145.99.156',	// Francisco Abayon Laptop Workstation on whats my ip
+		'::1'				// Localhost in XAMPP
 	);
