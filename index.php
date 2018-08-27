@@ -280,12 +280,14 @@ switch (true) {
  * 
  * @description  	Custom environment load and dynamic lookup of the root file
  * 
- * @package	    	Environment_pac
+ * @package	    	Environment_pack
  * @author  		Francisco Abayon 
- * @source  		[mix]
+ * @copyright		August 2018
  * @version  		0.1.0
- * @dependency		environment_data (./Environments.php)
+ * @dependency		(./environments.php)
+ * @source  		[mix]
  * @filesource		[N/A]
+
  * @code			define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
  * 					
  ***************************************************************************/

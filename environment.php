@@ -1,11 +1,11 @@
 <?php
 /***************************************************************************
  *
- * @package    		Environment_pac
+ * @package    		Environment_pack
  * @description 	Dynamic Environment detection for codeigniter code and 
  *					being access via Command Line Interface(CLI).
  * @author			Francisco Abayon
- * @version			0.0.1
+ * @version			0.1.1
  * @see				Root of the index.php file
  *
  * @url  			http://codebyjeff.com/blog/2013/10/setting-environment-vars-for-codeigniter-commandline
@@ -96,4 +96,5 @@ $domain = strtolower($realHost);
 	}	
 	//--> End of web access of the system here
 }
-// End of the file environment.php
+/* End of file environement.php */
+/* Location: ./environement.php */
