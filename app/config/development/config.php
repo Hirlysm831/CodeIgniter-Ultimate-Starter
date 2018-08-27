@@ -52,6 +52,8 @@ $config['index_page'] = 'index.php';
 |
 | WARNING: If you set this to 'PATH_INFO', URIs will always be URL-decoded!
 */
+//https://expressionengine.com/forums/archive/topic/99498/cli-codeigniter-on-the-command-line
+//$config['uri_protocol']    = isset($_SERVER['REQUEST_URI']) ? 'AUTO' : 'CLI';
 $config['uri_protocol']	= 'REQUEST_URI';
 
 /*

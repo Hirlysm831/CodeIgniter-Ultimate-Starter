@@ -31,6 +31,9 @@
  *
  ****************/
 define('DEFAULT_ENV', 'development');
+$hostname_development 	= array('localhost');
+$hostname_testing 		= array('localhosts','http://dikol/test');
+$hostname_production	= array('https://www.yoursite.tld','http://www.yoursite.tld');
 
 /****************
  *
@@ -43,16 +46,12 @@ define('DEFAULT_ENV', 'development');
  ****************/
 
 //--> Start of cli code here and detects if it is a command line request
-protected function _parse_argv(){
-	$args = array_slice($_SERVER['argv'], 1);
-	return $args ? implode('/', $args) : '';
-}
-
-
 if ((php_sapi_name() == 'cli') or defined('STDIN')){
-
+	$args = array_slice($_SERVER['argv'], 1);
+	$args ? implode('/', $args) : '';
+	
 	$environment = DEFAULT_ENV;
-	if (isset($argv)) && $argv)  {
+	if (isset($argv) && $argv)  {
 		// grab the --env argument, and the one that comes next
 		$key = (array_search('--env', $argv));
 		$environment = $argv[$key +1];
@@ -71,19 +70,22 @@ if ((php_sapi_name() == 'cli') or defined('STDIN')){
  *
  * @url				https://stackoverflow.com/questions/10350602/how-safe-is-serverhttp-host
  * @url				https://stackoverflow.com/questions/6474783/which-server-variables-are-safe
+ * @url				https://stackoverflow.com/questions/2297403/what-is-the-difference-between-http-host-and-server-name-in-php
  *
  ****************/
-	$domain = strtolower($_SERVER['HTTP_HOST']);
+list($realHost,)=explode(':',$_SERVER['HTTP_HOST']);
+$domain = strtolower($realHost);
+	
 	switch($domain) {
 		
 		// enter as many ip as  needed for production and testing
-		case 'www.yoursite.tld' :
+		case (in_array($domain, $hostname_production, TRUE)) :
 		  define('ENVIRONMENT', 'production');
 		break;
 
 		// case '192.168.10.251:8099' :
-		case '1111111111' :
-		case '11.111.11.11' :
+		// case ($abctest < 750):
+		case (in_array($domain, $hostname_testing, TRUE)) :
 		  define('ENVIRONMENT', 'testing');
 		break;
 		
@@ -94,15 +96,4 @@ if ((php_sapi_name() == 'cli') or defined('STDIN')){
 	}	
 	//--> End of web access of the system here
 }
-
-
-
-
-
-
-
-
-
-
-
 // End of the file environment.php

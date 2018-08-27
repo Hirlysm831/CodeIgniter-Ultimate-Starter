@@ -47,6 +47,66 @@
  * @todo 			at Maintenance_Mode, need to Fix the ip is not working here in RMF
  * @todo 			at Maintenance_Mode, need to study the log_message function
  * @todo 			at Maintenance_Mode, need to enhance the views both in html and cli access of the maintenance mode
+ 
+ 
+ STUDY
+ http://phpswitch.com/
+ switch(true)
+{
+    case (strlen($foo) > 30):
+        $error = "The value provided is too long.";
+	$valid = false;
+	break;
+
+    case (!preg_match('/^[A-Z0-9]+$/i', $foo)):
+        $error = "The value must be alphanumeric.";
+	$valid = false;
+	break;
+
+    default:
+	$valid = true;
+	break;
+}
+<?php 
+$browserName = 'mozilla'; 
+switch ($browserName) { 
+  case 'opera': 
+    echo 'opera'; 
+  break; 
+  case (preg_match("/Mozilla( Firebird)?|phoenix/i", $browserName)?$browserName:!$browserName): 
+    echo "Mozilla or Mozilla Firebird"; 
+  break; 
+  case 'konqueror': 
+    echo 'Konqueror'; 
+  break; 
+  default: 
+    echo 'Default'; 
+  break; 
+} 
+?> 
+
+or you could just use a regular expression for everything: 
+
+<?php 
+$uri = 'http://www.example.com'; 
+switch (true) { 
+  case preg_match("/$http(s)?/i", $uri, $matches): 
+    echo $uri . ' is an http/https uri...'; 
+  break; 
+  case preg_match("/$ftp(s)?/i", $uri, $matches): 
+    echo $uri . ' is an ftp/ftps uri...'; 
+  break; 
+  default: 
+    echo 'default'; 
+  break; 
+} 
+
+	Have error reporting turned on local and development environments but turned off on production
+	Have logging turned on local and development environments but turned off on production
+	Have different config settings for each of local, development and production environments
+	Have different database settings for each of local, development and production environments
+	Have different email settings for each of local, development and production environments
+	Now each of your config.php, database.php and email.php can have differnt settings. CodeIgniter will automatically choose right files to use based on your current environment. For example in application/config/local/config.php and application/config/development/config.php files, you can enable error reporting and logging using $config['log_threshold'] setting by setting it to 1 but disable error reporting and logging in production environment by setting $config['log_threshold'] to 0 in application/config/production/config.php fil
  ***************************************************************************/
 
  
