@@ -11,6 +11,7 @@
  * @url  			http://codebyjeff.com/blog/2013/10/setting-environment-vars-for-codeigniter-commandline
  * @url				http://codeinphp.github.io/post/development-environments-in-codeigniter/
  * @url				http://avenir.ro/codeigniter-tutorials/step-2-set-environments/
+ * @url				https://phpdelusions.net/articles/empty
  *
  ***************************************************************************/
 
@@ -31,23 +32,6 @@
  ****************/
 define('DEFAULT_ENV', 'development');
 
-//--> Start of cli code here and detects if it is a command line request
-if ((php_sapi_name() == 'cli') or defined('STDIN')){
-
-	$environment = DEFAULT_ENV;
-	if (isset($argv)) {
-		// grab the --env argument, and the one that comes next
-		$key = (array_search('--env', $argv));
-		$environment = $argv[$key +1];
-
-		// get rid of them so they don't get passed in to our method as parameter values
-		unset($argv[$key], $argv[$key +1]);
-	}  
-  	define('ENVIRONMENT', $environment);
-} 
-//--> End of CLI code here
-
-
 /****************
  *
  * Having conditional statement for not being access via cli is set to by boolean and check
@@ -57,10 +41,30 @@ if ((php_sapi_name() == 'cli') or defined('STDIN')){
  * @var			Boolean						Environement act ast the trigger point
  *
  ****************/
- 
-//--> Start of web request access
-if (!defined('ENVIRONMENT')){ 
 
+//--> Start of cli code here and detects if it is a command line request
+protected function _parse_argv(){
+	$args = array_slice($_SERVER['argv'], 1);
+	return $args ? implode('/', $args) : '';
+}
+
+
+if ((php_sapi_name() == 'cli') or defined('STDIN')){
+
+	$environment = DEFAULT_ENV;
+	if (isset($argv)) && $argv)  {
+		// grab the --env argument, and the one that comes next
+		$key = (array_search('--env', $argv));
+		$environment = $argv[$key +1];
+
+		// get rid of them so they don't get passed in to our method as parameter values
+		unset($argv[$key], $argv[$key +1]);
+	}  
+  	define('ENVIRONMENT', $environment);
+	//--> End of CLI code here
+} else{
+	
+	//--> Start of web request access
 /****************
  *
  * Not safe using on $_SERVER['HTTP_HOST'] but just be careful...
@@ -85,11 +89,20 @@ if (!defined('ENVIRONMENT')){
 		
 		// default switch value is set this kind whether being access at cli or host request
 		default :
-			define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : DEFAULT_ENV);
+			if (!defined('ENVIRONMENT')) define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : DEFAULT_ENV);
 		break;
-	}
-
+	}	
+	//--> End of web access of the system here
 }
-//--> End of web access of the system here
+
+
+
+
+
+
+
+
+
+
 
 // End of the file environment.php
