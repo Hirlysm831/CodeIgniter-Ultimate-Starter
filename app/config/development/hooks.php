@@ -11,6 +11,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |	https://codeigniter.com/user_guide/general/hooks.html
 |
 */
+
+///http://roopampoddar.com/2016/01/26/integrating-phpdotenv-env-files-in-codeigniter-3-0-using-hooks/
+
+$hook['pre_system'] = function() {
+    $dotenv = new Dotenv\Dotenv(APPPATH);
+    $dotenv->load();
+	//override
+	//$dotenv->overload();
+};
+
+
 /***************************************************************************
  *
  * @subpackage 		Maintenance_Mode
@@ -27,7 +38,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  *  				-	post_controller_constructor after controller is instantiated,
  *						but prior to any method calls happening
  ***************************************************************************/
- 
+
 
 $hook['post_controller_constructor'][] = array(
   'class' => 'maintenance',

@@ -1,0 +1,9 @@
+{
+  "description" : "All of the learnings in Codeigniter",
+  "name" : "Scarfonic/CodeIgniterUltimate",
+  "license": "MIT",
+  "require": {
+    "php": ">=5.3",
+    "vlucas/phpdotenv": "^2.2"
+  }
+}
