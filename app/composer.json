@@ -8,5 +8,10 @@
     "vlucas/phpdotenv": "^2.2",
     "compwright/codeigniter-installers": "*",
     "arrilot/dotenv-php": "^2.0"
-  }
+  },
+   "require-dev": {
+
+   "nerones/codeigniter-phpcs": "dev-master"
+
+ }
 }
