@@ -19,6 +19,12 @@ $hook['pre_system'] = function() {
     $dotenv->load();
 	//override
 	//$dotenv->overload();
+	
+	//rreq
+	//$dotenv->required(['DB_HOST', 'DB_NAME', 'DB_USER', 'DB_PASS']);
+	//$dotenv->required('DATABASE_DSN');
+	
+	//$dotenv->required('DATABASE_DSN')->notEmpty();
 };
 
 
@@ -37,6 +43,11 @@ $hook['pre_system'] = function() {
  *						security checks have been done. Also helper is not called as its process.
  *  				-	post_controller_constructor after controller is instantiated,
  *						but prior to any method calls happening
+ 
+ *						if(getenv('APP_ENV') === 'development') {
+						$dotenv = new Dotenv\Dotenv();
+						$dotenv->load(__DIR__);
+}
  ***************************************************************************/
 
 
@@ -47,6 +58,15 @@ $hook['post_controller_constructor'][] = array(
   'filepath' => 'hooks',
   'params'   => array('error_maintenance')	//filename from error file
 );
+
+//force SSL
+//https://matthewdaly.co.uk/blog/2018/06/23/forcing-ssl-in-codeigniter/
+$hook['post_controller_constructor'][] = array(
+								'class' => 'force_ssl',
+                                'function' => 'force_ssl',
+                                'filename' => 'ssl_hook.php',
+                                'filepath' => 'hooks'
+                                );
 
 /* End of file hooks.php */
 /* Location: ./application/config/developement/hooks.php */
