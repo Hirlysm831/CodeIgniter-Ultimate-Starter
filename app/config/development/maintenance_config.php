@@ -15,5 +15,6 @@ $config['allowed_maintenance_ips'] = array(
 		'169.254.95.228',	// Francisco Abayon Laptop Workstation  based on internet connectivity
 		'203.177.158.155',	// Francisco Abayon Laptop Workstation on whats my ip
 		'49.145.99.156',	// Francisco Abayon Laptop Workstation on whats my ip
-		'::1'				// Localhost in XAMPP
+		'::1',				// Localhost in XAMPP
+		'127.0.0.1'			// Localhost in XAMPP or HOME IP
 	);

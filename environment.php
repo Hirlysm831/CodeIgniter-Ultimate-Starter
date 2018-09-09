@@ -31,8 +31,8 @@
  *
  ****************/
 define('DEFAULT_ENV', 'development');
-$hostname_development 	= array('localhost');
-$hostname_testing 		= array('localhosts','http://dikol/test');
+$hostname_development 	= array('localhost','http://test.ultimatemvc.com:8080');
+$hostname_testing 		= array('http://test.ultimatemvc.com:8080','http://dikol/test');
 $hostname_production	= array('https://www.yoursite.tld','http://www.yoursite.tld');
 
 /****************

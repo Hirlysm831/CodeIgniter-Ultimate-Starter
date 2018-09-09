@@ -7,4 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Dotenv\\' => array($vendorDir . '/vlucas/phpdotenv/src'),
+    'Arrilot\\DotEnv\\' => array($vendorDir . '/arrilot/dotenv-php/src'),
 );

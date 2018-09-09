@@ -25,7 +25,12 @@ class Welcome extends CI_Controller {
 		 
 		 $ip = getenv('REMOTE_ADDR', true) ?: getenv('REMOTE_ADDR');
 		 $ip = getenv('REMOTE_ADDR', true) ? getenv('REMOTE_ADDR', true) : getenv('REMOTE_ADDR');
+		 // echo ENVIRONMENT;
 		echo $s3_bucket = $_ENV['DB_HOST'];
+		// echo $s3_bucket =getenv('DB_HOST');
+		// echo ENVIRONMENT;
+		//https://stackoverflow.com/questions/21901795/database-credentials-encryption-codeigniter
+		//https://stackoverflow.com/questions/5010660/how-do-you-use-setenv-to-read-variables-in-apache
 	}
 	
 	/*

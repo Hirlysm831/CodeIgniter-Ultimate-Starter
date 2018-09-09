@@ -15,6 +15,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * @url			 	https://bitbucket.org/skunkbad/community-auth-git-version/src/032a2c579cb0089eea44bce3aa6a4b8ce1220fb6/maintenance-mode.php?at=master&fileviewer=file-view-default
  * @source			[custom][mix]
  * @version  		0.0.1
+ * @todo  		    Text should be call on language or multilingual mode
  * @see				../config/ENVIRONMENT/autoload.php
  * @see				../config/ENVIRONMENT/config.php
  * @see				../config/mainteance_config.php
@@ -49,9 +50,10 @@ class Maintenance {
   public function maintenance_mode($params) {
     self::__construct();
     $user_ip  = $this->CI->input->ip_address();
+    $exemption_ip  = $this->CI->config->item('allowed_maintenance_ips');
+    $environment  = 'production';
 
-    if( ! in_array($user_ip, $this->CI->config->item('allowed_maintenance_ips')) && 
-     ENVIRONMENT !== 'production') {
+    if( ! in_array($user_ip,$exemption_ip  ) &&  ENVIRONMENT !== $environment ) {
       
 		  $_error =& load_class('Exceptions', 'core');
 		  $heading = 'Site Down For Maintenance';

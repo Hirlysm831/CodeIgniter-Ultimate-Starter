@@ -11,12 +11,30 @@ class ComposerStaticInitd0b63a663708711714d11e157a90bd5d
         array (
             'Dotenv\\' => 7,
         ),
+        'A' => 
+        array (
+            'Arrilot\\DotEnv\\' => 15,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
         'Dotenv\\' => 
         array (
             0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
+        ),
+        'Arrilot\\DotEnv\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/arrilot/dotenv-php/src',
+        ),
+    );
+
+    public static $prefixesPsr0 = array (
+        'C' => 
+        array (
+            'Composer\\Installer' => 
+            array (
+                0 => __DIR__ . '/..' . '/compwright/codeigniter-installers/src',
+            ),
         ),
     );
 
@@ -25,6 +43,7 @@ class ComposerStaticInitd0b63a663708711714d11e157a90bd5d
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitd0b63a663708711714d11e157a90bd5d::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitd0b63a663708711714d11e157a90bd5d::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitd0b63a663708711714d11e157a90bd5d::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }

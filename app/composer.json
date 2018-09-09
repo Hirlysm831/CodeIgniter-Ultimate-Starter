@@ -1,9 +1,12 @@
 {
-  "description" : "All of the learnings in Codeigniter",
-  "name" : "Scarfonic/CodeIgniterUltimate",
+  "name" : "Scarfonic/CodeIgniterUltimate",  	
+  "description" : "All of the learnings in Codeigniter", 
+  "type": "codeigniter-library",
   "license": "MIT",
   "require": {
     "php": ">=5.3",
-    "vlucas/phpdotenv": "^2.2"
+    "vlucas/phpdotenv": "^2.2",
+    "compwright/codeigniter-installers": "*",
+    "arrilot/dotenv-php": "^2.0"
   }
 }
