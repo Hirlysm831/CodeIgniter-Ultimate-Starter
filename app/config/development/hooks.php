@@ -14,18 +14,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 ///http://roopampoddar.com/2016/01/26/integrating-phpdotenv-env-files-in-codeigniter-3-0-using-hooks/
 
-$hook['pre_system'] = function() {
-    $dotenv = new Dotenv\Dotenv(APPPATH);
-    $dotenv->load();
-	//override
-	//$dotenv->overload();
-	
-	//rreq
-	//$dotenv->required(['DB_HOST', 'DB_NAME', 'DB_USER', 'DB_PASS']);
-	//$dotenv->required('DATABASE_DSN');
-	
-	//$dotenv->required('DATABASE_DSN')->notEmpty();
-};
+$hook['pre_system'][] = array(
+  'class' => 'environment',
+  'function' => 'environments',
+  'filename' => 'environment_hook.php',
+  'filepath' => 'hooks',
+  'params'   => ''
+);
 
 
 /***************************************************************************

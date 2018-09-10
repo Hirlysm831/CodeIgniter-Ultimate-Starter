@@ -3,6 +3,12 @@
   "description" : "All of the learnings in Codeigniter", 
   "type": "codeigniter-library",
   "license": "MIT",
+  "authors": [
+	{
+		"name":"Francisco Abayon",
+		"email":"franz.noyaba@gmail.com"
+	}
+  ],
   "require": {
     "php": ">=5.3",
     "vlucas/phpdotenv": "^2.2",

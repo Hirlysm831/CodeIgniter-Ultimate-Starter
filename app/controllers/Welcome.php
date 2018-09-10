@@ -23,10 +23,11 @@ class Welcome extends CI_Controller {
 		$this->load->view('welcome_message');
 		// echo DB_HOST;
 		 
-		 $ip = getenv('REMOTE_ADDR', true) ?: getenv('REMOTE_ADDR');
-		 $ip = getenv('REMOTE_ADDR', true) ? getenv('REMOTE_ADDR', true) : getenv('REMOTE_ADDR');
+		 // $ip = getenv('REMOTE_ADDR', true) ?: getenv('REMOTE_ADDR');
+		 // $ip = getenv('REMOTE_ADDR', true) ? getenv('REMOTE_ADDR', true) : getenv('REMOTE_ADDR');
 		 // echo ENVIRONMENT;
-		echo $s3_bucket = $_ENV['DB_HOST'];
+		// echo $s3_bucket = $_ENV['DB_HOST'];
+		// echo $dbUser = DotEnv::get('DB_USER', 'admin');
 		// echo $s3_bucket =getenv('DB_HOST');
 		// echo ENVIRONMENT;
 		//https://stackoverflow.com/questions/21901795/database-credentials-encryption-codeigniter
