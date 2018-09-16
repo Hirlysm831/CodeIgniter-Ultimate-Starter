@@ -11,20 +11,12 @@ class ComposerStaticInitd0b63a663708711714d11e157a90bd5d
         array (
             'Dotenv\\' => 7,
         ),
-        'A' => 
-        array (
-            'Arrilot\\DotEnv\\' => 15,
-        ),
     );
 
     public static $prefixDirsPsr4 = array (
         'Dotenv\\' => 
         array (
             0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
-        ),
-        'Arrilot\\DotEnv\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/arrilot/dotenv-php/src',
         ),
     );
 

@@ -12,8 +12,7 @@
   "require": {
     "php": ">=5.3",
     "vlucas/phpdotenv": "^2.2",
-    "compwright/codeigniter-installers": "*",
-    "arrilot/dotenv-php": "^2.0"
+    "compwright/codeigniter-installers": "*"
   },
    "require-dev": {
 

@@ -36,10 +36,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Environment {
 
   public function __construct() {
-    // $this->CI =& get_instance();
-    log_message('debug','Accessing environment_hooks from application/hooks.');
+    $this->CI =& get_instance();
+    log_message('debug','Accessing maintenance_hook from application/hooks.');
   }
-
 	/*//////////
 	 *
 	 *	$params[0] = config file name
@@ -58,32 +57,16 @@ class Environment {
 		#https://github.com/vlucas/phpdotenv/
 		case 'development' :
 		case 'testing' :
-			// $dotenv = new Dotenv\Dotenv(APPPATH);
-			// $dotenv->load();		
-			// require_once APPPATH.'third_party'.DIRECTORY_SEPARATOR.'arrilot'.DIRECTORY_SEPARATOR.'dotenv-php'.DIRECTORY_SEPARATOR.'src'.DIRECTORY_SEPARATOR.'DotEnv.php';
-			 // $namespace = APPPATH.'third_party'.DIRECTORY_SEPARATOR.'arrilot'.DIRECTORY_SEPARATOR.'dotenv-php'.DIRECTORY_SEPARATOR.'src'.DIRECTORY_SEPARATOR.'DotEnv.php';
-			 // $namespace = $this->GetFullNamespace(APPPATH . 'vendor\', '.\\..\\Arrilot\DotEnv');
-			 // $namespace = $this->GetFullNamespace(APPPATH . 'vendor');
-			 $namespace = $this->GetFullNamespace(__NAMESPACE__, '.\\..\\..\\Arrilot\DotEnv');
-			 
-			// use Arrilot\DotEnv;
-			// $dotenvs = new DotEnv();
-			// var_dump(APPPATH);
-			// var_dump(FCPATH);
-			var_dump($namespace);
-			// $dotenvs->load(APPPATH . '.env.php');
+			$dotenv = new Dotenv\Dotenv(APPPATH);
+			$dotenv->load();		
 		break;
 
 		#https://github.com/arrilot/dotenv-php
 		case 'production' :
 			
 			// use APPPATH \Arrilot\DotEnv\DotEnv;
-			require_once APPPATH.'third_party/arrilot/dotenv-php/src/DotEnv.php';
-			// GetFullNamespace
-			DotEnv::load(APPPATH . '.env.php');
-			// echo
-			// $dotenv = new Dotenv\Dotenv(APPPATH);
-			// $dotenv->load();		
+			require_once APPPATH.'third_party'.DIRECTORY_SEPARATOR.'arrilot'.DIRECTORY_SEPARATOR.'dotenv-php'.DIRECTORY_SEPARATOR.'src'.DIRECTORY_SEPARATOR.'DotEnv.php';
+			DotEnv::load(APPPATH . '.env.php');	
 		break;
 		
 		// default switch value is set this kind whether being access at cli or host request
@@ -101,69 +84,7 @@ class Environment {
 	
 	//$dotenv->required('DATABASE_DSN')->notEmpty();
   }
+  
 
-  
-  
-  
-public function GetFullNamespace($currentNamespace, $relativeNamespace)
-{
-    // correct relative namespace
-    $relativeNamespace = preg_replace('#/#Di', '\\', $relativeNamespace);
-
-    // create namespace parts
-    $namespaceParts = explode('\\', $currentNamespace);
-
-    // create parts for relative namespace
-    $relativeParts = explode('\\', $relativeNamespace);
-
-    $part;
-    for($i=0; $i<count($relativeParts); $i++) {
-        $part = $relativeParts[$i];
-
-        // check if just a dot
-        if($part == '.') {
-
-            // just a dot - do nothing
-            continue;
-        }
-        // check if two dots
-        elseif($part == '..') {
-
-            // two dots - remove namespace part at end of the list
-            if(count($namespaceParts) > 0) {
-
-                // remove part at end of list
-                unset($namespaceParts[count($namespaceParts)-1]);
-
-                // update array-indexes
-                $namespaceParts = array_values($namespaceParts);
-            }
-        }
-        else {
-
-            // add namespace part
-            $namespaceParts[] = $part;
-        }
-    }
-
-    if(count($namespaceParts) > 0) {
-        return implode('\\', $namespaceParts);
-    }
-    else {
-        return '';
-    }
-
-}  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
 }
 /* End of maintenance class*/

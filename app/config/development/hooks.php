@@ -14,7 +14,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 ///http://roopampoddar.com/2016/01/26/integrating-phpdotenv-env-files-in-codeigniter-3-0-using-hooks/
 
-$hook['pre_system'][] = array(
+$hook['pre_controller'][] = array(
   'class' => 'environment',
   'function' => 'environments',
   'filename' => 'environment_hook.php',
