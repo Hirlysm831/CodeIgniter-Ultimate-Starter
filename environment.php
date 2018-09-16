@@ -81,21 +81,21 @@ $domain = strtolower($realHost);
 		  define('ENVIRONMENT', 'production');
 		break;
 
-		// case '192.168.10.251:8099' :
-		// case ($abctest < 750):
+		# case '192.168.10.251:8099' :
+		# case ($abctest < 750):
 		case (in_array($domain, $hostname_testing, TRUE)) :
 		  define('ENVIRONMENT', 'testing');
 		break;
 		
-		// default switch value is set this kind whether being access at cli or host request
+		# default switch value is set this kind whether being access at cli or host request
 		default :
 			if (!defined('ENVIRONMENT')) define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : DEFAULT_ENV);
 		break;
 	}	
-	//--> End of web access of the system here
+	#--> End of web access of the system here
 }
 /**************************************************************************** 
  *	@internal this is a custom file, need to revoke before pushing the files or .git
  * 	End of file environment.php 
  * 	Location: ./environment.php 
- ****************************************************************************//
+ ****************************************************************************/
