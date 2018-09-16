@@ -56,9 +56,9 @@
  * NOTE: If you change these, also change the error_reporting() code below
  */
  
- //======================================================================
+ //=========================================================================
  // Environment Setup 
- //======================================================================
+ //=========================================================================
 /***************************************************************************
  * 
  * @description  	Custom environment load and dynamic lookup of the root file
@@ -121,6 +121,21 @@ switch (ENVIRONMENT)
  * This variable must contain the name of your "system" directory.
  * Set the path if it is not in the same directory as this file.
  */
+ //=========================================================================
+ // Configuration Setup 
+ //=========================================================================
+/***************************************************************************
+ * 
+ * @description  	Modifications of the file directory
+ * 
+ * @category		instantation 
+ * @package	    	directory_pack
+ * @author  		Francisco Abayon 
+ * @copyright		September 17, 2018
+ * @version  		0.1.0
+ * @example			$system_path = 'system';
+ * 					
+ ***************************************************************************/
 	$system_path = 'sys';
 
 /*
@@ -138,6 +153,21 @@ switch (ENVIRONMENT)
  *
  * NO TRAILING SLASH!
  */
+ //=========================================================================
+ // Configuration Setup 
+ //=========================================================================
+/***************************************************************************
+ * 
+ * @description  	Modifications of the file directory
+ * 
+ * @category		instantation 
+ * @package	    	directory_pack
+ * @author  		Francisco Abayon 
+ * @copyright		September 17, 2018
+ * @version  		0.1.0
+ * @example			$application_folder = 'application';
+ * 					
+ ***************************************************************************/
 	$application_folder = 'app';
 
 /*
