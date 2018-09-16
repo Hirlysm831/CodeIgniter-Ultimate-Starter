@@ -1,20 +1,4 @@
 <?php
-/***************************************************************************
- *
- * @package    		Environment_pack
- * @description 	Dynamic Environment detection for codeigniter code and 
- *					being access via Command Line Interface(CLI).
- * @author			Francisco Abayon
- * @version			0.1.1
- * @see				Root of the index.php file
- *
- * @url  			http://codebyjeff.com/blog/2013/10/setting-environment-vars-for-codeigniter-commandline
- * @url				http://codeinphp.github.io/post/development-environments-in-codeigniter/
- * @url				http://avenir.ro/codeigniter-tutorials/step-2-set-environments/
- * @url				https://phpdelusions.net/articles/empty
- *
- ***************************************************************************/
- 
  //=========================================================================
  // Configuration Setup 
  //=========================================================================
@@ -31,13 +15,13 @@
  * @author  		Francisco Abayon 
  * @copyright		September 17, 2018
  * @version  		0.1.0
- * 						It's in two places - let's be smart
- * 						Our goal is to send:
- *   						- php index.php cron daily_tasks important_job 123 --env production
- *							- and have it run http://mysite.com/cron/daily_tasks/important_job/123 
+ * 					It's in two places - let's be smart.Our goal is to send:
+ *   					- php index.php cron daily_tasks important_job 123 --env production
+ *						- and have it run http://mysite.com/cron/daily_tasks/important_job/123 
  *	  						  using the production environment
  * 					
  ***************************************************************************/
+#Delaration of the lists of graudates
 define('DEFAULT_ENV', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
 $hostname_development 	= array('localhost','http://test.ultimatemvc.com:8080');
 $hostname_testing 		= array('http://test.ultimatemvc.com:8080','http://dikol/test');
@@ -111,8 +95,7 @@ $domain = strtolower($realHost);
 	//--> End of web access of the system here
 }
 /**************************************************************************** 
- *	@abstract
- * 	@access
+ *	@internal this is a custom file, need to revoke before pushing the files or .git
  * 	End of file environment.php 
  * 	Location: ./environment.php 
  ****************************************************************************//
