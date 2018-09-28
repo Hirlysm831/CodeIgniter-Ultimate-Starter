@@ -261,3 +261,99 @@ switch (true) {
  * @var        		type    a data type for a class variable
  * @version    		version
 **********/
+
+http://myrightcode.com/send-email-using-php-mailer-codeigniter/
+https://www.smashingmagazine.com/2009/01/50-extremely-useful-php-tools/
+https://github.com/theseer/phpdox
+https://www.smashingmagazine.com/2008/12/50-really-useful-css-tools/
+https://thinkinginobjects.com/2012/08/26/dont-use-dao-use-repository/
+https://medium.com/@tungnt86/program-to-an-interface-not-an-implementation-108692c08baa
+https://www.airpair.com/php/posts/best-practices-for-modern-php-development
+https://phptherightway.com/pages/Design-Patterns.html
+https://designpatternsphp.readthedocs.io/en/latest/Structural/DataMapper/README.html
+https://dzone.com/articles/practical-php/practical-php-patterns-data
+
+http://php.net/language.oop5.typehinting
+http://php.net/manual/en/language.oop5.interfaces.php
+https://codeutopia.net/blog/2009/01/05/decoupling-models-from-the-database-data-access-object-pattern-in-php/
+http://php.net/manual/en/functions.arguments.php#functions.arguments.type-declaration
+
+================
+$year = date("Y");   
+$month = date("m");   
+$filename = "../".$year;   
+$filename2 = "../".$year."/".$month;
+
+if(file_exists($filename)){
+    if(file_exists($filename2)==false){
+        mkdir($filename2,0777);
+    }
+}else{
+    mkdir($filename,0777);
+}
+
+
+$dirname = $_POST["search"];
+$filename = "/folder/" . $dirname . "/";
+
+if (!file_exists($filename)) {
+    mkdir("folder/" . $dirname, 0777);
+    echo "The directory $dirname was successfully created.";
+    exit;
+} else {
+    echo "The directory $dirname exists.";
+}
+
+
+define('CI_VERSION', '2.1.3');
+echo CI_VERSION;
+
+applications/foo/
+applications/foo/config/
+applications/foo/controllers/
+applications/foo/libraries/
+applications/foo/models/
+applications/foo/views/
+applications/bar/
+applications/bar/config/
+applications/bar/controllers/
+applications/bar/libraries/
+applications/bar/models/
+applications/bar/views/
+
+
+
+
+https://code.tutsplus.com/tutorials/manage-multiple-applications-in-codeigniter--cms-29795
+https://www.twoclock.com/multiple-applications-with-one-codeigniter-installation/
+
+===========
+?php if (!defined('BASEPATH')) exit('No direct script access allowed');
+/*|--------------------------------------------
+------------------------------| Base Site URL|---------------
+-----------------------------------------------
+------------|| URL to your CodeIgniter root. Typically this will be your base URL,| WITH a trailing slash:|| http://www.your-site.com/|*/
+if(isset($_SERVER['HTTP_HOST'])){  
+  $config['base_url'] = isset($_SERVER['HTTPS']) && strtolower($_SERVER['HTTPS']) == 'on' ? 'https' : 'http'; 
+  $config['base_url'] .= '://'. $_SERVER['HTTP_HOST'];  
+  $config['base_url'] .= str_replace(basename($_SERVER['SCRIPT_NAME']), '', $_SERVER['SCRIPT_NAME']);
+  }
+else{    $config['base_url'] = 'http://localhost/';}
+
+
+/*|---------------------
+------------------------------
+-----------------------| Site| Set a constant for whichever site you happen to be running, if its not here| it will fatal error.|-------------
+-------------------------------------------------
+------------*/
+switch($_SERVER['HTTP_HOST']){
+case 'example.com':  
+  case 'www.example.com':  
+  define('SITE', 'example'); 
+break;    
+    case 'example2.com':  
+	case 'www.example2.com':
+	define('SITE', 'example2');   
+break;        d
+efault:       
+ define('SITE', 'default');    break;}
