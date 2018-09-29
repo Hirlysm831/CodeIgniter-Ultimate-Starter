@@ -55,7 +55,6 @@ if ((php_sapi_name() == 'cli') or defined('STDIN'))
   	define('ENVIRONMENT', $environment);
 	//--> End of CLI code here
 } 
-
 else
 {
 //--> Start of web request access
@@ -95,7 +94,6 @@ $domain = strtolower($realHost);
 	#--> End of web access of the system here
 }
 /**************************************************************************** 
- *	@internal this is a custom file, need to revoke before pushing the files or .git
  * 	End of file environment.php 
  * 	Location: ./environment.php 
  ****************************************************************************/

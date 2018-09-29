@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class Tsk extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -20,9 +20,9 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		// $this->load->view('welcome_message');
 		// echo DB_HOST;
-		 
+		 echo 'ha';
 		 // $ip = getenv('REMOTE_ADDR', true) ?: getenv('REMOTE_ADDR');
 		 // $ip = getenv('REMOTE_ADDR', true) ? getenv('REMOTE_ADDR', true) : getenv('REMOTE_ADDR');
 		 // echo ENVIRONMENT;
@@ -33,8 +33,7 @@ class Welcome extends CI_Controller {
 		//https://stackoverflow.com/questions/21901795/database-credentials-encryption-codeigniter
 		//https://stackoverflow.com/questions/5010660/how-do-you-use-setenv-to-read-variables-in-apache
 	}
-	
-	public function test2()
+	public function moklaaaao()
 	{
 		// $this->load->view('welcome_message');
 		// echo DB_HOST;
@@ -48,7 +47,8 @@ class Welcome extends CI_Controller {
 		// echo ENVIRONMENT;
 		//https://stackoverflow.com/questions/21901795/database-credentials-encryption-codeigniter
 		//https://stackoverflow.com/questions/5010660/how-do-you-use-setenv-to-read-variables-in-apache
-	}		/*
+	}	
+	/*
 	
 	When a new developer clones your codebase, they will have an additional one-time step to manually copy the .env.example file to .env and fill-in their own values (or get any sensitive values from a project co-worker).
 
