@@ -1,3 +1,75 @@
+<?php
+
+<?php
+/*
+header("Access-Control-Allow-Origin: *");
+header("Content-Type: application/json; charset=UTF-8");
+header("Access-Control-Allow-Methods: POST");
+header("Access-Control-Max-Age: 3600");
+header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
+ 
+
+header("Content-Type: application/json; charset=UTF-8");
+header("Access-Control-Allow-Methods: POST");
+header("Access-Control-Max-Age: 3600");
+header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
+
+//$token = bin2hex(openssl_random_pseudo_bytes(64));	
+*/
+//https://www.weichieprojects.com/blog/curl-api-calls-with-php/
+//https://stackoverflow.com/questions/30426047/correct-way-to-set-bearer-token-with-curl
+function callAPI($method, $url, $data,$headers = false){
+   $curl = curl_init();
+
+   switch ($method){
+      case "POST":
+         curl_setopt($curl, CURLOPT_POST, 1);
+         if ($data)
+            curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
+      break;
+	  
+      case "PUT":
+         curl_setopt($curl, CURLOPT_CUSTOMREQUEST, "PUT");
+         if ($data)
+            curl_setopt($curl, CURLOPT_POSTFIELDS, $data);			 					
+      break;
+	  
+      default:
+         if ($data)
+            $url = sprintf("%s?%s", $url, http_build_query($data));
+   }
+
+   // OPTIONS:
+   curl_setopt($curl, CURLOPT_URL, $url);
+   if(!$headers){
+       curl_setopt($curl, CURLOPT_HTTPHEADER, array(
+          'APIKEY: 111111111111111111111',
+          'Content-Type: application/json',
+       ));
+   }else{
+       curl_setopt($curl, CURLOPT_HTTPHEADER, array(
+          'APIKEY: 111111111111111111111',
+          'Content-Type: application/json',
+          $headers
+       ));
+   }
+   curl_setopt($curl, CURLOPT_CONNECTTIMEOUT, 30);
+   curl_setopt($curl, CURLOPT_TIMEOUT, 30);
+   curl_setopt($curl, CURLOPT_HEADER, 1); //addtional 2
+   curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);  //instead print directly, uncomment to be passed to variable
+   curl_setopt($curl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
+   //curl_setopt($curl, CURLOPT_HTTPAUTH, CURLAUTH_ANY); extension
+   // curl_setopt($curl, CURLOPT_USERPWD, “username:password”); //addtional 1
+
+   curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);//addition 1 if https uncomment here
+   // EXECUTE:
+   $result = curl_exec($curl);
+   if(!$result){die("Connection Failure");}
+   curl_close($curl);
+   return $result;
+}
+
+
 /***************************************************************************
  * 
  * @project			Custom Codeigniter V3
@@ -341,6 +413,14 @@ class MY_Loader extends CI_Loader
 }
 /* End of file MY_Loader.php */
 /* Location: ./application/core/MY_Loader.php */
+
+
+https://github.com/ParitoshVaidya/CodeIgniter-JWT-Sample
+https://github.com/lcobucci/jwt
+https://dev.to/robdwaller/how-to-create-a-json-web-token-using-php-3gml
+https://stackoverflow.com/questions/40903355/how-to-verify-jwt-token-in-codeigniter-3-x-for-every-request-from-client
+
+https://github.com/dhanifudin/rest-in-ci
 =======
 http://myrightcode.com/send-email-using-php-mailer-codeigniter/
 https://www.smashingmagazine.com/2009/01/50-extremely-useful-php-tools/
