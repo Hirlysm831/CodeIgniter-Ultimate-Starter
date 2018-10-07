@@ -83,25 +83,43 @@
  */
 switch (ENVIRONMENT)
 {
-	case 'development':
-		error_reporting(-1);
-		ini_set('display_errors', 1);
+	//http://www.howtofindit.in/displaying-php-errors/
+	case 'development':	
+		ini_set('error_prepend_string',"<div class='php-error-dev'>");
+		ini_set('error_append_string',"</div>");	
+		ini_set('display_errors',1);
+		ini_set('display_startup_errors',1);
+		error_reporting(E_ALL);
 	break;
 
-	case 'testing':
+	case 'testing':	
+		ini_set('error_prepend_string',"<div class='php-error-test'>");
+		ini_set('error_append_string',"</div>");	
+		ini_set('display_errors',1);
+		ini_set('display_startup_errors',1);
 		error_reporting(-1);
-		ini_set('display_errors', 1);
+		//uncomment to check and test if the php error is capture
+		//require ROOT . DIRECTORY_SEPARATOR . 'environment.php';	
 	break;
 	
 	case 'production':
 		ini_set('display_errors', 0);
 		if (version_compare(PHP_VERSION, '5.3', '>='))
 		{
-			error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_STRICT & ~E_USER_NOTICE & ~E_USER_DEPRECATED);
+			error_reporting(E_ALL 
+							& ~E_NOTICE 
+							& ~E_WARNING 
+							& ~E_DEPRECATED 
+							& ~E_STRICT 
+							& ~E_USER_NOTICE 
+							& ~E_USER_DEPRECATED);
 		}
 		else
 		{
-			error_reporting(E_ALL & ~E_NOTICE & ~E_STRICT & ~E_USER_NOTICE);
+			error_reporting(E_ALL 
+							& ~E_NOTICE 
+							& ~E_STRICT 
+							& ~E_USER_NOTICE);
 		}
 	break;
 
@@ -136,6 +154,7 @@ switch (ENVIRONMENT)
 	 * @copyright		September 17, 2018
 	 * @version  		0.1.1
 	 * @example			$system_path = 'system';
+	 * @see			 	global ROOT at this file 
 	 * 					
 	 ***************************************************************************/
 	$system_path = ROOT . DIRECTORY_SEPARATOR . 'sys';
@@ -165,6 +184,7 @@ switch (ENVIRONMENT)
 	 * @copyright		September 17, 2018
 	 * @version  		0.1.1
 	 * @example			$application_folder = 'application';
+	 * @see			 	global ROOT at this file 
 	 * 					
 	 ***************************************************************************/
 	$application_folder = ROOT . DIRECTORY_SEPARATOR . 'app';
