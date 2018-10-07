@@ -54,9 +54,6 @@
  * NOTE: If you change these, also change the error_reporting() code below
  */
  
-//==========================================================================
-// Environment Setup 
-//==========================================================================
 /***************************************************************************
  * 
  * Custom environment load and dynamic lookup of the root file
@@ -72,9 +69,9 @@
  *				$_SERVER['CI_ENV'] : 'development');
  * 					
  ***************************************************************************/	
-//Add global 'ROOT' and get current directory path with going up 1 level by '..'
-define('ROOT',realpath(__DIR__ . DIRECTORY_SEPARATOR . '..'));
-require ROOT . DIRECTORY_SEPARATOR . 'environment.php';	
+	//Add global 'ROOT' and get current directory path with going up 1 level by '..'
+	define('ROOT',realpath(__DIR__ . DIRECTORY_SEPARATOR . '..'));
+	require ROOT . DIRECTORY_SEPARATOR . 'environment.php';	
  
 /*
  *---------------------------------------------------------------
@@ -109,12 +106,17 @@ switch (ENVIRONMENT)
 	break;
 
 	default:
-		header($_SERVER["SERVER_PROTOCOL"]. '503 Service Unavailable.', TRUE, 503);
-		echo 'The application environment is not set correctly.';
-		exit(1); // EXIT_ERROR
+		/************************************************* 
+		 * Much better to add $_SERVER["SERVER_PROTOCOL"] for dynamic header and
+		 * to avoid unwanted or weird symbol in the header
+		 *
+		 * @url	http://php.net/manual/en/function.exit.php	
+		 *************************************************/
+			header($_SERVER["SERVER_PROTOCOL"]. '503 Service Unavailable.', TRUE, 503);
+			echo 'The application environment is not set correctly.';
+			exit(1); // EXIT_ERROR
 	break;
 }
-
 
 /*
  *---------------------------------------------------------------
@@ -124,18 +126,18 @@ switch (ENVIRONMENT)
  * This variable must contain the name of your "system" directory.
  * Set the path if it is not in the same directory as this file.
  */
-/***************************************************************************
- * 
- * @description  	Modifications of the file directory
- * 
- * @category		instantation 
- * @package	    	directory_pack
- * @author  		Francisco Abayon 
- * @copyright		September 17, 2018
- * @version  		0.1.1
- * @example			$system_path = 'system';
- * 					
- ***************************************************************************/
+	/***************************************************************************
+	 * 
+	 * Modification the directory value of system of codeigniter default
+	 * 
+	 * @category		instantation 
+	 * @package	    	directory_pack
+	 * @author  		Francisco Abayon <franz.noyaba@gmail.com> 
+	 * @copyright		September 17, 2018
+	 * @version  		0.1.1
+	 * @example			$system_path = 'system';
+	 * 					
+	 ***************************************************************************/
 	$system_path = ROOT . DIRECTORY_SEPARATOR . 'sys';
 
 /*
@@ -153,18 +155,18 @@ switch (ENVIRONMENT)
  *
  * NO TRAILING SLASH!
  */
-/***************************************************************************
- * 
- * @description  	Modifications of the file directory
- * 
- * @category		instantation 
- * @package	    	directory_pack
- * @author  		Francisco Abayon 
- * @copyright		September 17, 2018
- * @version  		0.1.1
- * @example			$application_folder = 'application';
- * 					
- ***************************************************************************/
+	/***************************************************************************
+	 * 
+	 * Modification the directory value of application of codeigniter default
+	 * 
+	 * @category		instantation 
+	 * @package	    	directory_pack
+	 * @author  		Francisco Abayon <franz.noyaba@gmail.com> 
+	 * @copyright		September 17, 2018
+	 * @version  		0.1.1
+	 * @example			$application_folder = 'application';
+	 * 					
+	 ***************************************************************************/
 	$application_folder = ROOT . DIRECTORY_SEPARATOR . 'app';
 
 /*
@@ -207,10 +209,10 @@ switch (ENVIRONMENT)
 	// $routing['directory'] = '';
 
 	// The controller class file name.  Example:  mycontroller
-	// $routing['controller'] = 'tsk';
+	// $routing['controller'] = '';
 
 	// The controller function you wish to be called.
-	// $routing['function']	= 'moklaaaao';
+	// $routing['function']	= '';
 
 
 /*

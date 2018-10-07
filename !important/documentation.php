@@ -1,3 +1,5 @@
+************************************************
+***************************************************************************
 <?php
 
 <?php
@@ -500,7 +502,9 @@ if(isset($_SERVER['HTTP_HOST'])){
   }
 else{    $config['base_url'] = 'http://localhost/';}
 
-
+when to use die
+  https://stackoverflow.com/questions/1795025/what-are-the-differences-in-die-and-exit-in-php/27851270#27851270
+  
 /*|---------------------
 ------------------------------
 -----------------------| Site| Set a constant for whichever site you happen to be running, if its not here| it will fatal error.|-------------

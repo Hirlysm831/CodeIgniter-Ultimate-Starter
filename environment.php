@@ -1,7 +1,13 @@
 <?php
- //=========================================================================
- // Configuration Setup 
- //=========================================================================
+/* 
+ * Make this file cannot be acessed directly when being called the file name
+ *
+ * @url	http://php.net/manual/en/function.exit.php	
+ */
+basename($_SERVER['PHP_SELF']) == basename(__FILE__) 
+&& (!ob_get_contents() || ob_clean()) 
+&& header('Location: /') && die('No direct script access allowed');
+
 /***************************************************************************
  * 
  * @description  	This can be set to anything, but default usage is:
