@@ -61,8 +61,8 @@
  * 
  * Custom environment load and dynamic lookup of the root file
  * 
- * @category	instantation 
  * @package	    environment_pack
+ * @category	instantation 
  * @author  	Francisco Abayon <franz.noyaba@gmail.com>
  * @copyright	August 25, 2018
  * @version  	0.3.0
@@ -109,7 +109,7 @@ switch (ENVIRONMENT)
 	break;
 
 	default:
-		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
+		header($_SERVER["SERVER_PROTOCOL"]. '503 Service Unavailable.', TRUE, 503);
 		echo 'The application environment is not set correctly.';
 		exit(1); // EXIT_ERROR
 	break;
@@ -124,9 +124,6 @@ switch (ENVIRONMENT)
  * This variable must contain the name of your "system" directory.
  * Set the path if it is not in the same directory as this file.
  */
- //=========================================================================
- // Configuration Setup 
- //=========================================================================
 /***************************************************************************
  * 
  * @description  	Modifications of the file directory
@@ -156,9 +153,6 @@ switch (ENVIRONMENT)
  *
  * NO TRAILING SLASH!
  */
- //=========================================================================
- // Configuration Setup 
- //=========================================================================
 /***************************************************************************
  * 
  * @description  	Modifications of the file directory
@@ -270,7 +264,7 @@ switch (ENVIRONMENT)
 	// Is the system path correct?
 	if ( ! is_dir($system_path))
 	{
-		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
+		header($_SERVER["SERVER_PROTOCOL"]. '503 Service Unavailable.', TRUE, 503);
 		echo 'Your system folder path does not appear to be set correctly. Please open the following file and correct this: '.pathinfo(__FILE__, PATHINFO_BASENAME);
 		exit(3); // EXIT_CONFIG
 	}
@@ -318,7 +312,7 @@ switch (ENVIRONMENT)
 	}
 	else
 	{
-		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
+		header($_SERVER["SERVER_PROTOCOL"]. '503 Service Unavailable.', TRUE, 503);
 		echo 'Your application folder path does not appear to be set correctly. Please open the following file and correct this: '.SELF;
 		exit(3); // EXIT_CONFIG
 	}
@@ -355,7 +349,7 @@ switch (ENVIRONMENT)
 	}
 	else
 	{
-		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
+		header($_SERVER["SERVER_PROTOCOL"]. '503 Service Unavailable.', TRUE, 503);
 		echo 'Your view folder path does not appear to be set correctly. Please open the following file and correct this: '.SELF;
 		exit(3); // EXIT_CONFIG
 	}
