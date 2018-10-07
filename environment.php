@@ -99,6 +99,7 @@ $domain = strtolower($realHost);
 	}	
 	#--> End of web access of the system here
 }
+
 /**************************************************************************** 
  * 	End of file environment.php 
  * 	Location: ./environment.php 

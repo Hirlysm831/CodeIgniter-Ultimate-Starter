@@ -1,0 +1,137 @@
+.snack-wrap {
+  display:block;
+  position:relative;
+  bottom:0px;
+  left:10px;
+  padding:0px;
+}
+ 
+.snackbar {
+  display:block;
+  background:#222;
+  border:#f2f2f2;
+  padding:10px 40px 10px 20px;
+  color:#fff;
+  font-family:Arial;
+  position:relative;
+  left:0px;
+  bottom:-70px;
+  transition: bottom 0.5s ease-in-out;
+  z-index:9;
+} 
+.snackclose, label {
+  bottom:-70px;
+  position:absolute;
+  border:0;
+}
+.snackclose {
+  display:none;
+  z-index:10;
+}
+label {
+  z-index:11;
+  display:block;
+  width:100%;
+  height:100%;
+  color:rgba(255,255,255,0.8);
+  cursor:pointer;
+}
+.animated {
+  animation-name: snackbar-show;
+  animation-duration: 1s;
+  animation-direction: forwards;
+  animation-timing-function: ease-in-out;
+  animation-delay:1s;
+  animation-fill-mode: forwards;
+}
+.snackclose:checked~.snackbar, .snackclose:checked, .snackclose:checked+label {
+  animation-name: snackbar-hide;
+  animation-delay:0s;
+}
+@keyframes snackbar-show {
+   0%{ bottom:-70px; }
+  90%, 95% {bottom:15px; }
+  92.5%, 100% {bottom:10px; }
+} 
+@keyframes snackbar-hide {
+   0%, 7.5% {bottom:10px; }
+  5%,10% {bottom:15px; }
+  100% {bottom:-70px; }
+}
+
+
+
+
+ 
+.my-notify-info, .my-notify-success, .my-notify-warning, .my-notify-error {
+    padding:10px;
+    margin:10px 0;
+	border-radius:.5em;
+	border: 1px solid;
+	box-shadow:1px 1px 3px #888;
+ 
+}
+.my-notify-info:before, .my-notify-success:before, .my-notify-warning:before, .my-notify-error:before {
+    font-style:normal;
+    font-weight:400;
+    speak:none;
+    display:inline-block;
+    text-decoration:inherit;
+    width:1em;
+    margin-right:.2em;
+    text-align:center;
+    font-variant:normal;
+    text-transform:none;
+    line-height:1em;
+    margin-left:.2em;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale
+
+}
+.my-notify-info {
+    color: #00529B;
+    background-color: #BDE5F8;
+}
+.my-notify-success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+}
+.my-notify-warning {
+    color: #9F6000;
+    background-color: #FEEFB3;
+}
+.my-notify-error {
+    color: #D8000C;
+    background-color: #FFD2D2;
+}
+
+/* The alert message box */
+
+
+.alert {
+   
+    background-color: #f44336; /* Red */
+    color: white;
+	padding:10px;
+    margin:10px 0;
+	border-radius:.5em;
+	border: 1px solid;
+	box-shadow:1px 1px 3px #888;
+}
+
+/* The close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+    color: black;
+}

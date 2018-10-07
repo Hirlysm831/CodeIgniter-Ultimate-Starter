@@ -1,7 +1,31 @@
 ************************************************
 ***************************************************************************
-<?php
 
+//https://davidwalsh.name/php-error_reporting-error-reporting
+add this one on the dev environment only
+error_get_last();
+<?php
+@todo customize the error handler to its corresponding css style in index.php
+@todo customize the error handler with multilingual in index.php
+@todo customize the error handler with developer POV and thinking in index.php
+
+@resume
+https://stackoverflow.com/questions/5187948/how-do-you-format-php-error-messages-they-dont-respect-css
+http://php.net/manual/en/function.set-error-handler.php
+http://php.net/manual/en/function.set-exception-handler.php
+https://codepen.io/imprakash/pen/GgNMXO
+http://php.net/manual/en/function.error-reporting.php
+http://php.net/manual/en/function.trigger-error.php
+https://stackoverflow.com/questions/1477791/count-number-of-php-warnings-notices
+https://davidwalsh.name/custom-error-handling-php
+https://vexxhost.com/blog/handling-php-errors-your-way/
+https://localhost/codeigniter-ultimate-starter/public/
+
+
+
+
+
+https://isabelcastillo.com/error-info-messages-css
 <?php
 /*
 header("Access-Control-Allow-Origin: *");
