@@ -1,6 +1,4 @@
 <?php
-/********************* End COMMENTING STRUCTURE ***************************/
-
 /**
  * CodeIgniter
  *
@@ -56,23 +54,27 @@
  * NOTE: If you change these, also change the error_reporting() code below
  */
  
- //=========================================================================
- // Environment Setup 
- //=========================================================================
+//==========================================================================
+// Environment Setup 
+//==========================================================================
 /***************************************************************************
  * 
- * @description  	Custom environment load and dynamic lookup of the root file
+ * Custom environment load and dynamic lookup of the root file
  * 
- * @category		instantation 
- * @package	    	environment_pack
- * @author  		Francisco Abayon 
- * @copyright		August 25, 2018
- * @version  		0.2.0
- * @see				(./environments.php)
- * @example			define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
+ * @category	instantation 
+ * @package	    environment_pack
+ * @author  	Francisco Abayon <franz.noyaba@gmail.com>
+ * @copyright	August 25, 2018
+ * @version  	0.3.0
+ * @link		../environments.php
+ * @url			https://stackoverflow.com/questions/9149483/get-folder-up-one-level/9149495
+ * @example		define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? 
+ *				$_SERVER['CI_ENV'] : 'development');
  * 					
  ***************************************************************************/	
-require 'environment.php';	
+//Add global 'ROOT' and get current directory path with going up 1 level by '..'
+define('ROOT',realpath(__DIR__ . DIRECTORY_SEPARATOR . '..'));
+require ROOT . DIRECTORY_SEPARATOR . 'environment.php';	
  
 /*
  *---------------------------------------------------------------
@@ -110,6 +112,7 @@ switch (ENVIRONMENT)
 		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
 		echo 'The application environment is not set correctly.';
 		exit(1); // EXIT_ERROR
+	break;
 }
 
 
@@ -132,11 +135,11 @@ switch (ENVIRONMENT)
  * @package	    	directory_pack
  * @author  		Francisco Abayon 
  * @copyright		September 17, 2018
- * @version  		0.1.0
+ * @version  		0.1.1
  * @example			$system_path = 'system';
  * 					
  ***************************************************************************/
-	$system_path = 'sys';
+	$system_path = ROOT . DIRECTORY_SEPARATOR . 'sys';
 
 /*
  *---------------------------------------------------------------
@@ -164,11 +167,11 @@ switch (ENVIRONMENT)
  * @package	    	directory_pack
  * @author  		Francisco Abayon 
  * @copyright		September 17, 2018
- * @version  		0.1.0
+ * @version  		0.1.1
  * @example			$application_folder = 'application';
  * 					
  ***************************************************************************/
-	$application_folder = 'app';
+	$application_folder = ROOT . DIRECTORY_SEPARATOR . 'app';
 
 /*
  *---------------------------------------------------------------
