@@ -83,140 +83,37 @@
  */
 switch (ENVIRONMENT)
 {
-	//http://www.howtofindit.in/displaying-php-errors/
-	//http://php.net/manual/en/errorfunc.configuration.php
+	/* 
+	 * Remodification of the ini_set values in the php
+	 *
+	 * @verion 0.1.0
+	 * @url	http://php.net/manual/en/errorfunc.configuration.php
+	 * @url	http://php.net/manual/en/errorfunc.configuration.php
+	 * @url	http://php.net/manual/en/function.exit.php	
+	 * 
+	 * @todo customize the error handler to its corresponding css style in index.php
+	 * @todo customize the error handler with multilingual in index.php
+	 * @todo customize the error handler with developer POV and thinking in index.php
+	 * @tutorial https://stackoverflow.com/questions/5187948/how-do-you-format-php-error-messages-they-dont-respect-css
+	 * @tutorial http://php.net/manual/en/function.set-error-handler.php
+	 * @tutorial http://php.net/manual/en/function.set-exception-handler.php
+	 * @tutorial https://codepen.io/imprakash/pen/GgNMXO
+	 * @tutorial http://php.net/manual/en/function.error-reporting.php
+	 * @tutorial http://php.net/manual/en/function.trigger-error.php
+	 * @tutorial https://stackoverflow.com/questions/1477791/count-number-of-php-warnings-notices
+	 * @tutorial https://davidwalsh.name/custom-error-handling-php
+	 * @tutorial https://vexxhost.com/blog/handling-php-errors-your-way/
+	 * @tutorial https://localhost/codeigniter-ultimate-starter/public/
+	 */
 	case 'development':	
-		// ini_set('error_prepend_string',"<div class='snack-wrap'>
-					// <input type='checkbox' class='snackclose animated' id='close'>
-					// <label class='snacklable animated' for='close'></label>  
-						// <div class='snackbar animated'><p>");
-		// ini_set('error_append_string',"</p></div></div>");	
-		// ini_set('error_prepend_string',"<div class='my-notify-error'><i class='fa-exclamation-circle'></i>");	
-		// ini_set('error_append_string',"<span class='closebtn' onclick='this.parentElement.style.display='none';'>&times;</span> </div>");	
-		ini_set('error_prepend_string',"<div class='alert'>
-				<span class='closebtn' onclick='this.parentElement.style.display=\"none\";'>
-				&times;</span> ");
+		echo '<link rel="stylesheet" type="text/css" href="php-error.css"/>';		
+		ini_set('error_prepend_string',"<div class='alert'><span class='closebtn' onclick='this.parentElement.style.display=\"none\";'>
+				&times;</span>");
 		ini_set('error_append_string',"</div>");
-		ini_set('html_errors',1);	
+		ini_set('html_errors',1);
 		ini_set('display_errors',1);
 		ini_set('display_startup_errors',1);
 		error_reporting(E_ALL);
-		echo '<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">';
-		echo '<link rel="stylesheet" type="text/css" href="demo.css"/>';
-
-
-/**
-* Custom error handler
-* @param integer $code
-* @param string $description
-* @param string $file
-* @param interger $line
-* @param mixed $context
-* @return boolean
-*/
-define('ERROR_LOG_FILE', 'C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\app\logs\root\error.log');
-
-
-/**
-* Custom error handler
-* @param integer $code
-* @param string $description
-* @param string $file
-* @param interger $line
-* @param mixed $context
-* @return boolean
-*/
-function handleError($code, $description, $file = null, $line = null, $context = null) {
-    $displayErrors = ini_get("display_errors");
-    $displayErrors = strtolower($displayErrors);
-    if (error_reporting() === 0 || $displayErrors === "on") {
-        return false;
-    }
-    list($error, $log) = mapErrorCode($code);
-    $data = array(
-        'level' => $log,
-        'code' => $code,
-        'error' => $error,
-        'description' => $description,
-        'file' => $file,
-        'line' => $line,
-        'context' => $context,
-        'path' => $file,
-        'message' => $error . ' (' . $code . '): ' . $description . ' in [' . $file . ', line ' . $line . ']'
-    );
-    return fileLog($data);
-}
-
-/**
-* This method is used to write data in file
-* @param mixed $logData
-* @param string $fileName
-* @return boolean
-*/
-function fileLog($logData, $fileName = ERROR_LOG_FILE) {
-    $fh = fopen($fileName, 'a+');
-    if (is_array($logData)) {
-        $logData = print_r($logData, 1);
-    }
-    $status = fwrite($fh, $logData);
-    fclose($fh);
-    return ($status) ? true : false;
-}
-
-/**
-* Map an error code into an Error word, and log location.
-*
-* @param int $code Error code to map
-* @return array Array of error word, and log location.
-*/
-function mapErrorCode($code) {
-    $error = $log = null;
-    switch ($code) {
-        case E_PARSE:
-        case E_ERROR:
-        case E_CORE_ERROR:
-        case E_COMPILE_ERROR:
-        case E_USER_ERROR:
-            $error = 'Fatal Error';
-            $log = LOG_ERR;
-            break;
-        case E_WARNING:
-        case E_USER_WARNING:
-        case E_COMPILE_WARNING:
-        case E_RECOVERABLE_ERROR:
-            $error = 'Warning';
-            $log = LOG_WARNING;
-            break;
-        case E_NOTICE:
-        case E_USER_NOTICE:
-            $error = 'Notice';
-            $log = LOG_NOTICE;
-            break;
-        case E_STRICT:
-            $error = 'Strict';
-            $log = LOG_NOTICE;
-            break;
-        case E_DEPRECATED:
-        case E_USER_DEPRECATED:
-            $error = 'Deprecated';
-            $log = LOG_NOTICE;
-            break;
-        default :
-            break;
-    }
-    return array($error, $log);
-}
-
-//calling custom error handler
-set_error_handler("handleError");
-
-//trigger error
-echo($test);
-echo($tesfffft);
-echo($test);
-echo($test);
-require 'asdf.php';
-		require ROOT . DIRECTORY_SEPARATOR . 'error_test.php';		
 	break;
 
 	case 'testing':	
@@ -227,6 +124,7 @@ require 'asdf.php';
 		ini_set('display_startup_errors',1);
 		error_reporting(-1);
 		//uncomment to check and test if the php error is capture
+		//echo $this_is_error;	
 		//require ROOT . DIRECTORY_SEPARATOR . 'error_test.php';	
 	break;
 	
