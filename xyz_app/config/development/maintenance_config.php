@@ -8,7 +8,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * @package	    maintenance_mode
  * @category	instantation 
  * @author  	Francisco Abayon <franz.noyaba@gmail.com>
- * @copyright	August 25, 2018
+ * @copyright	Oct 13, 2018
  * @version  	0.3.0
  * @link		../environments.php
  * @url			https://stackoverflow.com/questions/9149483/get-folder-up-one-level/9149495

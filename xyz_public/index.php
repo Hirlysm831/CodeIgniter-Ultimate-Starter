@@ -66,14 +66,50 @@
  * @link		../environments.php
  * @url			https://stackoverflow.com/questions/9149483/get-folder-up-one-level/9149495
  * @url			https://stackoverflow.com/questions/7008830/why-defined-define-syntax-in-defining-a-constant
+ * @url			http://codebyjeff.com/blog/2013/10/setting-environment-vars-for-codeigniter-commandline
  * @example		define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? 
  *				$_SERVER['CI_ENV'] : 'development');
  * 					
  ***************************************************************************/	
-	//Add global 'ROOT' and get current directory path with going up 1 level by '..'
-	defined('ROOT') OR define('ROOT',realpath(__DIR__ . DIRECTORY_SEPARATOR . '..'));
-	require ROOT . DIRECTORY_SEPARATOR . 'environment.php';	
+//Add global 'ROOT' and get current directory path with going up 1 level by '..'
+defined('ROOT') OR define('ROOT',realpath(__DIR__ . DIRECTORY_SEPARATOR . '..'));
+
+// It's in two places - let's be smart	
+defined('DEFAULT_ENVIRONMENT') OR define('DEFAULT_ENVIRONMENT', 'development');
+
+/***************************************************************************
+ *
+ * Having conditional statement for not being access via cli is set to by boolean and check
+ * if being access via cli it well automatically change the environment on it
+ *
+ * @todo		Create a case expression for determining the CLI or web in HTTP_HOST
+ * @var			Boolean						environment act ast the trigger point
+ *
+ ***************************************************************************/
  
+// detects if it is a command line request
+if ((php_sapi_name() == 'cli') or defined('STDIN'))
+{
+	$environment = DEFAULT_ENVIRONMENT;
+	if (isset($argv)) 
+	{
+		// grab the --env argument, and the one that comes next
+
+		$key = (array_search('--env', $argv));
+		$environment = $argv[$key +1];
+
+		// get rid of them so they don't get passed in to our method as parameter values
+
+		unset($argv[$key], $argv[$key +1]);
+	}  
+  	define('ENVIRONMENT', $environment);
+} 
+
+if (!defined('ENVIRONMENT'))
+{
+	define('ENVIRONMENT', isset($_SERVER['XYZ_ENVIRONMENT']) ? $_SERVER['XYZ_ENVIRONMENT'] : DEFAULT_ENV); 
+}
+
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING
