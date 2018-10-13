@@ -1,6 +1,8 @@
 <?php
-
+/*
+Live Data for server
+*/
 return [
-    'DB_USER' => 'root',
-    'DB_PASSWORD' => 'secret',
+    'XYZ_DBUSER_PROD' => 'root',
+    'XYZ_DBPASSWORD_PROD' => 'secret',
 ];

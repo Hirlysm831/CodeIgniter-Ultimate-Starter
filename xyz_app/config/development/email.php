@@ -1,7 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-
 /*
 * If you are using this app in a professionally hosted environment, you probably don't need
 * to do anything to this file.  If you are running it from your home server, or have a setup

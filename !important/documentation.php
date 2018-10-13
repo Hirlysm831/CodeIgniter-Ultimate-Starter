@@ -8,6 +8,7 @@ error_get_last();
 @todo customize the error handler to its corresponding css style in index.php
 @todo customize the error handler with multilingual in index.php
 @todo customize the error handler with developer POV and thinking in index.php
+@todo replace the default html file of the index.html to all folder defaults
 	@enhancement for php error modification link
 
 

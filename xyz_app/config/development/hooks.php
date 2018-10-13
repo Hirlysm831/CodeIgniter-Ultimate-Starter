@@ -25,7 +25,7 @@ $hook['pre_controller'][] = array(
 
 /***************************************************************************
  *
- * @subpackage 		Maintenance_Mode
+ * @subpackage 		maintenance_mode
  * @description 	Detecting the system if it is on Maintenance mode or not
  *					Also lood on the post controller(before reading the controller)
  * @author			Francisco Abayon

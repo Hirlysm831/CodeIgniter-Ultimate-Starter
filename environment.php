@@ -27,7 +27,7 @@ basename($_SERVER['PHP_SELF']) == basename(__FILE__)
  * @return	    the Environment of the server if its setup or not then return and access by web or CLI
  * @todo	    Optimize the domain name with its corresponding data
  ***************************************************************************/
-define('DEFAULT_ENV', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
+defined('DEFAULT_ENV') OR define('DEFAULT_ENV', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development'); 
 $hostname_development 	= array('localhost','http://test.ultimatemvc.com:8080');
 $hostname_testing 		= array('http://test.ultimatemvc.com:8080','http://dikol/test');
 $hostname_production	= array('https://www.yoursite.tld','http://www.yoursite.tld');
@@ -57,7 +57,8 @@ if ((php_sapi_name() == 'cli') or defined('STDIN'))
 		// get rid of them so they don't get passed in to our method as parameter values
 		unset($argv[$key], $argv[$key +1]);
 	}  
-  	define('ENVIRONMENT', $environment);
+	
+  	
 	//--> End of CLI code here
 } 
 else
@@ -81,18 +82,18 @@ $domain = strtolower($realHost);
 		
 		// enter as many ip as  needed for production and testing
 		case (in_array($domain, $hostname_production, TRUE)) :
-		  define('ENVIRONMENT', 'production');
+		  defined('ENVIRONMENT') OR define('ENVIRONMENT', 'production');
 		break;
 
 		//case '192.168.10.251:8099' :
 		//case ($abctest < 750):
 		case (in_array($domain, $hostname_testing, TRUE)) :
-		  define('ENVIRONMENT', 'testing');
+		  defined('ENVIRONMENT') OR define('ENVIRONMENT', 'testing');
 		break;
 		
 		//default switch value is set this kind whether being access at cli or host request
 		default :
-			if (!defined('ENVIRONMENT')) define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : DEFAULT_ENV);
+		  defined('ENVIRONMENT') OR define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : DEFAULT_ENV);
 		break;
 	}	
 	//--> End of web access of the system here

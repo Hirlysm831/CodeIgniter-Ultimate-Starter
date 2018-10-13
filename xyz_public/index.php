@@ -65,12 +65,13 @@
  * @version  	0.3.0
  * @link		../environments.php
  * @url			https://stackoverflow.com/questions/9149483/get-folder-up-one-level/9149495
+ * @url			https://stackoverflow.com/questions/7008830/why-defined-define-syntax-in-defining-a-constant
  * @example		define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? 
  *				$_SERVER['CI_ENV'] : 'development');
  * 					
  ***************************************************************************/	
 	//Add global 'ROOT' and get current directory path with going up 1 level by '..'
-	define('ROOT',realpath(__DIR__ . DIRECTORY_SEPARATOR . '..'));
+	defined('ROOT') OR define('ROOT',realpath(__DIR__ . DIRECTORY_SEPARATOR . '..'));
 	require ROOT . DIRECTORY_SEPARATOR . 'environment.php';	
  
 /*

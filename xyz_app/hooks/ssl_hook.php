@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 /***************************************************************************
  * 
- * @package	    	Maintenance_Mode
+ * @package	    	maintenance_mode
  * @description		Get real visitors ip address with shorthand method also
  *					requires php7 version and up
  * @author			Francisco Abayon

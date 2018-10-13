@@ -3,9 +3,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 /***************************************************************************
  * 
- * @subpackage		Maintenance_Mode
- * @description 	Save static database information for those who are having 
- *					the allowed maintenance excemptions
+ * Save static database information for those who are having the allowed maintenance excemptions
+ * 
+ * @package	    maintenance_mode
+ * @category	instantation 
+ * @author  	Francisco Abayon <franz.noyaba@gmail.com>
+ * @copyright	August 25, 2018
+ * @version  	0.3.0
+ * @link		../environments.php
+ * @url			https://stackoverflow.com/questions/9149483/get-folder-up-one-level/9149495
+ * @example		define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? 
+ *				$_SERVER['CI_ENV'] : 'development');
+ * 					
+ ***************************************************************************/	
+/***************************************************************************
+ * 
+ * @subpackage		maintenance_mode
+ * @description 	
+ *					
  * @author			Francisco Abayon
  * @version			0.0.1
  * 
