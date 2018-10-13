@@ -12,10 +12,21 @@ error_get_last();
 
 
 
+noun-actionword
+https://www.youtube.com/watch?v=zD4IGp1lBWs
+https://github.com/aiamk/codeigniter-restserver
+https://code.tutsplus.com/tutorials/working-with-restful-services-in-codeigniter--net-8814
+http://programmerblog.net/create-restful-web-services-in-codeigniter/
+https://www.codementor.io/byjg/using-json-web-token-jwt-as-a-php-session-axeuqbg1m
+https://recalll.co/app/?q=REST%20Authentication%20in%20PHP%20%28CodeIgniter%29
+https://github.com/firebase/php-jwt
+https://github.com/chriskacerguis/codeigniter-restserver/issues/765
+https://vivavivugeek.blogspot.com/2016/08/codeigniter-build-jwt-authentication.html
 
-
-
+https://github.com/dwyl/learn-json-web-tokens
 https://isabelcastillo.com/error-info-messages-css
+https://github.com/dodistyo/ci-rest-jwt
+https://github.com/ParitoshVaidya/CodeIgniter-JWT-Sample
 <?php
 /*
 header("Access-Control-Allow-Origin: *");

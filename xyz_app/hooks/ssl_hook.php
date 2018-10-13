@@ -35,7 +35,7 @@ class Force_ssl {
 		if ($_SERVER['SERVER_PORT'] != $xampp_ssl_port) { 
 			redirect($CI->uri->uri_string(),$redirect_method);
 		}
-	// $ip = getenv('REMOTE_ADDR', true) ? getenv('REMOTE_ADDR', true) : getenv('REMOTE_ADDR');
+	$ip = getenv('REMOTE_ADDR', true) ? getenv('REMOTE_ADDR', true) : getenv('REMOTE_ADDR');
 	// https://edoceo.com/creo/php-redirect
 	}
 

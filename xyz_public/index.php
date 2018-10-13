@@ -81,6 +81,20 @@
  * Different environments will require different levels of error reporting.
  * By default development will show errors but testing and live will hide them.
  */
+/***************************************************************************
+ * 
+ * Modification the directory value of system and application of codeigniter default
+ * 
+ * @category		instantation 
+ * @package	    	directory_pack
+ * @author  		Francisco Abayon <franz.noyaba@gmail.com> 
+ * @copyright		September 17, 2018
+ * @version  		0.1.1
+ * @example			$system_path = 'system';
+ * @example			$application_folder = = 'app';
+ * @see			 	global ROOT at this file 
+ * 					
+ ***************************************************************************/
 switch (ENVIRONMENT)
 {
 	/* 
@@ -114,18 +128,24 @@ switch (ENVIRONMENT)
 		ini_set('display_errors',1);
 		ini_set('display_startup_errors',1);
 		error_reporting(E_ALL);
+		$system_path = ROOT . DIRECTORY_SEPARATOR . 'xyz_sys';
+		$application_folder = ROOT . DIRECTORY_SEPARATOR . 'xyz_app';
 	break;
 
 	case 'testing':	
-		ini_set('error_prepend_string',"<div class='php-error-test'>");
-		ini_set('error_append_string',"</div>");	
-		ini_set('html_errors',1);	
+		echo '<link rel="stylesheet" type="text/css" href="php-error.css"/>';		
+		ini_set('error_prepend_string',"<div class='alert'><span class='closebtn' onclick='this.parentElement.style.display=\"none\";'>
+				&times;</span>");
+		ini_set('error_append_string',"</div>");
+		ini_set('html_errors',1);
 		ini_set('display_errors',1);
 		ini_set('display_startup_errors',1);
 		error_reporting(-1);
 		//uncomment to check and test if the php error is capture
 		//echo $this_is_error;	
 		//require ROOT . DIRECTORY_SEPARATOR . 'error_test.php';	
+		$system_path = ROOT . DIRECTORY_SEPARATOR . 'xyz_sys';
+		$application_folder = ROOT . DIRECTORY_SEPARATOR . 'xyz_app';
 	break;
 	
 	case 'production':
@@ -147,6 +167,8 @@ switch (ENVIRONMENT)
 							& ~E_STRICT 
 							& ~E_USER_NOTICE);
 		}
+		$system_path = ROOT . DIRECTORY_SEPARATOR . 'xyz_sys';
+		$application_folder = ROOT . DIRECTORY_SEPARATOR . 'xyz_app';
 	break;
 
 	default:
@@ -170,21 +192,6 @@ switch (ENVIRONMENT)
  * This variable must contain the name of your "system" directory.
  * Set the path if it is not in the same directory as this file.
  */
-	/***************************************************************************
-	 * 
-	 * Modification the directory value of system of codeigniter default
-	 * 
-	 * @category		instantation 
-	 * @package	    	directory_pack
-	 * @author  		Francisco Abayon <franz.noyaba@gmail.com> 
-	 * @copyright		September 17, 2018
-	 * @version  		0.1.1
-	 * @example			$system_path = 'system';
-	 * @see			 	global ROOT at this file 
-	 * 					
-	 ***************************************************************************/
-	$system_path = ROOT . DIRECTORY_SEPARATOR . 'sys';
-
 /*
  *---------------------------------------------------------------
  * APPLICATION DIRECTORY NAME
@@ -200,20 +207,6 @@ switch (ENVIRONMENT)
  *
  * NO TRAILING SLASH!
  */
-	/***************************************************************************
-	 * 
-	 * Modification the directory value of application of codeigniter default
-	 * 
-	 * @category		instantation 
-	 * @package	    	directory_pack
-	 * @author  		Francisco Abayon <franz.noyaba@gmail.com> 
-	 * @copyright		September 17, 2018
-	 * @version  		0.1.1
-	 * @example			$application_folder = 'application';
-	 * @see			 	global ROOT at this file 
-	 * 					
-	 ***************************************************************************/
-	$application_folder = ROOT . DIRECTORY_SEPARATOR . 'app';
 
 /*
  *---------------------------------------------------------------
