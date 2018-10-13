@@ -67,6 +67,7 @@
  * @url			https://stackoverflow.com/questions/9149483/get-folder-up-one-level/9149495
  * @url			https://stackoverflow.com/questions/7008830/why-defined-define-syntax-in-defining-a-constant
  * @url			http://codebyjeff.com/blog/2013/10/setting-environment-vars-for-codeigniter-commandline
+ * @url			https://garrettstjohn.com/articles/loading-environment-specific-configuration-files-codeigniter/
  * @example		define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? 
  *				$_SERVER['CI_ENV'] : 'development');
  * 					
@@ -80,7 +81,11 @@ defined('DEFAULT_ENVIRONMENT') OR define('DEFAULT_ENVIRONMENT', 'development');
 /***************************************************************************
  *
  * Having conditional statement for not being access via cli is set to by boolean and check
- * if being access via cli it well automatically change the environment on it
+ * if being access via cli it well automatically change the environment on it and Our goal is to send:
+ * 		- php index.php cron daily_tasks important_job 831 --environment production
+ *		- and have it run http://xyz.com/cron/daily_tasks/important_job/831
+ *		using the production environment
+ *
  *
  * @todo		Create a case expression for determining the CLI or web in HTTP_HOST
  * @var			Boolean						environment act ast the trigger point
@@ -95,19 +100,19 @@ if ((php_sapi_name() == 'cli') or defined('STDIN'))
 	{
 		// grab the --env argument, and the one that comes next
 
-		$key = (array_search('--env', $argv));
+		$key = (array_search('--environment', $argv));
 		$environment = $argv[$key +1];
 
 		// get rid of them so they don't get passed in to our method as parameter values
 
 		unset($argv[$key], $argv[$key +1]);
 	}  
-  	define('ENVIRONMENT', $environment);
+  	define('POINTER_ENVIRONMENT', $environment);
 } 
 
-if (!defined('ENVIRONMENT'))
+if (!defined('POINTER_ENVIRONMENT'))
 {
-	define('ENVIRONMENT', isset($_SERVER['XYZ_ENVIRONMENT']) ? $_SERVER['XYZ_ENVIRONMENT'] : DEFAULT_ENV); 
+	define('ENVIRONMENT', isset($_SERVER['XYZ_ENVIRONMENT']) ? $_SERVER['XYZ_ENVIRONMENT'] : DEFAULT_ENVIRONMENT); 
 }
 
 /*
