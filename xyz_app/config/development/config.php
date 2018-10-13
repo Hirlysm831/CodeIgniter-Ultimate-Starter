@@ -130,7 +130,7 @@ $config['enable_hooks'] = TRUE;
 | https://codeigniter.com/user_guide/general/creating_libraries.html
 |
 */
-$config['subclass_prefix'] = 'ST_';
+$config['subclass_prefix'] = SUBCLASS_PREFIX;
 
 /*
 |--------------------------------------------------------------------------
@@ -545,4 +545,4 @@ $config['rewrite_short_tags'] = FALSE;
 | @source			[custom][mix]
 | @version  		0.0.2
 */
-$config['proxy_ips'] = $_SERVER["HTTP_X_REAL_IP"] ?? $_SERVER["HTTP_X_FORWARDED_FOR"] ?? $_SERVER["HTTP_CLIENT_IP"] ?? $_SERVER["REMOTE_ADDR"] ?? NULL;
+$config['proxy_ips'] = PROXY_IPS;

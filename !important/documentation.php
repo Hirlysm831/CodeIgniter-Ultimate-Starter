@@ -11,6 +11,8 @@ error_get_last();
 @todo replace the default html file of the index.html to all folder defaults
 	@enhancement for php error modification link
 
+	https://medium.com/@amirsanni/dynamically-setting-base-url-in-codeigniter-3-8179d72ddd84
+	https://github.com/assoft/codeigniter/blob/master/application/config/constants.php
 
 defined('DEFAULT_ENV') OR define('DEFAULT_ENV', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development'); 
 $hostname_development 	= array('localhost','http://test.ultimatemvc.com:8080');
@@ -40,7 +42,7 @@ $domain = strtolower($realHost);
 	}	
 	//--> End of web access of the system here
 }
-
+	
 noun-actionword
 https://www.youtube.com/watch?v=zD4IGp1lBWs
 https://github.com/aiamk/codeigniter-restserver
