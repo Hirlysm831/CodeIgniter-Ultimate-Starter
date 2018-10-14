@@ -163,7 +163,7 @@ switch (ENVIRONMENT)
 	 */
 	case 'development':	
 		echo '<link rel="stylesheet" type="text/css" href="php-error.css"/>';		
-		ini_set('error_prepend_string',"<div class='alert'><span class='closebtn' onclick='this.parentElement.style.display=\"none\";'>
+		ini_set('error_prepend_string',"<div class='php-error'><span class='closebtn' onclick='this.parentElement.style.display=\"none\";'>
 				&times;</span>");
 		ini_set('error_append_string',"</div>");
 		ini_set('html_errors',1);
@@ -176,7 +176,7 @@ switch (ENVIRONMENT)
 
 	case 'testing':	
 		echo '<link rel="stylesheet" type="text/css" href="php-error.css"/>';		
-		ini_set('error_prepend_string',"<div class='alert'><span class='closebtn' onclick='this.parentElement.style.display=\"none\";'>
+		ini_set('error_prepend_string',"<div class='php-error'><span class='closebtn' onclick='this.parentElement.style.display=\"none\";'>
 				&times;</span>");
 		ini_set('error_append_string',"</div>");
 		ini_set('html_errors',1);

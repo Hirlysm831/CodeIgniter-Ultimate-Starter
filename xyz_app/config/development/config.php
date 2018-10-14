@@ -239,7 +239,7 @@ $config['allow_get_array'] = TRUE;
 | your log files will fill up very fast.
 |
 */
-$config['log_threshold'] = 0;
+$config['log_threshold'] = 4;
 
 /*
 |--------------------------------------------------------------------------
@@ -546,3 +546,24 @@ $config['rewrite_short_tags'] = FALSE;
 | @version  		0.0.2
 */
 $config['proxy_ips'] = PROXY_IPS;
+
+
+/*
+|--------------------------------------------------------------------------
+| Custom Config Setup
+|--------------------------------------------------------------------------
+|
+| If your server is behind a reverse proxy, you must whitelist the proxy
+|
+| @subpackage	    maintenance_mode
+| @description		Need to determine on what are the proxy ip need especially on PAAS
+|					,AWS or dynamic IP generated on the load balancer
+| @author			Francisco Abayon
+| @url 				https://forum.codeigniter.com/archive/index.php?thread-64427.html
+| @url			 	https://expressionengine.com/forums/archive/topic/185751/amazon-load-balancing-and-codeigniter-configproxy_ips#925678
+| @source			[custom][mix]
+| @version  		0.0.2
+*/
+// $config["clv_log_folder_path"] = APPPATH . "logs";
+// $config["clv_log_file_pattern"] = "log-*.php";
+// $config["clv_view_folder_path"] = 'utilities'. DIRECTORY_SEPARATOR . 'logviewer'. DIRECTORY_SEPARATOR . 'html';
