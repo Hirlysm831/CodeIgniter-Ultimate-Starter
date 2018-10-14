@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Welcome extends CI_Controller {
-private $logViewer;
+
 	/**
 	 * Index Page for this controller.
 	 *
@@ -20,14 +20,21 @@ private $logViewer;
 	 */
 	 
 public function asd() {
-    // $this->logViewer = new \CILogViewer\CILogViewer();
 
+				
+$a=2;
+$b=&$a; // note the & operator
+$b=3;
 }	 
 	 
 	public function index()
 	{
-		  $this->logViewer = new \CILogViewer();
-		echo $this->logViewer->showLogs();
+
+	
+	$this->load->library('utilities/Logviewer');
+			echo  $this->logviewer->showlogs(); 
+
+
 		// $this->load->view('welcome_message');
 		// echo DB_HOST;
 		 

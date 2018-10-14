@@ -1,0 +1,24 @@
+INFO - 2018-10-14 18:28:14 --> Config Class Initialized
+INFO - 2018-10-14 18:28:14 --> Hooks Class Initialized
+DEBUG - 2018-10-14 18:28:14 --> UTF-8 Support Enabled
+INFO - 2018-10-14 18:28:14 --> Utf8 Class Initialized
+INFO - 2018-10-14 18:28:14 --> URI Class Initialized
+DEBUG - 2018-10-14 18:28:14 --> No URI present. Default controller set.
+INFO - 2018-10-14 18:28:14 --> Router Class Initialized
+INFO - 2018-10-14 18:28:14 --> Output Class Initialized
+INFO - 2018-10-14 18:28:14 --> Security Class Initialized
+DEBUG - 2018-10-14 18:28:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-10-14 18:28:14 --> Input Class Initialized
+INFO - 2018-10-14 18:28:14 --> Language Class Initialized
+DEBUG - 2018-10-14 18:28:14 --> Accessing maintenance_hook from application/hooks.
+DEBUG - 2018-10-14 18:28:14 --> Accessing maintenance_hook from application/hooks.
+INFO - 2018-10-14 18:28:14 --> Loader Class Initialized
+DEBUG - 2018-10-14 18:28:14 --> Config file loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\config/development\maintenance_config.php
+INFO - 2018-10-14 18:28:14 --> Controller Class Initialized
+DEBUG - 2018-10-14 18:28:14 --> Accessing maintenance_hook from application/hooks.
+DEBUG - 2018-10-14 18:28:14 --> Accessing ssl_hook from app/hooks.
+DEBUG - 2018-10-14 18:28:14 --> Accessing ssl_hook from app/hooks.
+INFO - 2018-10-14 18:28:14 --> Helper loaded: url_helper
+INFO - 2018-10-14 18:28:14 --> File loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\views\cilogviewer/logs.php
+INFO - 2018-10-14 18:28:15 --> Final output sent to browser
+DEBUG - 2018-10-14 18:28:15 --> Total execution time: 1.0424

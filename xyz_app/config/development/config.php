@@ -564,6 +564,8 @@ $config['proxy_ips'] = PROXY_IPS;
 | @source			[custom][mix]
 | @version  		0.0.2
 */
-// $config["clv_log_folder_path"] = APPPATH . "logs";
-// $config["clv_log_file_pattern"] = "log-*.php";
-// $config["clv_view_folder_path"] = 'utilities'. DIRECTORY_SEPARATOR . 'logviewer'. DIRECTORY_SEPARATOR . 'html';
+$config["clv_log_folder_path"] = APPPATH . DIRECTORY_SEPARATOR . "logs";
+$config["clv_log_file_pattern"] = "log-*.php";
+
+ //this is the name of the view file passed to CI load->view()
+$config["clv_view_folder_path"] = 'utilities'. DIRECTORY_SEPARATOR . 'logviewer'. DIRECTORY_SEPARATOR . 'html';

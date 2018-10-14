@@ -48,7 +48,6 @@ class Maintenance {
 	 *
 	//////////*/
   public function maintenance_mode($params) {
-    self::__construct();
     $user_ip  = $this->CI->input->ip_address();
     $exemption_ip  = $this->CI->config->item('allowed_maintenance_ips');
     $environment  = 'production';

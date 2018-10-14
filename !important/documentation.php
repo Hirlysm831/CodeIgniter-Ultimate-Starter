@@ -14,6 +14,48 @@ error_get_last();
 	https://medium.com/@amirsanni/dynamically-setting-base-url-in-codeigniter-3-8179d72ddd84
 	https://github.com/assoft/codeigniter/blob/master/application/config/constants.php
 
+	
+	/*
+|--------------------------------------------------------------------------
+| Custom Constants
+|--------------------------------------------------------------------------
+|
+| The define variables for the system
+|
+*/
+/*************************************************  
+ *
+ * Custom environment load and dynamic lookup of the root file
+ *
+ * @url			https://stackoverflow.com/questions/9149483/get-folder-up-one-level/9149495
+ * @url			https://stackoverflow.com/questions/7008830/why-defined-define-syntax-in-defining-a-constant *************************************************/
+defined('MAJOR')			OR define('MAJOR','1', TRUE);  // major changes tracking
+defined('MINOR') 			OR define('MINOR','0', TRUE); 	// minor changes tracking
+defined('PATCH') 			OR define('PATCH','0', TRUE);	// patch changes tracking
+defined('APP_VERSION') 		OR define('APP_VERSION',MAJOR . MINOR . PATCH, TRUE);  // semantic version
+defined('SUBCLASS_PREFIX') 	OR define('SUBCLASS_PREFIX','xyz_');  // semantic version
+defined('PROXY_IPS') 		OR define('PROXY_IPS', $_SERVER["HTTP_X_REAL_IP"] ?? $_SERVER["HTTP_X_FORWARDED_FOR"] ?? $_SERVER["HTTP_CLIENT_IP"] ?? $_SERVER["REMOTE_ADDR"] ?? NULL, TRUE);  // Dynamic filterring data in PROXY_IP based on setup of Cloud
+defined('PUBLIC_FOLDER') 	OR define('PUBLIC_FOLDER','xyz_public' ,TRUE);  // Dynamic filterring data in PROXY_IP based on setup of Cloud
+
+
+return $this->output
+        ->set_content_type('application/json')
+        ->set_status_header(200) // Return status
+        ->set_output(json_encode(array(your array)));
+		
+$response = array('status' => 'OK');
+
+$this->output
+        ->set_status_header(200)
+        ->set_content_type('application/json', 'utf-8')
+        ->set_output(json_encode($response, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES))
+        ->_display();
+exit;
+
+
+
+
+
 defined('DEFAULT_ENV') OR define('DEFAULT_ENV', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development'); 
 $hostname_development 	= array('localhost','http://test.ultimatemvc.com:8080');
 $hostname_testing 		= array('http://test.ultimatemvc.com:8080','http://dikol/test');

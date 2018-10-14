@@ -4,13 +4,11 @@
  * Date: 09-Jan-18
  * Time: 4:30 AM
  */
-// namespace CILogViewer;
-
 defined('BASEPATH') OR exit('No direct script access allowed');
 defined('APPPATH') OR exit('Not a Code Igniter Environment');
 
 
-class CILogViewer {
+class Logviewer {
 
     private $CI;
 
@@ -40,17 +38,18 @@ class CILogViewer {
     //this is a combination of the LOG_FOLDER_PATH and LOG_FILE_PATTERN
     private $fullLogFilePath = "";
 
-	private $viewFolderLog = "";
+	//the dynamic setup of log file for the views
+    private $logFileView = "";
+
+	//the dynamic setup of log file for the views
+    private $pointerProperty = "";
 	
     //these are the config keys expected in the config.php
     const LOG_FILE_PATTERN_CONFIG_KEY = "clv_log_file_pattern";
     const LOG_FOLDER_PATH_CONFIG_KEY = "clv_log_folder_path";
-	const VIEW_FOLDER_PATH_CONFIG_KEY = "clv_view_folder_path";
+	const LOG_VIEW_FILE_PATH_CONFIG_KEY = "cls_view_file_path";
 
-    //this is the name of the view file passed to CI load->view()
-    // const CI_LOG_VIEW_FILE_PATH = "";
 
-	
     /**
      * Here we define the paths for the view file
      * that's used by the library to present logs on the UI
@@ -97,13 +96,20 @@ class CILogViewer {
         //configure the log folder path and the file pattern for all the logs in the folder
         $this->logFolderPath =  !is_null($this->CI->config->item(self::LOG_FOLDER_PATH_CONFIG_KEY)) ? rtrim($this->CI->config->item(self::LOG_FOLDER_PATH_CONFIG_KEY), "/") : rtrim(APPPATH, "/") . "/logs";
         $this->logFilePattern = !is_null($this->CI->config->item(self::LOG_FILE_PATTERN_CONFIG_KEY)) ? $this->CI->config->item(self::LOG_FILE_PATTERN_CONFIG_KEY) : "log-*.php";
-        $this->viewFolderLog = !is_null($this->CI->config->item(self::VIEW_FOLDER_PATH_CONFIG_KEY)) ? $this->CI->config->item(self::VIEW_FOLDER_PATH_CONFIG_KEY) : "cilogviewer/logs";
+        $this->logFileView = !is_null($this->CI->config->item(self::LOG_VIEW_FILE_PATH_CONFIG_KEY)) ? $this->CI->config->item(self::LOG_VIEW_FILE_PATH_CONFIG_KEY) : "utilities/logviewer/html/logs";
 
         //concatenate to form Full Log Path
         $this->fullLogFilePath = $this->logFolderPath . "/" . $this->logFilePattern;
-
+		
+		//based on the setup file name in the config, remove the extension
+		$this->pointerProperty = str_replace('.php', '', $this->LOG_VIEW_FILE_NAME);
+		
+		//based on the log directory, remove the file name and replace based on the setup file name
+		$this->pointerProperty = str_replace($this->pointerProperty, '', $this->logFileView);
+		
+		
         //create the view file so that CI can find it
-        $this->LOG_VIEW_FILE_FOLDER = rtrim(APPPATH, "/") . "/views/cilogviewer";
+        $this->LOG_VIEW_FILE_FOLDER = rtrim(APPPATH, "/") . "/views/".$this->pointerProperty;
         $this->LOG_VIEW_FILE_PATH = rtrim($this->LOG_VIEW_FILE_FOLDER) . "/" . $this->LOG_VIEW_FILE_NAME;
         if(!file_exists($this->LOG_VIEW_FILE_PATH)) {
 
@@ -177,7 +183,7 @@ class CILogViewer {
         $data['logs'] = $logs;
         $data['files'] =  !empty($files) ? $files : [];
         $data['currentFile'] = !is_null($currentFile) ? basename($currentFile) : "";
-        return $this->CI->load->view($this->viewFolderLog, $data, true);
+        return $this->CI->load->view($this->logFileView, $data, true);
     }
 
 
