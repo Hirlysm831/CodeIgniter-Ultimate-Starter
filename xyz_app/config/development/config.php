@@ -1,6 +1,20 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+/*************************************************  
+ *
+ * Set PHP Timezone for standard and unity and we should not rely on php.ini only.
+ * but it may cause a problem in the shared hosting in the future
+ *
+ * @todo		Research and refactor the code based on codeigniter standard
+ * @url			https://stackoverflow.com/questions/31309536/how-to-set-time-zone-in-codeigniter
+ * @tutorial	https://www.inmotionhosting.com/support/website/php/setting-the-timezone-for-php-in-the-phpini-file
+ * 
+ ************************************************/
+/*
+ * 
+ */ 
+date_default_timezone_set(DEFAULT_TIMEZONE);
 /*
 |--------------------------------------------------------------------------
 | Base Site URL
