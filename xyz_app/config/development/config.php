@@ -6,15 +6,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * Set PHP Timezone for standard and unity and we should not rely on php.ini only.
  * but it may cause a problem in the shared hosting in the future
  *
+ * @category	php.ini
  * @todo		Research and refactor the code based on codeigniter standard
  * @url			https://stackoverflow.com/questions/31309536/how-to-set-time-zone-in-codeigniter
  * @tutorial	https://www.inmotionhosting.com/support/website/php/setting-the-timezone-for-php-in-the-phpini-file
  * 
  ************************************************/
-/*
- * 
- */ 
 date_default_timezone_set(DEFAULT_TIMEZONE);
+
 /*
 |--------------------------------------------------------------------------
 | Base Site URL
@@ -37,16 +36,25 @@ date_default_timezone_set(DEFAULT_TIMEZONE);
 | a PHP script and you can easily do that on your own.
 |
 */
-// $config['base_url'] = 'http://localhost:8080/codeigniter-ultimate-starter/';
-
-//https://medium.com/@amirsanni/dynamically-setting-base-url-in-codeigniter-3-8179d72ddd84
+/*************************************************  
+ *
+ * Dyanmic setup based url on the server values and automation
+ *
+ * @version		0.0.1
+ * @var			string (callback function)
+ * @todo		Dynamic URL based on the server and being pointed
+ * @todo		Refactor the existing code
+ * @url			https://medium.com/@amirsanni/dynamically-setting-base-url-in-codeigniter-3-8179d72ddd84
+ * @exampe		$config['base_url'] = 'http://localhost:8080/codeigniter-ultimate-starter/';
+ * 
+ ************************************************/
 $protocol = is_https() ? "https://" : "http://";
 $host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : "";
 if(is_cli()){
    $config['base_url'] = '';
 }
 else if(stristr($host, "localhost") !== FALSE || (stristr($host, '192.168.') !== FALSE) || (stristr($host, '127.0.0') !== FALSE)){
-   $config['base_url'] = $protocol.$host."/codeigniter-ultimate-starter/";
+   $config['base_url'] = $protocol.$host."/codeigniter-ultimate-starter/" . DIRECTORY_SEPARATOR . PUBLIC_FOLDER;
 }
 else{
     $allowed_hosts = ['amirsanni.com', 'www.amirsanni.com'];
@@ -80,8 +88,6 @@ $config['index_page'] = '';
 |
 | WARNING: If you set this to 'PATH_INFO', URIs will always be URL-decoded!
 */
-//https://expressionengine.com/forums/archive/topic/99498/cli-codeigniter-on-the-command-line
-//$config['uri_protocol']    = isset($_SERVER['REQUEST_URI']) ? 'AUTO' : 'CLI';
 $config['uri_protocol']	= 'REQUEST_URI';
 
 /*
@@ -128,7 +134,7 @@ $config['charset'] = 'UTF-8';
 |
 | If you would like to use the 'hooks' feature you must enable it by
 | setting this variable to TRUE (boolean).  See the user guide for details.
-| @subpackage			Maintenance_Mode
+| @package			maintenance_mode
 */
 $config['enable_hooks'] = TRUE;
 
@@ -290,7 +296,14 @@ $config['log_file_extension'] = '';
 | IMPORTANT: This MUST be an integer (no quotes) and you MUST use octal
 |            integer notation (i.e. 0700, 0644, etc.)
 */
-$config['log_file_permissions'] = 0644;
+/*************************************************  
+ *
+ * Values default in the constant.php with 0644
+ * 
+ * @var constant
+ * 
+ ************************************************/
+$config['log_file_permissions'] = FILE_READ_MODE;
 
 /*
 |--------------------------------------------------------------------------
@@ -580,6 +593,5 @@ $config['proxy_ips'] = PROXY_IPS;
 */
 $config["clv_log_folder_path"] = APPPATH . DIRECTORY_SEPARATOR . "logs";
 $config["clv_log_file_pattern"] = "log-*.php";
-
  //this is the name of the view file passed to CI load->view()
 $config["clv_view_folder_path"] = 'utilities'. DIRECTORY_SEPARATOR . 'logviewer'. DIRECTORY_SEPARATOR . 'html';

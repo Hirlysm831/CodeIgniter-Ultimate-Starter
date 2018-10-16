@@ -1,43 +1,85 @@
 ************************************************
 ***************************************************************************
 
+
+@session_start();
+ // echo $_SERVER['AUTH_USER'];
+ echo gethostbyaddr($_SERVER['REMOTE_ADDR']);
+ // echo $_SERVER['REMOTE_USER'];
+  $user= shell_exec("echo %username%"); 
+    echo "user : $user";
+if (!function_exists('getallheaders')) {
+    /**
+     * Get all HTTP header key/values as an associative array for the current request.
+     *
+     * @return string[string] The HTTP header key/value pairs.
+     */
+    function getallheaders()
+    {
+        $headers = array();
+        $copy_server = array(
+            'CONTENT_TYPE'   => 'Content-Type',
+            'CONTENT_LENGTH' => 'Content-Length',
+            'CONTENT_MD5'    => 'Content-Md5',
+        );
+        foreach ($_SERVER as $key => $value) {
+            if (substr($key, 0, 5) === 'HTTP_') {
+                $key = substr($key, 5);
+                if (!isset($copy_server[$key]) || !isset($_SERVER[$key])) {
+                    $key = str_replace(' ', '-', ucwords(strtolower(str_replace('_', ' ', $key))));
+                    $headers[$key] = $value;
+                }
+            } elseif (isset($copy_server[$key])) {
+                $headers[$copy_server[$key]] = $value;
+            }
+        }
+        if (!isset($headers['Authorization'])) {
+            if (isset($_SERVER['REDIRECT_HTTP_AUTHORIZATION'])) {
+                $headers['Authorization'] = $_SERVER['REDIRECT_HTTP_AUTHORIZATION'];
+            } elseif (isset($_SERVER['PHP_AUTH_USER'])) {
+                $basic_pass = isset($_SERVER['PHP_AUTH_PW']) ? $_SERVER['PHP_AUTH_PW'] : '';
+                $headers['Authorization'] = 'Basic ' . base64_encode($_SERVER['PHP_AUTH_USER'] . ':' . $basic_pass);
+            } elseif (isset($_SERVER['PHP_AUTH_DIGEST'])) {
+                $headers['Authorization'] = $_SERVER['PHP_AUTH_DIGEST'];
+            }
+        }
+        return $headers;
+    }
+}
+foreach (getallheaders() as $name => $value) {
+    // echo "$name: $value\n";
+}
+die();
+  try {
+    throw new Exception();
+    return 1;
+  } catch (Exception $e) {
+    echo "Exception!\n";
+    return 2;
+  } finally {
+    echo "Finally called!\n";
+    return 3;
+  }
+die();
+
+
+
 //https://davidwalsh.name/php-error_reporting-error-reporting
 add this one on the dev environment only
 error_get_last();
-<?php
-@todo customize the error handler to its corresponding css style in index.php
-@todo customize the error handler with multilingual in index.php
-@todo customize the error handler with developer POV and thinking in index.php
-@todo replace the default html file of the index.html to all folder defaults
-	@enhancement for php error modification link
+
 
 	https://medium.com/@amirsanni/dynamically-setting-base-url-in-codeigniter-3-8179d72ddd84
 	https://github.com/assoft/codeigniter/blob/master/application/config/constants.php
 
 	
-	/*
-|--------------------------------------------------------------------------
-| Custom Constants
-|--------------------------------------------------------------------------
-|
-| The define variables for the system
-|
-*/
-/*************************************************  
+	/**
+ * Predefined logging levels
  *
- * Custom environment load and dynamic lookup of the root file
- *
- * @url			https://stackoverflow.com/questions/9149483/get-folder-up-one-level/9149495
- * @url			https://stackoverflow.com/questions/7008830/why-defined-define-syntax-in-defining-a-constant *************************************************/
-defined('MAJOR')			OR define('MAJOR','1', TRUE);  // major changes tracking
-defined('MINOR') 			OR define('MINOR','0', TRUE); 	// minor changes tracking
-defined('PATCH') 			OR define('PATCH','0', TRUE);	// patch changes tracking
-defined('APP_VERSION') 		OR define('APP_VERSION',MAJOR . MINOR . PATCH, TRUE);  // semantic version
-defined('SUBCLASS_PREFIX') 	OR define('SUBCLASS_PREFIX','xyz_');  // semantic version
-defined('PROXY_IPS') 		OR define('PROXY_IPS', $_SERVER["HTTP_X_REAL_IP"] ?? $_SERVER["HTTP_X_FORWARDED_FOR"] ?? $_SERVER["HTTP_CLIENT_IP"] ?? $_SERVER["REMOTE_ADDR"] ?? NULL, TRUE);  // Dynamic filterring data in PROXY_IP based on setup of Cloud
-defined('PUBLIC_FOLDER') 	OR define('PUBLIC_FOLDER','xyz_public' ,TRUE);  // Dynamic filterring data in PROXY_IP based on setup of Cloud
-
-
+ * @var array
+ */
+https://stackoverflow.com/questions/35459870/how-to-configure-multiple-database-and-using-failover-in-codeigniter
+https://codeigniter.com/user_guide/database/configuration.html
 return $this->output
         ->set_content_type('application/json')
         ->set_status_header(200) // Return status
@@ -53,6 +95,30 @@ $this->output
 exit;
 
 
+
+/ Base URL (keeps this crazy sh*t out of the config.php
+if(isset($_SERVER['HTTP_HOST']))
+{
+	$base_url = isset($_SERVER['HTTPS']) && strtolower($_SERVER['HTTPS']) == 'on' ? 'https' : 'http';
+	$base_url .= '://'. $_SERVER['HTTP_HOST'];
+	$base_url .= str_replace(basename($_SERVER['SCRIPT_NAME']), '', $_SERVER['SCRIPT_NAME']);
+	
+	// Base URI (It's different to base URL!)
+	$base_uri = parse_url($base_url, PHP_URL_PATH);
+	if(substr($base_uri, 0, 1) != '/') $base_uri = '/'.$base_uri;
+	if(substr($base_uri, -1, 1) != '/') $base_uri .= '/';
+}
+else
+{
+	$base_url = 'http://localhost/';
+	$base_uri = '/';
+}
+// Define these values to be used later on
+define('BASE_URL', $base_url);
+define('BASE_URI', $base_uri);
+define('APPPATH_URI', BASE_URI.APPPATH);
+// We dont need these variables any more
+unset($base_uri, $base_url);
 
 
 

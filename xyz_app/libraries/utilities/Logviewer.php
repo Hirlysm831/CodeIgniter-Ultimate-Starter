@@ -1,11 +1,19 @@
 <?php
-/**
- * Author: Seun Matt (https://github.com/SeunMatt)
- * Date: 09-Jan-18
- * Time: 4:30 AM
- */
+/***************************************************************************
+ * 
+ * Modification the directory value of system and application of codeigniter default
+ * 
+ * @category		Logger
+ * @package	    	Logviewer
+ * @author  		Francisco Abayon <franz.noyaba@gmail.com> 
+ * @author  		Seun Mattn <https://github.com/SeunMatt> 
+ * @copyright		October 16, 2018
+ * @version  		0.0.1
+ * @url				https://github.com/SeunMatt
+ * 					
+ ***************************************************************************/
 defined('BASEPATH') OR exit('No direct script access allowed');
-defined('APPPATH') OR exit('Not a Code Igniter Environment');
+defined('APPPATH') 	OR exit('Not a CodeIgniter Environment');
 
 
 class Logviewer {

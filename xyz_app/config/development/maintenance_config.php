@@ -10,21 +10,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * @author  	Francisco Abayon <franz.noyaba@gmail.com>
  * @copyright	Oct 13, 2018
  * @version  	0.3.0
- * @link		../environments.php
- * @url			https://stackoverflow.com/questions/9149483/get-folder-up-one-level/9149495
- * @example		define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? 
- *				$_SERVER['CI_ENV'] : 'development');
+ * @var 		array()
  * 					
  ***************************************************************************/	
-/***************************************************************************
- * 
- * @subpackage		maintenance_mode
- * @description 	
- *					
- * @author			Francisco Abayon
- * @version			0.0.1
- * 
- ***************************************************************************/
 $config['allowed_maintenance_ips'] = array(
 		'192.168.195.69',	// Francisco Abayon Laptop Workstation  based on internet connectivity
 		'169.254.95.228',	// Francisco Abayon Laptop Workstation  based on internet connectivity

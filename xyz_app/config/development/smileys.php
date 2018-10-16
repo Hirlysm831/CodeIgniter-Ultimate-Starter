@@ -13,6 +13,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | https://codeigniter.com/user_guide/helpers/smiley_helper.html
 |
 */
+/***************************************************************************
+ * 
+ * Smiley libray for text/string replacer
+ * 
+ * @package	    codeignter
+ * @category	library 
+ * @author  	Francisco Abayon <franz.noyaba@gmail.com>
+ * @copyright	Oct 16, 2018
+ * @version  	0.1.0
+ * @var 		array()
+ * @todo 		add the library class for smileys
+ * @todo 		modify the library class smileys on modern looks and output
+ * 					
+ ***************************************************************************/
 $smileys = array(
 
 //	smiley			image name						width	height	alt
