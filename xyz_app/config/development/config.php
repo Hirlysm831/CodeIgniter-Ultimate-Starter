@@ -134,7 +134,8 @@ $config['charset'] = 'UTF-8';
 |
 | If you would like to use the 'hooks' feature you must enable it by
 | setting this variable to TRUE (boolean).  See the user guide for details.
-| @package			maintenance_mode
+| @subpackage		maintenance_mode
+| @example			$config['enable_hooks'] = FALSE;
 */
 $config['enable_hooks'] = TRUE;
 
@@ -569,8 +570,9 @@ $config['rewrite_short_tags'] = FALSE;
 | @author			Francisco Abayon
 | @url 				https://forum.codeigniter.com/archive/index.php?thread-64427.html
 | @url			 	https://expressionengine.com/forums/archive/topic/185751/amazon-load-balancing-and-codeigniter-configproxy_ips#925678
-| @source			[custom][mix]
+| @example			$config['proxy_ips'] = '';
 | @version  		0.0.2
+| 
 */
 $config['proxy_ips'] = PROXY_IPS;
 
@@ -579,7 +581,7 @@ $config['proxy_ips'] = PROXY_IPS;
 |--------------------------------------------------------------------------
 | Custom Config Setup
 |--------------------------------------------------------------------------
-|
+|@todo resume here
 | If your server is behind a reverse proxy, you must whitelist the proxy
 |
 | @subpackage	    maintenance_mode
@@ -588,7 +590,6 @@ $config['proxy_ips'] = PROXY_IPS;
 | @author			Francisco Abayon
 | @url 				https://forum.codeigniter.com/archive/index.php?thread-64427.html
 | @url			 	https://expressionengine.com/forums/archive/topic/185751/amazon-load-balancing-and-codeigniter-configproxy_ips#925678
-| @source			[custom][mix]
 | @version  		0.0.2
 */
 $config["clv_log_folder_path"] = APPPATH . DIRECTORY_SEPARATOR . "logs";

@@ -97,6 +97,7 @@ defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest auto
  * @url			https://stackoverflow.com/questions/7008830/why-defined-define-syntax-in-defining-a-constant 
  * @url			https://semver.org/
  * @tutorial	http://php.net/manual/en/timezones.asia.php
+ * @todo		Apply CICD based on the SemVer variables reflected in the repository
  * 
  ************************************************/
 defined('MAJOR')			OR define('MAJOR','1', TRUE);  // major changes tracking

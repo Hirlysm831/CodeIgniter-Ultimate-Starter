@@ -11,6 +11,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * @copyright	Oct 13, 2018
  * @version  	0.3.0
  * @var 		array()
+ * @todo		Configurable that can be access the ip setups on database connectivity				
  * 					
  ***************************************************************************/	
 $config['allowed_maintenance_ips'] = array(
