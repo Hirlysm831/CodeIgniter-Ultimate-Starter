@@ -10,7 +10,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * @url 			https://aftabmuni.wordpress.com/2016/07/06/setup-maintenance-mode-using-hooks-in-codeigniter/
  * @url			  	https://edoceo.com/creo/php-redirect
  * @source			[custom][mix]
- * @version  		0.0.1
+ * @since  		0.0.1
  * @see				../config/ENVIRONMENT/hooks.php
  * 					
  ***************************************************************************/

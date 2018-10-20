@@ -8,7 +8,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * @author			Francisco Abayon
  * @url				https://stackoverflow.com/questions/13646690/how-to-get-real-ip-from-visitor
  * @url				https://stackoverflow.com/questions/15699101/get-the-client-ip-address-using-php
- * @version  		0.0.1
+ * @since  		0.0.1
  * 
  ***************************************************************************/
 if (!function_exists('visitors_ip')){
@@ -38,7 +38,7 @@ if (!function_exists('visitors_ip')){
  *					requires php7 version and up
  * @author			Francisco Abayon
  * @url				https://stackoverflow.com/questions/37921803/how-to-get-my-site-visitors-ip-address-in-php
- * @version  		0.0.1
+ * @since  		0.0.1
  * @todo			Fix and find the error of this function
  ***************************************************************************/
 if (!function_exists('visitors_ip_short')){

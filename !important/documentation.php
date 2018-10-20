@@ -1,6 +1,21 @@
 ************************************************
 ***************************************************************************
-
+ * @package        	CodeIgniter
+ * @subpackage    	Libraries
+ * @category    	Libraries
+ * @access    	Libraries
+ * @author        	Zeeshan M
+  * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc. (https://ellislab.com/)
+ * @copyright	Copyright (c) 2014 - 2018, British Columbia Institute of Technology (http://bcit.ca/)
+  * @license	http://opensource.org/licenses/MIT	MIT License
+  @var 		array()
+ * @since	Version 1.0.0
+ * @see		at the top
+ * @link		../environments.php
+ * @url			https://stackoverflow.com/questions/9149483/get-folder-up-one-level/9149495
+ @ example
+ 	 * @todo 		customize the error handler with developer POV and thinking in index.php
+	 * @tutorial	https://stackoverflow.com/questions/5187948/how-do-you-format-php-error-messages-they-dont-respect-css
 
 @session_start();
  // echo $_SERVER['AUTH_USER'];
@@ -242,7 +257,7 @@ function callAPI($method, $url, $data,$headers = false){
  * @description		Standard Framework in PHP with codeigniter framework
  * @author			Francisco Abayon
  * @url				[N/A]
- * @version			0.0.1
+ * @since			0.0.1
  *
  * @credentials		[N/A]
  * @legend			[N/A] 		=> Not available as for now, but added data in the future
@@ -299,7 +314,7 @@ function callAPI($method, $url, $data,$headers = false){
 @final
 @ignore
 @internal
-@version
+@since
 @author
 @copyright
 @license
@@ -461,7 +476,7 @@ switch (true) {
 @final
 @ignore
 @internal
-@version
+@since
 @author
 @copyright
 @license
@@ -497,7 +512,7 @@ switch (true) {
  * @throws       	Javadoc-compatible, use as needed
  * @todo         	phpdoc.de compatibility
  * @var        		type    a data type for a class variable
- * @version    		version
+ * @since    		version
 **********/
 
 <<<<<<< HEAD

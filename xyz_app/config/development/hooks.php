@@ -9,7 +9,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | files.  Please see the user guide for info:
 |
 |	https://codeigniter.com/user_guide/general/hooks.html
-|
+|if(getenv('APP_ENV') === 'development') {
+						$dotenv = new Dotenv\Dotenv();
+						$dotenv->load(__DIR__);
+}
 */
 
 ///http://roopampoddar.com/2016/01/26/integrating-phpdotenv-env-files-in-codeigniter-3-0-using-hooks/
@@ -25,12 +28,14 @@ $hook['pre_controller'][] = array(
 
 /***************************************************************************
  *
- * @subpackage 		maintenance_mode
- * @description 	Detecting the system if it is on Maintenance mode or not
- *					Also lood on the post controller(before reading the controller)
- * @author			Francisco Abayon
+ * Detecting the system if it is on Maintenance mode or not
+ * Also load on the post controller(before reading the controller)
+ *
+ * @subpackage		maintenance_mode
+ * @category		hooks 
+ * @author			Francisco Abayon <franz.noyaba@gamail.com>
+ * @since			0.0.1	
  * @url 			https://www.codeigniter.com/user_guide/general/hooks.html
- * @version			0.0.1	
  * @internal 		 Must post_controller_constructor because:
  *					- 	pre_system  is not applicable . Only the benchmark and hooks class have
  *						been loaded at this point. No routing or other processes have happened.
@@ -38,20 +43,18 @@ $hook['pre_controller'][] = array(
  *						security checks have been done. Also helper is not called as its process.
  *  				-	post_controller_constructor after controller is instantiated,
  *						but prior to any method calls happening
- 
- *						if(getenv('APP_ENV') === 'development') {
-						$dotenv = new Dotenv\Dotenv();
-						$dotenv->load(__DIR__);
-}
+ *
+ * @todo			create CLI views return on maintenance view
+ * @todo			Optimize the views with customize return data
+ * @todo			Optimize the views with customize return data
+ *
  ***************************************************************************/
-
-
 $hook['post_controller_constructor'][] = array(
   'class' => 'maintenance',
   'function' => 'maintenance_mode',
   'filename' => 'maintenance_hook.php',
   'filepath' => 'hooks',
-  'params'   => array('error_maintenance')	//filename from error file
+  'params'   => array('error_maintenance')	//filename from error file html
 );
 
 //force SSL
@@ -62,6 +65,3 @@ $hook['post_controller_constructor'][] = array(
                                 'filename' => 'ssl_hook.php',
                                 'filepath' => 'hooks'
                                 );
-
-/* End of file hooks.php */
-/* Location: ./application/config/developement/hooks.php */

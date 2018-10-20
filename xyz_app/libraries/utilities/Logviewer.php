@@ -8,7 +8,7 @@
  * @author  		Francisco Abayon <franz.noyaba@gmail.com> 
  * @author  		Seun Mattn <https://github.com/SeunMatt> 
  * @copyright		October 16, 2018
- * @version  		0.0.1
+ * @since  		0.0.1
  * @url				https://github.com/SeunMatt
  * 					
  ***************************************************************************/

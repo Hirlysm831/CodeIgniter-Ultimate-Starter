@@ -92,20 +92,23 @@ defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest auto
 /*************************************************  
  *
  * Custom environment load and dynamic lookup of the root file
- *
+ * 
  * @url			https://stackoverflow.com/questions/9149483/get-folder-up-one-level/9149495
  * @url			https://stackoverflow.com/questions/7008830/why-defined-define-syntax-in-defining-a-constant 
  * @url			https://semver.org/
- * @tutorial	http://php.net/manual/en/timezones.asia.php
+ *
  * @todo		Apply CICD based on the SemVer variables reflected in the repository
+ * @tutorial	http://php.net/manual/en/timezones.asia.php
  * 
  ************************************************/
-defined('MAJOR')			OR define('MAJOR','1', TRUE);  // major changes tracking
+defined('MAJOR')			OR define('MAJOR','0', TRUE);  // major changes tracking
 defined('MINOR') 			OR define('MINOR','0', TRUE); 	// minor changes tracking
-defined('PATCH') 			OR define('PATCH','0', TRUE);	// patch changes tracking
-defined('APP_NAME') 		OR define('APP_NAME','xxxxxxxxxxx');  // semantic version
-defined('APP_VERSION') 		OR define('APP_VERSION',MAJOR . MINOR . PATCH, TRUE);  // semantic version
+defined('PATCH') 			OR define('PATCH','1', TRUE);	// patch changes tracking
+defined('APP_NAME') 		OR define('APP_NAME','xxxxxxxxxxx');  // name of the application in the system
+defined('APP_VERSION') 		OR define('APP_VERSION',MAJOR .'.'. MINOR .'.'. PATCH, TRUE);  // semantic version
+defined('APP_NAME_VERSION') OR define('APP_NAME_VERSION',APP_NAME .'-'.APP_VERSION, TRUE);  // Name of the system with its corresponding version
 defined('SUBCLASS_PREFIX') 	OR define('SUBCLASS_PREFIX','xyz_');  // semantic version
 defined('PROXY_IPS') 		OR define('PROXY_IPS', $_SERVER["HTTP_X_REAL_IP"] ?? $_SERVER["HTTP_X_FORWARDED_FOR"] ?? $_SERVER["HTTP_CLIENT_IP"] ?? $_SERVER["REMOTE_ADDR"] ?? NULL, TRUE);  // Dynamic filterring data in PROXY_IP based on setup of Cloud
-defined('PUBLIC_FOLDER') 	OR define('PUBLIC_FOLDER','xyz_public' ,TRUE);  // Dynamic filterring data in PROXY_IP based on setup of Cloud
 defined('DEFAULT_TIMEZONE') OR define('DEFAULT_TIMEZONE','Asia/Urumqi' ,TRUE);  //Timezone Setup in Asia, can be used also in 'Asia/Manila'
+defined('PUBLIC_FOLDER') 	OR define('PUBLIC_FOLDER','xyz_public' ,TRUE);  //  Folder name of the directory in public folder
+defined('LOGS_FOLDER') 		OR define('LOGS_FOLDER','logs' ,TRUE);  // Folder name of the directory in logs

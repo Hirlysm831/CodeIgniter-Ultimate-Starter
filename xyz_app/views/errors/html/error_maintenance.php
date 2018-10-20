@@ -6,7 +6,7 @@
  * @author			Francisco Abayon
  * @url				https://aftabmuni.wordpress.com/2016/07/06/setup-maintenance-mode-using-hooks-in-codeigniter/
  * @url				http://www.roytuts.com/display-site-maintenence-message-using-codeigniter/
- * @version  		0.1.0
+ * @since  		0.1.0
  * 
  ***************************************************************************/
 

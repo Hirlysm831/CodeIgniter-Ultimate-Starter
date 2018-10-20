@@ -5,12 +5,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * 
  * Get real visitors ip address with shorthand method also requires php7 version and up
  *
- * @access       	public
  * @package	    	maintenance_mode
  * @category		hooks 
+ * @access       	public
  * @author  		Francisco Abayon <franz.noyaba@gmail.com>
  * @copyright		Oct 16, 2018
- * @version  		0.3.0
+ * @since  			0.0.1
  * @url 			https://aftabmuni.wordpress.com/2016/07/06/setup-maintenance-mode-using-hooks-in-codeigniter/
  * @url			 	https://github.com/bcit-ci/CodeIgniter/wiki/I-want-to-take-my-site-offline-for-maintenance---rogierb
  * @url			 	https://stackoverflow.com/questions/15572568/how-to-build-in-maintenance-mode-in-codeigniter
@@ -22,17 +22,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * @link			../config/ENVIRONMENT/mainteance_config.php
  * @link			../app/views/errors/html/error_maintenance.php
  * @link			../app/views/errors/cli/error_maintenance.php
+ *
  * @todo  		    Text should be call on language or multilingual modea
  * @todo  		    Modify the html in the maintenance mode			
+ * @todo  		    Use the constant of Exit(0) in codeigniter as much as possible		
  * 					
  ***************************************************************************/
 class Maintenance {
-
-  private $UniqueId; //https://www.w3schools.com/php/php_exception.asp	
 	
   public function __construct() {
 		$this->CI =& get_instance();
-		log_message('info', APP_NAME . ' is executing maintenance_hook file in ' . APPPATH . 'hooks by '
+		log_message('info', APP_NAME_VERSION . ' is executing maintenance_hook file in ' . APPPATH . 'hooks by '
 		. gethostbyaddr($_SERVER['REMOTE_ADDR']) . ' with the unit name '.shell_exec("echo %username%").'.' );
   }
 
@@ -59,18 +59,18 @@ class Maintenance {
 		$output = '';
 
 		$output = $_error->show_error($heading, $message, $params[0],503); 
-		log_message('info', 'While ' . APP_NAME . ' is in maintenance mode, it was attempted to be access by ' 
+		log_message('info', 'While ' . APP_NAME_VERSION . ' is in maintenance mode, it was attempted to be access by ' 
 		. gethostbyaddr($_SERVER['REMOTE_ADDR']) . ' using the unit name by ' . shell_exec("echo %username%") . '.' );
 		exit($output);
 	}
 	else  if (ENVIRONMENT !== $environment)
 	{
-		log_message('debug', 'While ' . APP_NAME . ' is in maintenance mode, it was successfully  access by ' 
+		log_message('debug', 'While ' . APP_NAME_VERSION . ' is in maintenance mode, it was successfully  access by ' 
 		. gethostbyaddr($_SERVER['REMOTE_ADDR']) . ' using the unit name by ' . shell_exec("echo %username%") . '.' );			
 	}
   }
   
   public function __destruct() {
-    log_message('info', APP_NAME . ' maintenance_hook file in ' . APPPATH   . 'hook was executed completely.');
+    log_message('info', APP_NAME_VERSION . ' maintenance_hook file in ' . APPPATH   . 'hook was executed completely.');
   }
 }

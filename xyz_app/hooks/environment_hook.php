@@ -14,7 +14,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * @url			 	https://stackoverflow.com/questions/10471974/codeigniter-2-and-htaccess-how-to-implement-down-for-maintenance-mode
  * @url			 	https://bitbucket.org/skunkbad/community-auth-git-version/src/032a2c579cb0089eea44bce3aa6a4b8ce1220fb6/maintenance-mode.php?at=master&fileviewer=file-view-default
  * @source			[custom][mix]
- * @version  		0.0.1
+ * @since  		0.0.1
  * @todo  		    Text should be call on language or multilingual mode
  * @see				../config/ENVIRONMENT/autoload.php
  * @see				../config/ENVIRONMENT/config.php

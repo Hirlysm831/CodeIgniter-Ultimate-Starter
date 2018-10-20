@@ -7,7 +7,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 * @sources(s)		https://forum.codeigniter.com/archive/index.php?thread-64142.html
 * 					[custom][mix]
 * 
-* @version  		0.1.0
+* @since  		0.1.0
 * @description(s)  	isplay site under maintenance via CLI
 * @author(s)  		Francisco Abayon 
 * @dateadded  		December 07, 2017

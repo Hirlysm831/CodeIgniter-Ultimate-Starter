@@ -62,7 +62,7 @@
  * @category	instantation 
  * @author  	Francisco Abayon <franz.noyaba@gmail.com>
  * @copyright	August 25, 2018
- * @version  	0.3.0
+ * @since  	0.3.0
  * @link		../environments.php
  * @url			https://stackoverflow.com/questions/9149483/get-folder-up-one-level/9149495
  * @url			https://stackoverflow.com/questions/7008830/why-defined-define-syntax-in-defining-a-constant
@@ -127,11 +127,11 @@ if (!defined('POINTER_ENVIRONMENT'))
  * 
  * Modification the directory value of system and application of codeigniter default
  * 
- * @category		instantation 
- * @package	    	directory_pack
+ * @package	    	configuration
+ * @category		setup 
  * @author  		Francisco Abayon <franz.noyaba@gmail.com> 
  * @copyright		September 17, 2018
- * @version  		0.1.1
+ * @since  		0.0.1
  * @example			$system_path = 'system';
  * @example			$application_folder = = 'app';
  * @see			 	global ROOT at this file 
@@ -142,24 +142,24 @@ switch (ENVIRONMENT)
 	/* 
 	 * Remodification of the ini_set values in the php
 	 *
-	 * @verion 0.1.0
-	 * @url	http://php.net/manual/en/errorfunc.configuration.php
-	 * @url	http://php.net/manual/en/errorfunc.configuration.php
-	 * @url	http://php.net/manual/en/function.exit.php	
+	 * @verion 		0.0.1
+	 * @url			http://php.net/manual/en/errorfunc.configuration.php
+	 * @url			http://php.net/manual/en/errorfunc.configuration.php
+	 * @url			http://php.net/manual/en/function.exit.php	
 	 * 
-	 * @todo customize the error handler to its corresponding css style in index.php
-	 * @todo customize the error handler with multilingual in index.php
-	 * @todo customize the error handler with developer POV and thinking in index.php
-	 * @tutorial https://stackoverflow.com/questions/5187948/how-do-you-format-php-error-messages-they-dont-respect-css
-	 * @tutorial http://php.net/manual/en/function.set-error-handler.php
-	 * @tutorial http://php.net/manual/en/function.set-exception-handler.php
-	 * @tutorial https://codepen.io/imprakash/pen/GgNMXO
-	 * @tutorial http://php.net/manual/en/function.error-reporting.php
-	 * @tutorial http://php.net/manual/en/function.trigger-error.php
-	 * @tutorial https://stackoverflow.com/questions/1477791/count-number-of-php-warnings-notices
-	 * @tutorial https://davidwalsh.name/custom-error-handling-php
-	 * @tutorial https://vexxhost.com/blog/handling-php-errors-your-way/
-	 * @tutorial https://localhost/codeigniter-ultimate-starter/public/
+	 * @todo 		customize the error handler to its corresponding css style in index.php
+	 * @todo		customize the error handler with multilingual in index.php
+	 * @todo 		customize the error handler with developer POV and thinking in index.php
+	 * @tutorial	https://stackoverflow.com/questions/5187948/how-do-you-format-php-error-messages-they-dont-respect-css
+	 * @tutorial	http://php.net/manual/en/function.set-error-handler.php
+	 * @tutorial	http://php.net/manual/en/function.set-exception-handler.php
+	 * @tutorial	https://codepen.io/imprakash/pen/GgNMXO
+	 * @tutorial	http://php.net/manual/en/function.error-reporting.php
+	 * @tutorial	http://php.net/manual/en/function.trigger-error.php
+	 * @tutorial	https://stackoverflow.com/questions/1477791/count-number-of-php-warnings-notices
+	 * @tutorial	https://davidwalsh.name/custom-error-handling-php
+	 * @tutorial	https://vexxhost.com/blog/handling-php-errors-your-way/
+	 * @tutorial	https://localhost/codeigniter-ultimate-starter/public/
 	 */
 	case 'development':	
 		echo '<link rel="stylesheet" type="text/css" href="php-error.css"/>';		
@@ -169,8 +169,6 @@ switch (ENVIRONMENT)
 		ini_set('display_errors',1);
 		ini_set('display_startup_errors',1);
 		error_reporting(E_ALL);
-				// echo $this_is_error;	
-		// require ROOT . DIRECTORY_SEPARATOR . 'error_test.php';
 		$system_path = ROOT . DIRECTORY_SEPARATOR . 'xyz_sys';
 		$application_folder = ROOT . DIRECTORY_SEPARATOR . 'xyz_app';
 	break;
@@ -220,6 +218,7 @@ switch (ENVIRONMENT)
 		 * to avoid unwanted or weird symbol in the header
 		 *
 		 * @url	http://php.net/manual/en/function.exit.php	
+		 * 
 		 *************************************************/
 			header($_SERVER["SERVER_PROTOCOL"]. '503 Service Unavailable.', TRUE, 503);
 			echo 'The application environment is not set correctly.';

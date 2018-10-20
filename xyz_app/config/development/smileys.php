@@ -21,7 +21,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * @category	library 
  * @author  	Francisco Abayon <franz.noyaba@gmail.com>
  * @copyright	Oct 16, 2018
- * @version  	0.1.0
+ * @since  	0.1.0
  * @var 		array()
  * @todo 		add the library class for smileys
  * @todo 		modify the library class smileys on modern looks and output
