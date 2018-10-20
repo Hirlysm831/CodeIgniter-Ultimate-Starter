@@ -150,6 +150,7 @@ switch (ENVIRONMENT)
 	 * @todo 		customize the error handler to its corresponding css style in index.php
 	 * @todo		customize the error handler with multilingual in index.php
 	 * @todo 		customize the error handler with developer POV and thinking in index.php
+	 * @todo 		if testing mode, BASEPATH define header will now be deactivated and unused
 	 * @tutorial	https://stackoverflow.com/questions/5187948/how-do-you-format-php-error-messages-they-dont-respect-css
 	 * @tutorial	http://php.net/manual/en/function.set-error-handler.php
 	 * @tutorial	http://php.net/manual/en/function.set-exception-handler.php

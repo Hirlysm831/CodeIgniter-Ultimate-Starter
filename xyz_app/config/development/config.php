@@ -158,7 +158,9 @@ $config['charset'] = 'UTF-8';
  *
  * Values default in the constant.php with 0644
  * 
+ * @subpackage		environment_mode
  * @subpackage		maintenance_mode
+ * @link			../../hooks/hooks.php
  * @example			$config['enable_hooks'] = FALSE;
  * 
  * @todo			Enable only specific hooks in codeigniter based on the environment setup
@@ -602,6 +604,7 @@ $config['rewrite_short_tags'] = FALSE;
 | @description		Need to determine on what are the proxy ip need especially on PAAS
 |					,AWS or dynamic IP generated on the load balancer
 | @author			Francisco Abayon
+| @link				../../hooks/hooks.php
 | @url 				https://forum.codeigniter.com/archive/index.php?thread-64427.html
 | @url			 	https://expressionengine.com/forums/archive/topic/185751/amazon-load-balancing-and-codeigniter-configproxy_ips#925678
 | @example			$config['proxy_ips'] = '';
@@ -615,7 +618,7 @@ $config['proxy_ips'] = PROXY_IPS;
 |--------------------------------------------------------------------------
 | Custom Config Setup
 |--------------------------------------------------------------------------
-|@todo resume here
+|
 | Need to determine on what are the proxy ip need especially on PAAS,
 | AWS or dynamic IP generated on the load balancer
 |
@@ -623,6 +626,7 @@ $config['proxy_ips'] = PROXY_IPS;
 | 	
 | @author			Francisco Abayon <franz.noyaba@gmail.com>
 | @since  			0.0.1 
+| @link				../../hooks/hooks.php
 | @url 				https://forum.codeigniter.com/archive/index.php?thread-64427.html
 | @url			 	https://expressionengine.com/forums/archive/topic/185751/amazon-load-balancing-and-codeigniter-configproxy_ips#925678
 */

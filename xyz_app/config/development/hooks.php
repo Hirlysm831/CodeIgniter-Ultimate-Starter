@@ -35,6 +35,7 @@ $hook['pre_controller'][] = array(
  * @category		hooks 
  * @author			Francisco Abayon <franz.noyaba@gamail.com>
  * @since			0.0.1	
+ * @link			../../hooks/hooks.php
  * @url 			https://www.codeigniter.com/user_guide/general/hooks.html
  * @internal 		 Must post_controller_constructor because:
  *					- 	pre_system  is not applicable . Only the benchmark and hooks class have
@@ -50,18 +51,33 @@ $hook['pre_controller'][] = array(
  *
  ***************************************************************************/
 $hook['post_controller_constructor'][] = array(
-  'class' => 'maintenance',
-  'function' => 'maintenance_mode',
-  'filename' => 'maintenance_hook.php',
-  'filepath' => 'hooks',
-  'params'   => array('error_maintenance')	//filename from error file html
+  'class' 		=> 'maintenance',
+  'function' 	=> 'maintenance_mode',
+  'filename' 	=> 'maintenance_hook.php',
+  'filepath' 	=> 'hooks',
+  'params'   	=> array('error_maintenance')	//filename from error file html
 );
 
-//force SSL
-//https://matthewdaly.co.uk/blog/2018/06/23/forcing-ssl-in-codeigniter/
+
+/***************************************************************************
+ *
+ * Force SSL the php file and being setup in the application
+ *
+ * @subpackage			http_ssl
+ * @category		hooks 
+ * @author			Francisco Abayon <franz.noyaba@gamail.com>
+ * @copyright		Oct 20, 2018
+ * @since			0.0.1	
+ * @link			../../hooks/ssl_hook.php
+ * @url 			https://matthewdaly.co.uk/blog/2018/06/23/forcing-ssl-in-codeigniter/
+ *
+ * @todo			create setup values to define wheter the port numbers are default or not
+ * @todo			Autodetect that if its ssl was expired, send an email
+ *
+ ***************************************************************************/
 $hook['post_controller_constructor'][] = array(
-								'class' => 'force_ssl',
-                                'function' => 'force_ssl',
-                                'filename' => 'ssl_hook.php',
-                                'filepath' => 'hooks'
-                                );
+  'class' 		=> 'force_ssl',
+  'function' 	=> 'force_ssl',
+  'filename' 	=> 'ssl_hook.php',
+  'filepath' 	=> 'hooks'
+);

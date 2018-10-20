@@ -5,12 +5,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * 
  * Save static database information for those who are having the allowed maintenance excemptions
  * 
+ * @subpackage  environment_mode
  * @subpackage  maintenance_mode
  * @category	configuration 
  * @author  	Francisco Abayon <franz.noyaba@gmail.com>
  * @copyright	Oct 13, 2018
  * @since  		0.0.1
  * @var 		array()
+ * @see			../../hooks/hooks.php
+ *
  * @todo		Configurable that can be access the ip setups on database connectivity				
  * 					
  ***************************************************************************/	

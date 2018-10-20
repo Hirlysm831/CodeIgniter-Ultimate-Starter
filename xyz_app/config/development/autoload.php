@@ -102,7 +102,7 @@ $autoload['helper'] = array();
 | NOTE: This item is intended for use ONLY if you have created custom
 | config files.  Otherwise, leave it blank.
 |
-| 	@see			maintenance_mode
+| 	@subpackage		maintenance_mode
 |	@var string		maintenance_config
 |	@example		$autoload['config'] = array();
 */

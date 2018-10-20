@@ -1,7 +1,7 @@
 <?php
 /***************************************************************************
  * 
- * @subpackage 		maintenance_mode
+ * @subpackage 		environment_mode
  * @description 	Display site under maintenance via html with SEO
  * @author			Francisco Abayon
  * @url				https://aftabmuni.wordpress.com/2016/07/06/setup-maintenance-mode-using-hooks-in-codeigniter/

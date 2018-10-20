@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 /***************************************************************************
  * 
- * @package	    	maintenance_mode
+ * @package	    	http_ssl
  * @description		Get real visitors ip address with shorthand method also
  *					requires php7 version and up
  * @author			Francisco Abayon
@@ -41,4 +41,3 @@ class Force_ssl {
 
 
 }
-/* End of maintenance class*/

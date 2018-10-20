@@ -3,35 +3,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 /***************************************************************************
  * 
- * @package	    	Maintenance_Mode
- * @description		Get real visitors ip address with shorthand method also
- *					requires php7 version and up
- * @author			Francisco Abayon
- * @url 			https://aftabmuni.wordpress.com/2016/07/06/setup-maintenance-mode-using-hooks-in-codeigniter/
- * @url			 	https://github.com/bcit-ci/CodeIgniter/wiki/I-want-to-take-my-site-offline-for-maintenance---rogierb
- * @url			 	https://stackoverflow.com/questions/15572568/how-to-build-in-maintenance-mode-in-codeigniter
- * @url			 	https://gist.github.com/georgioupanayiotis/17bd480829a313402402
- * @url			 	https://stackoverflow.com/questions/10471974/codeigniter-2-and-htaccess-how-to-implement-down-for-maintenance-mode
- * @url			 	https://bitbucket.org/skunkbad/community-auth-git-version/src/032a2c579cb0089eea44bce3aa6a4b8ce1220fb6/maintenance-mode.php?at=master&fileviewer=file-view-default
- * @source			[custom][mix]
+ * @package     envornment_mode
+ * @category    hooks
+ * @access   	public
  * @since  		0.0.1
- * @todo  		    Text should be call on language or multilingual mode
- * @see				../config/ENVIRONMENT/autoload.php
- * @see				../config/ENVIRONMENT/config.php
- * @see				../config/mainteance_config.php
- * @see				../app/helper/real_ip_helper.php
- * @see				../app/views/errors/html/error_maintenance.php
- * @see				../app/views/errors/cli/error_maintenance.php
+ * @author      Francisco Abayon <franz.noyaba@gmail.com>
+ * @copyright	October 20,2019
+ * @see			../config/ENVIRONMENT/autoload.php
+ * @see			../config/ENVIRONMENT/config.php
+ * @see			../config/mainteance_config.php
+ * @see			../xyz_app/views/errors/html/error_maintenance.php
+ * @see			../xyz_app/views/errors/cli/error_maintenance.php
+ * @url 		https://aftabmuni.wordpress.com/2016/07/06/setup-maintenance-mode-using-hooks-in-codeigniter/
+ * @url		 	https://github.com/bcit-ci/CodeIgniter/wiki/I-want-to-take-my-site-offline-for-maintenance---rogierb
+ * @url			https://stackoverflow.com/questions/15572568/how-to-build-in-maintenance-mode-in-codeigniter
+ * @url			https://gist.github.com/georgioupanayiotis/17bd480829a313402402
+ * @url		 	https://stackoverflow.com/questions/10471974/codeigniter-2-and-htaccess-how-to-implement-down-for-maintenance-mode
+ * @url			https://bitbucket.org/skunkbad/community-auth-git-version/src/032a2c579cb0089eea44bce3aa6a4b8ce1220fb6/maintenance-mode.php?at=master&fileviewer=file-view-default
  * 					
- ***************************************************************************/
-
-/***************************************************************************
- *
- * @access       	public
- * @description		Get real visitors ip address with shorthand method also
- *					requires php7 version and up
- * @author			Francisco Abayon
- * 
+ * @todo  	    Text should be call on language or multilingual mode
+ * 					
  ***************************************************************************/
 class Environment {
 
