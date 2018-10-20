@@ -608,7 +608,7 @@ $config['rewrite_short_tags'] = FALSE;
 | @url 				https://forum.codeigniter.com/archive/index.php?thread-64427.html
 | @url			 	https://expressionengine.com/forums/archive/topic/185751/amazon-load-balancing-and-codeigniter-configproxy_ips#925678
 | @example			$config['proxy_ips'] = '';
-| @since  			0.0.2
+| @since  			0.0.1
 | 
 */
 $config['proxy_ips'] = PROXY_IPS;
@@ -622,7 +622,7 @@ $config['proxy_ips'] = PROXY_IPS;
 | Need to determine on what are the proxy ip need especially on PAAS,
 | AWS or dynamic IP generated on the load balancer
 |
-| @subpackage	    maintenance_mode
+| @subpackage	    logger
 | 	
 | @author			Francisco Abayon <franz.noyaba@gmail.com>
 | @since  			0.0.1 

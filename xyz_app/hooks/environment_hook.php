@@ -11,7 +11,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * @copyright	October 20,2019
  * @see			../config/ENVIRONMENT/autoload.php
  * @see			../config/ENVIRONMENT/config.php
- * @see			../config/mainteance_config.php
+ * @see			../config/ENVIRONMENT/maintenance_config.php
  * @see			../xyz_app/views/errors/html/error_maintenance.php
  * @see			../xyz_app/views/errors/cli/error_maintenance.php
  * @url 		https://aftabmuni.wordpress.com/2016/07/06/setup-maintenance-mode-using-hooks-in-codeigniter/
@@ -22,6 +22,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * @url			https://bitbucket.org/skunkbad/community-auth-git-version/src/032a2c579cb0089eea44bce3aa6a4b8ce1220fb6/maintenance-mode.php?at=master&fileviewer=file-view-default
  * 					
  * @todo  	    Text should be call on language or multilingual mode
+ * @todo  	    is it required to have define BASEPATH in the views
+ * @todo  	    environment_hook should not be able access and display in views, it should
+ * 				be go the controller first
  * 					
  ***************************************************************************/
 class Environment {

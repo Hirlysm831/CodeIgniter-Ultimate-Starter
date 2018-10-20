@@ -1,15 +1,24 @@
 <?php
 /***************************************************************************
- * 
- * @subpackage 		environment_mode
- * @description 	Display site under maintenance via html with SEO
- * @author			Francisco Abayon
- * @url				https://aftabmuni.wordpress.com/2016/07/06/setup-maintenance-mode-using-hooks-in-codeigniter/
- * @url				http://www.roytuts.com/display-site-maintenence-message-using-codeigniter/
- * @since  		0.1.0
- * 
- ***************************************************************************/
-
+* 
+* Display site under maintenance via html with SEO
+* 
+* @subpackage	environment_mode
+* @category 	views
+* @since  		0.0.1
+* @author      	Francisco Abayon <franz.noyaba@gmail.com>
+* @copyright	October 20,2019
+* @url			https://forum.codeigniter.com/archive/index.php?thread-64142.html
+* @url			https://aftabmuni.wordpress.com/2016/07/06/setup-maintenance-mode-using-hooks-in-codeigniter/
+* @url			http://www.roytuts.com/display-site-maintenence-message-using-codeigniter/	
+* 	
+* @todo 		customize the views page for the error maintenance return
+* @todo 		modify the CLI request with color displays
+* @todo 		compatible to all servers (E.G. IIS, NGINX, Apache)
+* @todo 		remove the header and display this request to the controller using codeigniter methods
+* @todo 		Apply multilinguar scripts and texts
+*
+***************************************************************************/
 header('HTTP/1.1 503 Service Temporarily Unavailable', true, 503);
 header('Status: 503 Service Temporarily Unavailable');
 header('Retry-After: 7200');
@@ -48,7 +57,3 @@ header('Retry-After: 7200');
 		</div>
 	</body>
 </html>
-<?php
-
-/* End of file error_maintenance.php */
-/* Location: ./application/views/errors/html/error_maintenance.php */
