@@ -2040,3 +2040,201 @@ DEBUG - 2018-10-21 21:52:59 --> Global POST, GET and COOKIE data sanitized
 INFO - 2018-10-21 21:52:59 --> Input Class Initialized
 INFO - 2018-10-21 21:52:59 --> Language Class Initialized
 ERROR - 2018-10-21 21:52:59 --> 404 Page Not Found: Php-errorcss/index
+INFO - 2018-10-21 21:56:57 --> Config Class Initialized
+INFO - 2018-10-21 21:56:57 --> Hooks Class Initialized
+DEBUG - 2018-10-21 21:56:57 --> UTF-8 Support Enabled
+INFO - 2018-10-21 21:56:57 --> Utf8 Class Initialized
+INFO - 2018-10-21 21:56:57 --> URI Class Initialized
+INFO - 2018-10-21 21:56:57 --> Router Class Initialized
+INFO - 2018-10-21 21:56:57 --> Output Class Initialized
+INFO - 2018-10-21 21:56:57 --> Security Class Initialized
+DEBUG - 2018-10-21 21:56:57 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-10-21 21:56:57 --> Input Class Initialized
+INFO - 2018-10-21 21:56:57 --> Language Class Initialized
+ERROR - 2018-10-21 21:56:57 --> 404 Page Not Found: Tsk/index
+INFO - 2018-10-21 21:56:57 --> Config Class Initialized
+INFO - 2018-10-21 21:56:57 --> Hooks Class Initialized
+DEBUG - 2018-10-21 21:56:57 --> UTF-8 Support Enabled
+INFO - 2018-10-21 21:56:57 --> Utf8 Class Initialized
+INFO - 2018-10-21 21:56:57 --> URI Class Initialized
+INFO - 2018-10-21 21:56:58 --> Router Class Initialized
+INFO - 2018-10-21 21:56:58 --> Output Class Initialized
+INFO - 2018-10-21 21:56:58 --> Security Class Initialized
+DEBUG - 2018-10-21 21:56:58 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-10-21 21:56:58 --> Input Class Initialized
+INFO - 2018-10-21 21:56:58 --> Language Class Initialized
+ERROR - 2018-10-21 21:56:58 --> 404 Page Not Found: Php-errorcss/index
+INFO - 2018-10-21 21:57:06 --> Config Class Initialized
+INFO - 2018-10-21 21:57:06 --> Hooks Class Initialized
+DEBUG - 2018-10-21 21:57:06 --> UTF-8 Support Enabled
+INFO - 2018-10-21 21:57:06 --> Utf8 Class Initialized
+INFO - 2018-10-21 21:57:06 --> URI Class Initialized
+DEBUG - 2018-10-21 21:57:06 --> No URI present. Default controller set.
+INFO - 2018-10-21 21:57:06 --> Router Class Initialized
+INFO - 2018-10-21 21:57:06 --> Output Class Initialized
+INFO - 2018-10-21 21:57:06 --> Security Class Initialized
+DEBUG - 2018-10-21 21:57:06 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-10-21 21:57:06 --> Input Class Initialized
+INFO - 2018-10-21 21:57:06 --> Language Class Initialized
+INFO - 2018-10-21 21:57:06 --> Loader Class Initialized
+DEBUG - 2018-10-21 21:57:06 --> Config file loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\config/development\maintenance_config.php
+INFO - 2018-10-21 21:57:06 --> Controller Class Initialized
+INFO - 2018-10-21 21:57:06 --> Development:xxxxxxxxxxx-0.0.1 is executing maintenance_hook file in C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\hooks by fabayon.rafi.local with the unit name fabayon
+.
+DEBUG - 2018-10-21 21:57:06 --> While Development:xxxxxxxxxxx-0.0.1 is in maintenance mode, it was successfully  access by fabayon.rafi.local using the unit name fabayon
+.
+INFO - 2018-10-21 21:57:06 --> Development:xxxxxxxxxxx-0.0.1 is executing ssl_hook file in C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\hooks by fabayon.rafi.local with the unit name fabayon
+.
+INFO - 2018-10-21 21:57:06 --> Helper loaded: url_helper
+DEBUG - 2018-10-21 21:57:06 --> Development:xxxxxxxxxxx-0.0.1fabayon.rafi.local with the unit name fabayon
+ is accessing with SSL Request.
+INFO - 2018-10-21 21:57:06 --> File loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/logviewer/html/logs.php
+INFO - 2018-10-21 21:57:07 --> Final output sent to browser
+DEBUG - 2018-10-21 21:57:07 --> Total execution time: 1.6071
+INFO - 2018-10-21 21:57:07 --> Development:xxxxxxxxxxx-0.0.1 maintenance_hook file in C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-10-21 21:57:07 --> Development:xxxxxxxxxxx-0.0.1 ssl_hook file in C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-10-21 21:57:24 --> Config Class Initialized
+INFO - 2018-10-21 21:57:24 --> Hooks Class Initialized
+DEBUG - 2018-10-21 21:57:24 --> UTF-8 Support Enabled
+INFO - 2018-10-21 21:57:24 --> Utf8 Class Initialized
+INFO - 2018-10-21 21:57:24 --> URI Class Initialized
+DEBUG - 2018-10-21 21:57:25 --> No URI present. Default controller set.
+INFO - 2018-10-21 21:57:25 --> Router Class Initialized
+INFO - 2018-10-21 21:57:25 --> Output Class Initialized
+INFO - 2018-10-21 21:57:25 --> Security Class Initialized
+DEBUG - 2018-10-21 21:57:25 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-10-21 21:57:25 --> Input Class Initialized
+INFO - 2018-10-21 21:57:25 --> Language Class Initialized
+INFO - 2018-10-21 21:57:25 --> Loader Class Initialized
+DEBUG - 2018-10-21 21:57:25 --> Config file loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\config/development\maintenance_config.php
+INFO - 2018-10-21 21:57:25 --> Controller Class Initialized
+INFO - 2018-10-21 21:57:25 --> Development:xxxxxxxxxxx-0.0.1 is executing maintenance_hook file in C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\hooks by fabayon.rafi.local with the unit name fabayon
+.
+DEBUG - 2018-10-21 21:57:25 --> While Development:xxxxxxxxxxx-0.0.1 is in maintenance mode, it was successfully  access by fabayon.rafi.local using the unit name fabayon
+.
+INFO - 2018-10-21 21:57:25 --> Development:xxxxxxxxxxx-0.0.1 is executing ssl_hook file in C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\hooks by fabayon.rafi.local with the unit name fabayon
+.
+INFO - 2018-10-21 21:57:25 --> Helper loaded: url_helper
+DEBUG - 2018-10-21 21:57:25 --> Development:xxxxxxxxxxx-0.0.1fabayon.rafi.local with the unit name fabayon
+ is accessing with SSL Request.
+INFO - 2018-10-21 21:57:25 --> File loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php
+INFO - 2018-10-21 21:57:25 --> Final output sent to browser
+DEBUG - 2018-10-21 21:57:25 --> Total execution time: 0.8043
+INFO - 2018-10-21 21:57:25 --> Development:xxxxxxxxxxx-0.0.1 maintenance_hook file in C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-10-21 21:57:25 --> Development:xxxxxxxxxxx-0.0.1 ssl_hook file in C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-10-21 21:57:29 --> Config Class Initialized
+INFO - 2018-10-21 21:57:29 --> Hooks Class Initialized
+DEBUG - 2018-10-21 21:57:29 --> UTF-8 Support Enabled
+INFO - 2018-10-21 21:57:29 --> Utf8 Class Initialized
+INFO - 2018-10-21 21:57:29 --> URI Class Initialized
+DEBUG - 2018-10-21 21:57:29 --> No URI present. Default controller set.
+INFO - 2018-10-21 21:57:29 --> Router Class Initialized
+INFO - 2018-10-21 21:57:29 --> Output Class Initialized
+INFO - 2018-10-21 21:57:29 --> Security Class Initialized
+DEBUG - 2018-10-21 21:57:29 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-10-21 21:57:29 --> Input Class Initialized
+INFO - 2018-10-21 21:57:29 --> Language Class Initialized
+INFO - 2018-10-21 21:57:30 --> Loader Class Initialized
+DEBUG - 2018-10-21 21:57:30 --> Config file loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\config/development\maintenance_config.php
+INFO - 2018-10-21 21:57:30 --> Controller Class Initialized
+INFO - 2018-10-21 21:57:30 --> Development:xxxxxxxxxxx-0.0.1 is executing maintenance_hook file in C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\hooks by fabayon.rafi.local with the unit name fabayon
+.
+DEBUG - 2018-10-21 21:57:30 --> While Development:xxxxxxxxxxx-0.0.1 is in maintenance mode, it was successfully  access by fabayon.rafi.local using the unit name fabayon
+.
+INFO - 2018-10-21 21:57:30 --> Development:xxxxxxxxxxx-0.0.1 is executing ssl_hook file in C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\hooks by fabayon.rafi.local with the unit name fabayon
+.
+INFO - 2018-10-21 21:57:30 --> Helper loaded: url_helper
+DEBUG - 2018-10-21 21:57:30 --> Development:xxxxxxxxxxx-0.0.1fabayon.rafi.local with the unit name fabayon
+ is accessing with SSL Request.
+INFO - 2018-10-21 21:57:30 --> File loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php
+INFO - 2018-10-21 21:57:30 --> Final output sent to browser
+DEBUG - 2018-10-21 21:57:30 --> Total execution time: 0.8520
+INFO - 2018-10-21 21:57:30 --> Development:xxxxxxxxxxx-0.0.1 maintenance_hook file in C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-10-21 21:57:30 --> Development:xxxxxxxxxxx-0.0.1 ssl_hook file in C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-10-21 21:57:31 --> Config Class Initialized
+INFO - 2018-10-21 21:57:31 --> Hooks Class Initialized
+DEBUG - 2018-10-21 21:57:31 --> UTF-8 Support Enabled
+INFO - 2018-10-21 21:57:31 --> Utf8 Class Initialized
+INFO - 2018-10-21 21:57:31 --> URI Class Initialized
+DEBUG - 2018-10-21 21:57:31 --> No URI present. Default controller set.
+INFO - 2018-10-21 21:57:31 --> Router Class Initialized
+INFO - 2018-10-21 21:57:31 --> Output Class Initialized
+INFO - 2018-10-21 21:57:31 --> Security Class Initialized
+DEBUG - 2018-10-21 21:57:31 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-10-21 21:57:31 --> Input Class Initialized
+INFO - 2018-10-21 21:57:31 --> Language Class Initialized
+INFO - 2018-10-21 21:57:31 --> Loader Class Initialized
+DEBUG - 2018-10-21 21:57:31 --> Config file loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\config/development\maintenance_config.php
+INFO - 2018-10-21 21:57:31 --> Controller Class Initialized
+INFO - 2018-10-21 21:57:32 --> Development:xxxxxxxxxxx-0.0.1 is executing maintenance_hook file in C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\hooks by fabayon.rafi.local with the unit name fabayon
+.
+DEBUG - 2018-10-21 21:57:32 --> While Development:xxxxxxxxxxx-0.0.1 is in maintenance mode, it was successfully  access by fabayon.rafi.local using the unit name fabayon
+.
+INFO - 2018-10-21 21:57:32 --> Development:xxxxxxxxxxx-0.0.1 is executing ssl_hook file in C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\hooks by fabayon.rafi.local with the unit name fabayon
+.
+INFO - 2018-10-21 21:57:32 --> Helper loaded: url_helper
+DEBUG - 2018-10-21 21:57:32 --> Development:xxxxxxxxxxx-0.0.1fabayon.rafi.local with the unit name fabayon
+ is accessing with SSL Request.
+INFO - 2018-10-21 21:57:32 --> File loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php
+INFO - 2018-10-21 21:57:32 --> Final output sent to browser
+DEBUG - 2018-10-21 21:57:32 --> Total execution time: 1.1581
+INFO - 2018-10-21 21:57:32 --> Development:xxxxxxxxxxx-0.0.1 maintenance_hook file in C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-10-21 21:57:32 --> Development:xxxxxxxxxxx-0.0.1 ssl_hook file in C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-10-21 21:57:34 --> Config Class Initialized
+INFO - 2018-10-21 21:57:34 --> Hooks Class Initialized
+DEBUG - 2018-10-21 21:57:34 --> UTF-8 Support Enabled
+INFO - 2018-10-21 21:57:34 --> Utf8 Class Initialized
+INFO - 2018-10-21 21:57:34 --> URI Class Initialized
+DEBUG - 2018-10-21 21:57:34 --> No URI present. Default controller set.
+INFO - 2018-10-21 21:57:34 --> Router Class Initialized
+INFO - 2018-10-21 21:57:34 --> Output Class Initialized
+INFO - 2018-10-21 21:57:34 --> Security Class Initialized
+DEBUG - 2018-10-21 21:57:34 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-10-21 21:57:34 --> Input Class Initialized
+INFO - 2018-10-21 21:57:34 --> Language Class Initialized
+INFO - 2018-10-21 21:57:34 --> Loader Class Initialized
+DEBUG - 2018-10-21 21:57:34 --> Config file loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\config/development\maintenance_config.php
+INFO - 2018-10-21 21:57:34 --> Controller Class Initialized
+INFO - 2018-10-21 21:57:34 --> Development:xxxxxxxxxxx-0.0.1 is executing maintenance_hook file in C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\hooks by fabayon.rafi.local with the unit name fabayon
+.
+DEBUG - 2018-10-21 21:57:34 --> While Development:xxxxxxxxxxx-0.0.1 is in maintenance mode, it was successfully  access by fabayon.rafi.local using the unit name fabayon
+.
+INFO - 2018-10-21 21:57:34 --> Development:xxxxxxxxxxx-0.0.1 is executing ssl_hook file in C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\hooks by fabayon.rafi.local with the unit name fabayon
+.
+INFO - 2018-10-21 21:57:34 --> Helper loaded: url_helper
+DEBUG - 2018-10-21 21:57:34 --> Development:xxxxxxxxxxx-0.0.1fabayon.rafi.local with the unit name fabayon
+ is accessing with SSL Request.
+INFO - 2018-10-21 21:57:34 --> File loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php
+INFO - 2018-10-21 21:57:34 --> Final output sent to browser
+DEBUG - 2018-10-21 21:57:34 --> Total execution time: 0.8262
+INFO - 2018-10-21 21:57:34 --> Development:xxxxxxxxxxx-0.0.1 maintenance_hook file in C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-10-21 21:57:34 --> Development:xxxxxxxxxxx-0.0.1 ssl_hook file in C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-10-21 21:57:46 --> Config Class Initialized
+INFO - 2018-10-21 21:57:46 --> Hooks Class Initialized
+DEBUG - 2018-10-21 21:57:46 --> UTF-8 Support Enabled
+INFO - 2018-10-21 21:57:46 --> Utf8 Class Initialized
+INFO - 2018-10-21 21:57:46 --> URI Class Initialized
+DEBUG - 2018-10-21 21:57:46 --> No URI present. Default controller set.
+INFO - 2018-10-21 21:57:46 --> Router Class Initialized
+INFO - 2018-10-21 21:57:46 --> Output Class Initialized
+INFO - 2018-10-21 21:57:46 --> Security Class Initialized
+DEBUG - 2018-10-21 21:57:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-10-21 21:57:46 --> Input Class Initialized
+INFO - 2018-10-21 21:57:46 --> Language Class Initialized
+INFO - 2018-10-21 21:57:46 --> Loader Class Initialized
+DEBUG - 2018-10-21 21:57:46 --> Config file loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\config/development\maintenance_config.php
+INFO - 2018-10-21 21:57:46 --> Controller Class Initialized
+INFO - 2018-10-21 21:57:46 --> Development:xxxxxxxxxxx-0.0.1 is executing maintenance_hook file in C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\hooks by fabayon.rafi.local with the unit name fabayon
+.
+DEBUG - 2018-10-21 21:57:46 --> While Development:xxxxxxxxxxx-0.0.1 is in maintenance mode, it was successfully  access by fabayon.rafi.local using the unit name fabayon
+.
+INFO - 2018-10-21 21:57:46 --> Development:xxxxxxxxxxx-0.0.1 is executing ssl_hook file in C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\hooks by fabayon.rafi.local with the unit name fabayon
+.
+INFO - 2018-10-21 21:57:46 --> Helper loaded: url_helper
+DEBUG - 2018-10-21 21:57:46 --> Development:xxxxxxxxxxx-0.0.1fabayon.rafi.local with the unit name fabayon
+ is accessing with SSL Request.
+INFO - 2018-10-21 21:57:46 --> File loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php
+INFO - 2018-10-21 21:57:46 --> Final output sent to browser
+DEBUG - 2018-10-21 21:57:46 --> Total execution time: 0.8322
+INFO - 2018-10-21 21:57:46 --> Development:xxxxxxxxxxx-0.0.1 maintenance_hook file in C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-10-21 21:57:46 --> Development:xxxxxxxxxxx-0.0.1 ssl_hook file in C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.

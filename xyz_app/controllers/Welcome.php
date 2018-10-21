@@ -37,9 +37,7 @@ echo  $ip = getenv('XYZ_DBHOST_DEV', true) ? getenv('XYZ_DBHOST_DEV', true) : ge
 	public function index()
 	{
 
-		// $this->load->view('welcome_message');
-
-
+		$this->load->view('welcome_message'); 
 	}
 	
 
