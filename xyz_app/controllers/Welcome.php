@@ -25,28 +25,22 @@ public function asd() {
 $a=2;
 $b=&$a; // note the & operator
 $b=3;
+	
+	// $this->load->library('utilities/Logviewer');
+			// echo  $this->logviewer->showlogs(); 
+
+echo  $ip = getenv('XYZ_DBHOST_DEV', true) ? getenv('XYZ_DBHOST_DEV', true) : getenv('XYZ_DBHOST_DEV');
 }	 
 	 
 	public function index()
 	{
 
-	
-	$this->load->library('utilities/Logviewer');
-			echo  $this->logviewer->showlogs(); 
 
-
+// $this->load->library('utilities/Logviewer');
+			// echo  $this->logviewer->showlogs(); 
 		// $this->load->view('welcome_message');
-		// echo DB_HOST;
-		 
-		 // $ip = getenv('REMOTE_ADDR', true) ?: getenv('REMOTE_ADDR');
-		 // $ip = getenv('REMOTE_ADDR', true) ? getenv('REMOTE_ADDR', true) : getenv('REMOTE_ADDR');
-		 // echo ENVIRONMENT;
-		// echo $s3_bucket = $_ENV['DB_HOST'];
-		// echo $dbUser = DotEnv::get('DB_USER', 'admin');
-		// echo $s3_bucket =getenv('DB_HOST');
-		// echo ENVIRONMENT;
-		//https://stackoverflow.com/questions/21901795/database-credentials-encryption-codeigniter
-		//https://stackoverflow.com/questions/5010660/how-do-you-use-setenv-to-read-variables-in-apache
+
+
 	}
 	
 	public function test2()
@@ -61,11 +55,6 @@ $b=3;
 		// echo $dbUser = DotEnv::get('DB_USER', 'admin');
 		// echo $s3_bucket =getenv('DB_HOST');
 		// echo ENVIRONMENT;
-		//https://stackoverflow.com/questions/21901795/database-credentials-encryption-codeigniter
-		//https://stackoverflow.com/questions/5010660/how-do-you-use-setenv-to-read-variables-in-apache
-	}		/*
-	
-	When a new developer clones your codebase, they will have an additional one-time step to manually copy the .env.example file to .env and fill-in their own values (or get any sensitive values from a project co-worker).
 
-phpdotenv is made for development environments, and generally should not be used in production. In production, the actual environment variables should be set so that there is no overhead of loading the .env file on each request. This can be achieved via an automated deployment process with tools like Vagrant, chef, or Puppet, or can be set manually with cloud hosts like Pagodabox and Heroku.*/
+	}		
 }

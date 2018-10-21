@@ -32,7 +32,7 @@ class Maintenance {
 	
   public function __construct() {
 		$this->CI =& get_instance();
-		log_message('info', APP_NAME_VERSION . ' is executing maintenance_hook file in ' . APPPATH . 'hooks by '
+		log_message('info', ENVIRONMENT_APP_NAME_VERSION . ' is executing maintenance_hook file in ' . APPPATH . 'hooks by '
 		. gethostbyaddr($_SERVER['REMOTE_ADDR']) . ' with the unit name '.shell_exec("echo %username%").'.' );
   }
 
@@ -59,18 +59,18 @@ class Maintenance {
 		$output = '';
 
 		$output = $_error->show_error($heading, $message, $params[0],503); 
-		log_message('info', 'While ' . APP_NAME_VERSION . ' is in maintenance mode, it was attempted to be access by ' 
-		. gethostbyaddr($_SERVER['REMOTE_ADDR']) . ' using the unit name by ' . shell_exec("echo %username%") . '.' );
+		log_message('info', 'While ' . ENVIRONMENT_APP_NAME_VERSION . ' is in maintenance mode, it was attempted to be access by ' 
+		. gethostbyaddr($_SERVER['REMOTE_ADDR']) . ' using the unit name ' . shell_exec("echo %username%") . '.' );
 		exit($output);
 	}
 	else  if (ENVIRONMENT !== $environment)
 	{
-		log_message('debug', 'While ' . APP_NAME_VERSION . ' is in maintenance mode, it was successfully  access by ' 
-		. gethostbyaddr($_SERVER['REMOTE_ADDR']) . ' using the unit name by ' . shell_exec("echo %username%") . '.' );			
+		log_message('debug', 'While ' . ENVIRONMENT_APP_NAME_VERSION . ' is in maintenance mode, it was successfully  access by ' 
+		. gethostbyaddr($_SERVER['REMOTE_ADDR']) . ' using the unit name ' . shell_exec("echo %username%") . '.' );			
 	}
   }
   
   public function __destruct() {
-    log_message('info', APP_NAME_VERSION . ' maintenance_hook file in ' . APPPATH   . 'hook was executed completely.');
+    log_message('info', ENVIRONMENT_APP_NAME_VERSION . ' maintenance_hook file in ' . APPPATH   . 'hook was executed completely.');
   }
 }

@@ -1,5 +1,15 @@
 ************************************************
 ***************************************************************************
+  /**
+     * Assert that the callback returns true for each variable.
+     *
+     * @param callable $callback
+     * @param string   $message
+     *
+     * @throws \Dotenv\Exception\InvalidCallbackException|\Dotenv\Exception\ValidationException
+     *
+     * @return \Dotenv\Validator
+     */
  * @package        	CodeIgniter
  * @subpackage    	Libraries
  * @category    	Libraries
@@ -701,3 +711,20 @@ break;        d
 efault:       
  define('SITE', 'default');    break;}
 >>>>>>> 810e8426c0174144b85810a01c7befdcebaa9a3d
+
+
+	$dotenv = new Dotenv\Dotenv(APPPATH . CONFIG_FOLDER . DIRECTORY_SEPARATOR . ENVIRONMENT  );
+			$dotenv->load();
+			$dotenv->required(['XYZ_DBHOST_DEFAULT', 'XYZ_DBUSER_DEFAULT', 'XYZ_DBPASSWORD_DEFAULT']);
+			
+			//check the variables if empty, error will be return in the exception
+			$dotenv->required('XYZ_DBHOST_DEFAULT')->notEmpty();
+			$dotenv->required('XYZ_DBUSER_DEFAULT')->notEmpty();
+			$dotenv->required('XYZ_DBPASSWORD_DEFAULT')->notEmpty();
+$hook['pre_controller'][] = array(
+  'class' => 'environment',
+  'function' => 'environments',
+  'filename' => 'environment_hook.php',
+  'filepath' => 'hooks',
+  'params'   => ''
+);
