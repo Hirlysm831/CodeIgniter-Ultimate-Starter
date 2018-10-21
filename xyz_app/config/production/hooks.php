@@ -55,7 +55,7 @@ $hook['post_controller_constructor'][] = array(
  * @copyright		Oct 20, 2018
  * @since			0.0.1	
  * @link			../../hooks/ssl_hook.php
- * @url 			https://matthewdaly.co.uk/blog/2018/06/23/forcing-ssl-in-codeigniter/
+ * @url 			
  *
  * @todo			create setup values to define wheter the port numbers are default or not
  * @todo			Autodetect that if its ssl was expired, send an email

@@ -112,7 +112,7 @@ if ((php_sapi_name() == 'cli') or defined('STDIN'))
 
 if (!defined('POINTER_ENVIRONMENT'))
 {
-	define('ENVIRONMENT', isset($_SERVER['XYZ_ENVIRONMENT']) ? $_SERVER['XYZ_ENVIRONMENT'] : DEFAULT_ENVIRONMENT); 
+	define('ENVIRONMENT', isset($_SERVER['APP_ENVIRONMENT']) ? $_SERVER['APP_ENVIRONMENT'] : DEFAULT_ENVIRONMENT); 
 }
 
 /*

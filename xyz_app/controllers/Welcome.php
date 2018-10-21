@@ -39,7 +39,7 @@ echo  $ip = getenv('XYZ_DBHOST_DEV', true) ? getenv('XYZ_DBHOST_DEV', true) : ge
 // $this->load->library('utilities/Logviewer');
 			// echo  $this->logviewer->showlogs(); 
 		// $this->load->view('welcome_message');
-
+echo XYZ_DBHOST_DEFAULT;
 
 	}
 	

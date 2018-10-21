@@ -109,7 +109,9 @@ defined('APP_VERSION') 		OR define('APP_VERSION',MAJOR .'.'. MINOR .'.'. PATCH, 
 defined('ENVIRONMENT_APP_NAME_VERSION') OR define('ENVIRONMENT_APP_NAME_VERSION',ucwords(ENVIRONMENT) .':'. APP_NAME .'-'.APP_VERSION, TRUE);  // Name of the system with its corresponding version
 defined('SUBCLASS_PREFIX') 	OR define('SUBCLASS_PREFIX','xyz_');  // semantic version
 defined('PROXY_IPS') 		OR define('PROXY_IPS', $_SERVER["HTTP_X_REAL_IP"] ?? $_SERVER["HTTP_X_FORWARDED_FOR"] ?? $_SERVER["HTTP_CLIENT_IP"] ?? $_SERVER["REMOTE_ADDR"] ?? NULL, TRUE);  // Dynamic filterring data in PROXY_IP based on setup of Cloud
+
 defined('DEFAULT_TIMEZONE') OR define('DEFAULT_TIMEZONE','Asia/Urumqi' ,TRUE);  //Timezone Setup in Asia, can be used also in 'Asia/Manila'
+defined('SSL_PORT') OR define('SSL_PORT', 443 ,TRUE);  //SSL Port number 
 
 defined('PUBLIC_FOLDER') 	OR define('PUBLIC_FOLDER','xyz_public' ,TRUE);  //  Folder name of the directory in public folder
 defined('CONFIG_FOLDER') 	OR define('CONFIG_FOLDER','config' ,TRUE);  //  Folder name of the directory in config folder
