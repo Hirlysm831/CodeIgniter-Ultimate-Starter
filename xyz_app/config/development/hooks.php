@@ -81,3 +81,11 @@ $hook['post_controller_constructor'][] = array(
   'filename' 	=> 'ssl_hook.php',
   'filepath' 	=> 'hooks'
 );
+
+
+$hook['display_override'][] = array(
+	'class'  	=> 'Develbar',
+    'function' 	=> 'debug',
+    'filename' 	=> 'Develbar.php',
+    'filepath' 	=> 'third_party/DevelBar/hooks'
+);
