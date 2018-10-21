@@ -19,42 +19,28 @@ class Welcome extends CI_Controller {
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 	 
-public function asd() {
+public function demo_date() {
 
-				
+# Refference variable(pointer somewhat)			
 $a=2;
 $b=&$a; // note the & operator
 $b=3;
 	
-	// $this->load->library('utilities/Logviewer');
-			// echo  $this->logviewer->showlogs(); 
+#codeigniter logger
+// $this->load->library('utilities/Logviewer');
+// echo  $this->logviewer->showlogs(); 
 
+#setup variable in the system, either in htaccess/web.config or manual in CICD PAAS
 echo  $ip = getenv('XYZ_DBHOST_DEV', true) ? getenv('XYZ_DBHOST_DEV', true) : getenv('XYZ_DBHOST_DEV');
 }	 
 	 
 	public function index()
 	{
 
-
-// $this->load->library('utilities/Logviewer');
-			// echo  $this->logviewer->showlogs(); 
 		// $this->load->view('welcome_message');
-echo XYZ_DBHOST_DEFAULT;
+
 
 	}
 	
-	public function test2()
-	{
-		// $this->load->view('welcome_message');
-		// echo DB_HOST;
-		 echo 'moklo';
-		 // $ip = getenv('REMOTE_ADDR', true) ?: getenv('REMOTE_ADDR');
-		 // $ip = getenv('REMOTE_ADDR', true) ? getenv('REMOTE_ADDR', true) : getenv('REMOTE_ADDR');
-		 // echo ENVIRONMENT;
-		// echo $s3_bucket = $_ENV['DB_HOST'];
-		// echo $dbUser = DotEnv::get('DB_USER', 'admin');
-		// echo $s3_bucket =getenv('DB_HOST');
-		// echo ENVIRONMENT;
 
-	}		
 }

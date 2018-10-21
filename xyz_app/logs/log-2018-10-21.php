@@ -2001,3 +2001,42 @@ INFO - 2018-10-21 21:49:44 --> Final output sent to browser
 DEBUG - 2018-10-21 21:49:44 --> Total execution time: 0.8821
 INFO - 2018-10-21 21:49:45 --> Development:xxxxxxxxxxx-0.0.1 maintenance_hook file in C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
 INFO - 2018-10-21 21:49:45 --> Development:xxxxxxxxxxx-0.0.1 ssl_hook file in C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-10-21 21:52:57 --> Config Class Initialized
+INFO - 2018-10-21 21:52:57 --> Hooks Class Initialized
+DEBUG - 2018-10-21 21:52:57 --> UTF-8 Support Enabled
+INFO - 2018-10-21 21:52:58 --> Utf8 Class Initialized
+INFO - 2018-10-21 21:52:58 --> URI Class Initialized
+INFO - 2018-10-21 21:52:58 --> Router Class Initialized
+INFO - 2018-10-21 21:52:58 --> Output Class Initialized
+INFO - 2018-10-21 21:52:58 --> Security Class Initialized
+DEBUG - 2018-10-21 21:52:58 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-10-21 21:52:58 --> Input Class Initialized
+INFO - 2018-10-21 21:52:58 --> Language Class Initialized
+INFO - 2018-10-21 21:52:58 --> Loader Class Initialized
+DEBUG - 2018-10-21 21:52:58 --> Config file loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\config/development\maintenance_config.php
+INFO - 2018-10-21 21:52:58 --> Controller Class Initialized
+INFO - 2018-10-21 21:52:58 --> Development:xxxxxxxxxxx-0.0.1 is executing maintenance_hook file in C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\hooks by fabayon.rafi.local with the unit name fabayon
+.
+DEBUG - 2018-10-21 21:52:58 --> While Development:xxxxxxxxxxx-0.0.1 is in maintenance mode, it was successfully  access by fabayon.rafi.local using the unit name fabayon
+.
+INFO - 2018-10-21 21:52:58 --> Development:xxxxxxxxxxx-0.0.1 is executing ssl_hook file in C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\hooks by fabayon.rafi.local with the unit name fabayon
+.
+INFO - 2018-10-21 21:52:58 --> Helper loaded: url_helper
+DEBUG - 2018-10-21 21:52:58 --> Development:xxxxxxxxxxx-0.0.1fabayon.rafi.local with the unit name fabayon
+ is accessing with SSL Request.
+INFO - 2018-10-21 21:52:58 --> Final output sent to browser
+DEBUG - 2018-10-21 21:52:58 --> Total execution time: 0.8823
+INFO - 2018-10-21 21:52:58 --> Development:xxxxxxxxxxx-0.0.1 maintenance_hook file in C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-10-21 21:52:58 --> Development:xxxxxxxxxxx-0.0.1 ssl_hook file in C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-10-21 21:52:58 --> Config Class Initialized
+INFO - 2018-10-21 21:52:58 --> Hooks Class Initialized
+DEBUG - 2018-10-21 21:52:58 --> UTF-8 Support Enabled
+INFO - 2018-10-21 21:52:59 --> Utf8 Class Initialized
+INFO - 2018-10-21 21:52:59 --> URI Class Initialized
+INFO - 2018-10-21 21:52:59 --> Router Class Initialized
+INFO - 2018-10-21 21:52:59 --> Output Class Initialized
+INFO - 2018-10-21 21:52:59 --> Security Class Initialized
+DEBUG - 2018-10-21 21:52:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-10-21 21:52:59 --> Input Class Initialized
+INFO - 2018-10-21 21:52:59 --> Language Class Initialized
+ERROR - 2018-10-21 21:52:59 --> 404 Page Not Found: Php-errorcss/index
