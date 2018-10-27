@@ -11,11 +11,13 @@
   ],
   "require": {
     "php": ">=5.3",
-    "compwright/codeigniter-installers": "*"
+    "compwright/codeigniter-installers": "*",
+	"graylog2/gelf-php": "^1.5",
+	"monolog/monolog": "^1.23"        
   },
    "require-dev": {
 
-   "nerones/codeigniter-phpcs": "dev-master"
+	"nerones/codeigniter-phpcs": "dev-master"
 
  }
 }

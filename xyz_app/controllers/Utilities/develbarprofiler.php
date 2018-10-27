@@ -39,7 +39,7 @@ class DevelBarProfiler extends CI_Controller
      * @param $profilerId
      * @return string
      */
-    public function profil($profilerId)
+    public function profile($profilerId)
     {
         $this->load->helper('url');
 

@@ -1,3 +1,12 @@
+<?php
+/***************************************************************************
+*
+* @subpackage		Logviewer
+* @return			Methods in loader
+* @idea				optimize and slicing the views
+*
+***************************************************************************/
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

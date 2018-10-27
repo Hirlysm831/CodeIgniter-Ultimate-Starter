@@ -57,7 +57,7 @@ if(is_cli()){
    $config['base_url'] = '';
 }
 else if(stristr($host, "localhost") !== FALSE || (stristr($host, '192.168.') !== FALSE) || (stristr($host, '127.0.0') !== FALSE)){
-   $config['base_url'] = $protocol.$host."/codeigniter-ultimate-starter/" . DIRECTORY_SEPARATOR . PUBLIC_FOLDER;
+   $config['base_url'] = $protocol.$host."/codeigniter-ultimate-starter/" .  PUBLIC_FOLDER;
 }
 else{
     $allowed_hosts = ['amirsanni.com', 'www.amirsanni.com'];

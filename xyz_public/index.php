@@ -62,7 +62,7 @@
  * @category	instantation 
  * @author  	Francisco Abayon <franz.noyaba@gmail.com>
  * @copyright	August 25, 2018
- * @since  	0.3.0
+ * @since  		0.3.0
  * @link		../environments.php
  * @url			https://stackoverflow.com/questions/9149483/get-folder-up-one-level/9149495
  * @url			https://stackoverflow.com/questions/7008830/why-defined-define-syntax-in-defining-a-constant

@@ -5,11 +5,20 @@
  * 
  * @category		Logger
  * @package	    	Logviewer
+ * @access	    	Public
  * @author  		Francisco Abayon <franz.noyaba@gmail.com> 
  * @author  		Seun Mattn <https://github.com/SeunMatt> 
  * @copyright		October 16, 2018
- * @since  		0.0.1
+ * @since  			0.0.1
+ * @link			../../views/utilites/logviewer/log.php		
  * @url				https://github.com/SeunMatt
+ * 					
+ * @todo			create cli views in the logviewer
+ * @todo			cron job in the log viewer/creator
+ * @note			logs must be stored on cloud or logviewer API
+ * @todo			refactor the code in the html
+ * @idea			update the text based on the language function 
+ * @idea			Progressive enhancement in the views			
  * 					
  ***************************************************************************/
 defined('BASEPATH') OR exit('No direct script access allowed');
@@ -75,7 +84,7 @@ class Logviewer {
      * various API commands there are
      */
     private const API_QUERY_PARAM = "api";
-    private const API_FILE_QUERY_PARAM = "f";
+    private const API_FILE_QUERY_PARAM = "file";
     private const API_LOG_STYLE_QUERY_PARAM = "sline";
     private const API_CMD_LIST = "list";
     private const API_CMD_VIEW = "view";

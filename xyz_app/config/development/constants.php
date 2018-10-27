@@ -114,6 +114,8 @@ defined('DEFAULT_TIMEZONE') OR define('DEFAULT_TIMEZONE','Asia/Urumqi' ,TRUE);  
 defined('SSL_PORT') OR define('SSL_PORT', 443 ,TRUE);  //SSL Port number 
 
 defined('PUBLIC_FOLDER') 	OR define('PUBLIC_FOLDER','xyz_public' ,TRUE);  //  Folder name of the directory in public folder
+defined('APP_FOLDER') 	OR define('APP_FOLDER','xyz_app' ,TRUE);  //  Folder name of the directory in application folder
+defined('SYS_FOLDER') 	OR define('SYS_FOLDER','xyz_sys' ,TRUE);  //  Folder name of the directory in system folder
 defined('CONFIG_FOLDER') 	OR define('CONFIG_FOLDER','config' ,TRUE);  //  Folder name of the directory in config folder
 defined('LOGS_FOLDER') 		OR define('LOGS_FOLDER','logs' ,TRUE);  // Folder name of the directory in logs
 defined('THIRD_PARTY') 		OR define('THIRD_PARTY','third_party' ,TRUE);  // Folder name of the directory in thirdy_party

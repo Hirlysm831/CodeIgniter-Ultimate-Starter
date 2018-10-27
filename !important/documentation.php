@@ -1,5 +1,7 @@
 ************************************************
 ***************************************************************************
+  https://atom.io/packages/todo-show
+ ['FIXME', 'TODO', 'CHANGED', 'XXX', 'IDEA', 'HACK', 'NOTE', 'REVIEW', 'NB', 'BUG', 'QUESTION', 'COMBAK', 'TEMP'] 
   /**
      * Assert that the callback returns true for each variable.
      *
