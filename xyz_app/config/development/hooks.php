@@ -83,9 +83,31 @@ $hook['post_controller_constructor'][] = array(
 );
 
 
+
+/***************************************************************************
+ *
+ * add development debug bar for extending tracing data
+ *
+ * @package			develbar
+ * @category		hooks 
+ * @author			Francisco Abayon <franz.noyaba@gamail.com>
+ * @author			JC Sama <JC Sama>
+ * @copyright		Oct 28, 2018
+ * @since			0.0.1	
+ * @link			../../hooks/develbar_hook.php
+ * @link			../../core/XYZ_Loader.php
+ * @url 			https://github.com/JCSama/CodeIgniter-develbar
+ *
+ * @todo			create page independent same on the screenshot provided
+ * @todo			Move the views in the page
+ * @todo			Make 777 the folder of cache to make the profiling work properly
+ * @todo			Organized the develprofiler controller to be in the propery utilities folder
+ * @todo			Cleanup the Third party folder, must be specify the proper standard of the codeigniter
+ *
+ ***************************************************************************/
 $hook['display_override'][] = array(
-	'class'  	=> 'Develbar',
+	'class'  	=> 'develbar',
     'function' 	=> 'debug',
-    'filename' 	=> 'Develbar.php',
-    'filepath' 	=> 'third_party/DevelBar/hooks'
+    'filename' 	=> 'develbar_hook.php',
+    'filepath' 	=> 'hooks'
 );

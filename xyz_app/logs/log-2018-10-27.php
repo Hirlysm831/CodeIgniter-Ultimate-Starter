@@ -707,3 +707,105 @@ INFO - 2018-10-27 22:14:42 --> Final output sent to browser
 DEBUG - 2018-10-27 22:14:42 --> Total execution time: 0.4693
 INFO - 2018-10-27 22:14:42 --> Development:xxxxxxxxxxx-0.0.1 maintenance_hook file in C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
 INFO - 2018-10-27 22:14:42 --> Development:xxxxxxxxxxx-0.0.1 ssl_hook file in C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-10-27 22:42:31 --> Config Class Initialized
+INFO - 2018-10-27 22:42:31 --> Hooks Class Initialized
+DEBUG - 2018-10-27 22:42:31 --> UTF-8 Support Enabled
+INFO - 2018-10-27 22:42:31 --> Utf8 Class Initialized
+INFO - 2018-10-27 22:42:31 --> URI Class Initialized
+DEBUG - 2018-10-27 22:42:31 --> No URI present. Default controller set.
+INFO - 2018-10-27 22:42:31 --> Router Class Initialized
+INFO - 2018-10-27 22:42:31 --> Output Class Initialized
+INFO - 2018-10-27 22:42:31 --> Security Class Initialized
+DEBUG - 2018-10-27 22:42:31 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-10-27 22:42:31 --> Input Class Initialized
+INFO - 2018-10-27 22:42:31 --> Language Class Initialized
+INFO - 2018-10-27 22:42:31 --> Loader Class Initialized
+DEBUG - 2018-10-27 22:42:31 --> Config file loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\config/development\maintenance_config.php
+INFO - 2018-10-27 22:42:31 --> Controller Class Initialized
+INFO - 2018-10-27 22:42:31 --> Development:xxxxxxxxxxx-0.0.1 is executing maintenance_hook file in C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\hooks by fabayon.rafi.local with the unit name fabayon
+.
+DEBUG - 2018-10-27 22:42:31 --> While Development:xxxxxxxxxxx-0.0.1 is in maintenance mode, it was successfully  access by fabayon.rafi.local using the unit name fabayon
+.
+INFO - 2018-10-27 22:42:31 --> Development:xxxxxxxxxxx-0.0.1 is executing ssl_hook file in C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\hooks by fabayon.rafi.local with the unit name fabayon
+.
+INFO - 2018-10-27 22:42:31 --> Helper loaded: url_helper
+DEBUG - 2018-10-27 22:42:31 --> Development:xxxxxxxxxxx-0.0.1fabayon.rafi.local with the unit name fabayon
+ is accessing with SSL Request.
+INFO - 2018-10-27 22:42:31 --> File loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php
+DEBUG - 2018-10-27 22:42:31 --> Config file loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\third_party/DevelBar/config/develbar.php
+INFO - 2018-10-27 22:42:31 --> Helper loaded: utility_helper
+INFO - 2018-10-27 22:42:31 --> Helper loaded: language_helper
+INFO - 2018-10-27 22:42:31 --> Helper loaded: text_helper
+INFO - 2018-10-27 22:42:31 --> Language file loaded: language/english/develbar_lang.php
+DEBUG - 2018-10-27 22:42:31 --> DevelBar Class Initialized !
+INFO - 2018-10-27 22:42:31 --> File loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\third_party/DevelBar/views/develbar/benchmarks.php
+INFO - 2018-10-27 22:42:31 --> File loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\third_party/DevelBar/views/develbar/memory_usage.php
+INFO - 2018-10-27 22:42:31 --> File loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\third_party/DevelBar/views/develbar/request.php
+INFO - 2018-10-27 22:42:31 --> File loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\third_party/DevelBar/views/develbar/database.php
+INFO - 2018-10-27 22:42:31 --> File loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\third_party/DevelBar/views/develbar/hooks.php
+INFO - 2018-10-27 22:42:31 --> File loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\third_party/DevelBar/views/develbar/ajax.php
+INFO - 2018-10-27 22:42:31 --> File loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\third_party/DevelBar/views/develbar/libraries.php
+INFO - 2018-10-27 22:42:31 --> File loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\third_party/DevelBar/views/develbar/helpers.php
+INFO - 2018-10-27 22:42:31 --> File loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\third_party/DevelBar/views/develbar/views.php
+INFO - 2018-10-27 22:42:31 --> File loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\third_party/DevelBar/views/develbar/config.php
+INFO - 2018-10-27 22:42:31 --> File loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\third_party/DevelBar/views/develbar/session.php
+INFO - 2018-10-27 22:42:31 --> File loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\third_party/DevelBar/views/develbar/models.php
+INFO - 2018-10-27 22:42:31 --> File loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\third_party/DevelBar/assets/css/develbar.css
+INFO - 2018-10-27 22:42:31 --> File loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\third_party/DevelBar/assets/js/develbar.js
+INFO - 2018-10-27 22:42:31 --> File loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\third_party/DevelBar/views/develbar/develbar.php
+INFO - 2018-10-27 22:42:31 --> File loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\third_party/DevelBar/assets/js/ajax.js
+INFO - 2018-10-27 22:42:31 --> Final output sent to browser
+DEBUG - 2018-10-27 22:42:31 --> Total execution time: 0.4260
+INFO - 2018-10-27 22:42:31 --> Development:xxxxxxxxxxx-0.0.1 maintenance_hook file in C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-10-27 22:42:31 --> Development:xxxxxxxxxxx-0.0.1 ssl_hook file in C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-10-27 23:11:22 --> Config Class Initialized
+INFO - 2018-10-27 23:11:22 --> Hooks Class Initialized
+DEBUG - 2018-10-27 23:11:22 --> UTF-8 Support Enabled
+INFO - 2018-10-27 23:11:22 --> Utf8 Class Initialized
+INFO - 2018-10-27 23:11:22 --> URI Class Initialized
+DEBUG - 2018-10-27 23:11:22 --> No URI present. Default controller set.
+INFO - 2018-10-27 23:11:22 --> Router Class Initialized
+INFO - 2018-10-27 23:11:22 --> Output Class Initialized
+INFO - 2018-10-27 23:11:22 --> Security Class Initialized
+DEBUG - 2018-10-27 23:11:22 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-10-27 23:11:22 --> Input Class Initialized
+INFO - 2018-10-27 23:11:22 --> Language Class Initialized
+INFO - 2018-10-27 23:11:22 --> Loader Class Initialized
+DEBUG - 2018-10-27 23:11:22 --> Config file loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\config/development\maintenance_config.php
+INFO - 2018-10-27 23:11:22 --> Controller Class Initialized
+INFO - 2018-10-27 23:11:22 --> Development:xxxxxxxxxxx-0.0.1 is executing maintenance_hook file in C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\hooks by fabayon.rafi.local with the unit name fabayon
+.
+DEBUG - 2018-10-27 23:11:22 --> While Development:xxxxxxxxxxx-0.0.1 is in maintenance mode, it was successfully  access by fabayon.rafi.local using the unit name fabayon
+.
+INFO - 2018-10-27 23:11:22 --> Development:xxxxxxxxxxx-0.0.1 is executing ssl_hook file in C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\hooks by fabayon.rafi.local with the unit name fabayon
+.
+INFO - 2018-10-27 23:11:22 --> Helper loaded: url_helper
+DEBUG - 2018-10-27 23:11:22 --> Development:xxxxxxxxxxx-0.0.1fabayon.rafi.local with the unit name fabayon
+ is accessing with SSL Request.
+INFO - 2018-10-27 23:11:22 --> File loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php
+DEBUG - 2018-10-27 23:11:22 --> Config file loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\third_party/DevelBar/config/develbar.php
+INFO - 2018-10-27 23:11:22 --> Helper loaded: utility_helper
+INFO - 2018-10-27 23:11:22 --> Helper loaded: language_helper
+INFO - 2018-10-27 23:11:22 --> Helper loaded: text_helper
+INFO - 2018-10-27 23:11:22 --> Language file loaded: language/english/develbar_lang.php
+DEBUG - 2018-10-27 23:11:22 --> DevelBar Class Initialized !
+INFO - 2018-10-27 23:11:22 --> File loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\third_party/DevelBar/views/develbar/benchmarks.php
+INFO - 2018-10-27 23:11:22 --> File loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\third_party/DevelBar/views/develbar/memory_usage.php
+INFO - 2018-10-27 23:11:22 --> File loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\third_party/DevelBar/views/develbar/request.php
+INFO - 2018-10-27 23:11:22 --> File loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\third_party/DevelBar/views/develbar/database.php
+INFO - 2018-10-27 23:11:23 --> File loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\third_party/DevelBar/views/develbar/hooks.php
+INFO - 2018-10-27 23:11:23 --> File loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\third_party/DevelBar/views/develbar/ajax.php
+INFO - 2018-10-27 23:11:23 --> File loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\third_party/DevelBar/views/develbar/libraries.php
+INFO - 2018-10-27 23:11:23 --> File loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\third_party/DevelBar/views/develbar/helpers.php
+INFO - 2018-10-27 23:11:23 --> File loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\third_party/DevelBar/views/develbar/views.php
+INFO - 2018-10-27 23:11:23 --> File loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\third_party/DevelBar/views/develbar/config.php
+INFO - 2018-10-27 23:11:23 --> File loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\third_party/DevelBar/views/develbar/session.php
+INFO - 2018-10-27 23:11:23 --> File loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\third_party/DevelBar/views/develbar/models.php
+INFO - 2018-10-27 23:11:23 --> File loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\third_party/DevelBar/assets/css/develbar.css
+INFO - 2018-10-27 23:11:23 --> File loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\third_party/DevelBar/assets/js/develbar.js
+INFO - 2018-10-27 23:11:23 --> File loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\third_party/DevelBar/views/develbar/develbar.php
+INFO - 2018-10-27 23:11:23 --> File loaded: C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\third_party/DevelBar/assets/js/ajax.js
+INFO - 2018-10-27 23:11:23 --> Final output sent to browser
+DEBUG - 2018-10-27 23:11:23 --> Total execution time: 0.5079
+INFO - 2018-10-27 23:11:23 --> Development:xxxxxxxxxxx-0.0.1 maintenance_hook file in C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-10-27 23:11:23 --> Development:xxxxxxxxxxx-0.0.1 ssl_hook file in C:\xampp\htdocs\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.

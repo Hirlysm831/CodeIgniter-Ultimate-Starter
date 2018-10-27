@@ -12,6 +12,7 @@
  * @since  			0.0.1
  * @link			../../views/utilites/logviewer/log.php		
  * @url				https://github.com/SeunMatt
+ * @url				https://github.com/SeunMatt/codeigniter-log-viewer
  * 					
  * @todo			create cli views in the logviewer
  * @todo			cron job in the log viewer/creator
