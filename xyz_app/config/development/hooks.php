@@ -9,22 +9,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | files.  Please see the user guide for info:
 |
 |	https://codeigniter.com/user_guide/general/hooks.html
-|if(getenv('APP_ENV') === 'development') {
-						$dotenv = new Dotenv\Dotenv();
-						$dotenv->load(__DIR__);
+|
 }
 */
-
-///http://roopampoddar.com/2016/01/26/integrating-phpdotenv-env-files-in-codeigniter-3-0-using-hooks/
-
-$hook['pre_controller'][] = array(
-  'class' => 'environment',
-  'function' => 'environments',
-  'filename' => 'environment_hook.php',
-  'filepath' => 'hooks',
-  'params'   => ''
-);
-
 
 /***************************************************************************
  *
