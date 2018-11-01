@@ -1,11 +1,11 @@
 <?php
-$arr = get_defined_vars();
+// $arr = get_defined_vars();
 /*   while (list($var,$value) = each ($_SERVER)) {
       echo "$var => $value <br />";
    } */
-  echo  $_SERVER['testinghere'];
+  // echo  $_SERVER['testinghere'];
 // die(var_dump($arr ));
-exit();
+// exit();
 
 /**
  * CodeIgniter

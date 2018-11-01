@@ -11,6 +11,7 @@
   ],
   "require": {
     "php": ">=5.3",
+	"vlucas/phpdotenv": "^2.2",
     "compwright/codeigniter-installers": "*",
 	"graylog2/gelf-php": "^1.5",
 	"monolog/monolog": "^1.23"        
