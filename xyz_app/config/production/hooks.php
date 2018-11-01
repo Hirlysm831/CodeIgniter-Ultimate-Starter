@@ -10,6 +10,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 |	https://codeigniter.com/user_guide/general/hooks.html
 |
+}
 */
 
 /***************************************************************************
@@ -49,13 +50,13 @@ $hook['post_controller_constructor'][] = array(
  *
  * Force SSL the php file and being setup in the application
  *
- * @subpackage		http_ssl
+ * @subpackage			http_ssl
  * @category		hooks 
  * @author			Francisco Abayon <franz.noyaba@gamail.com>
  * @copyright		Oct 20, 2018
  * @since			0.0.1	
  * @link			../../hooks/ssl_hook.php
- * @url 			
+ * @url 			https://matthewdaly.co.uk/blog/2018/06/23/forcing-ssl-in-codeigniter/
  *
  * @todo			create setup values to define wheter the port numbers are default or not
  * @todo			Autodetect that if its ssl was expired, send an email
@@ -66,4 +67,34 @@ $hook['post_controller_constructor'][] = array(
   'function' 	=> 'force_ssl',
   'filename' 	=> 'ssl_hook.php',
   'filepath' 	=> 'hooks'
+);
+
+
+
+/***************************************************************************
+ *
+ * add development debug bar for extending tracing data
+ *
+ * @package			develbar
+ * @category		hooks 
+ * @author			Francisco Abayon <franz.noyaba@gamail.com>
+ * @author			JC Sama <JC Sama>
+ * @copyright		Oct 28, 2018
+ * @since			0.0.1	
+ * @link			../../hooks/develbar_hook.php
+ * @link			../../core/XYZ_Loader.php
+ * @url 			https://github.com/JCSama/CodeIgniter-develbar
+ *
+ * @todo			create page independent same on the screenshot provided
+ * @todo			Move the views in the page
+ * @todo			Make 777 the folder of cache to make the profiling work properly
+ * @todo			Organized the develprofiler controller to be in the propery utilities folder
+ * @todo			Cleanup the Third party folder, must be specify the proper standard of the codeigniter
+ *
+ ***************************************************************************/
+$hook['display_override'][] = array(
+	'class'  	=> 'develbar',
+    'function' 	=> 'debug',
+    'filename' 	=> 'develbar_hook.php',
+    'filepath' 	=> 'hooks'
 );

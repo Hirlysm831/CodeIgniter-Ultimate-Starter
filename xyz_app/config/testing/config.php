@@ -1,6 +1,21 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+/*************************************************  
+ *
+ * Set PHP Timezone for standard and unity and we should not rely on php.ini only.
+ * but it may cause a problem in the shared hosting in the future
+ *
+ * @category	php.ini
+ * @since		0.0.1
+ * @url			https://stackoverflow.com/questions/31309536/how-to-set-time-zone-in-codeigniter
+ * 
+ * @todo		Research and refactor the code based on codeigniter standard
+ * @tutorial	https://www.inmotionhosting.com/support/website/php/setting-the-timezone-for-php-in-the-phpini-file
+ * 
+ ************************************************/
+date_default_timezone_set(DEFAULT_TIMEZONE);
+
 /*
 |--------------------------------------------------------------------------
 | Base Site URL
@@ -23,7 +38,31 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = '';
+/*************************************************  
+ *
+ * Dynamic setup based url on the server values and automation
+ *
+ * @since		0.0.1
+ * @var			string (callback function)
+ *
+ * @todo		Dynamic URL based on the server and being pointed
+ * @todo		Refactor the existing code
+ * @url			https://medium.com/@amirsanni/dynamically-setting-base-url-in-codeigniter-3-8179d72ddd84
+ * @exampe		$config['base_url'] = 'http://localhost:8080/codeigniter-ultimate-starter/';
+ * 
+ ************************************************/
+$protocol = is_https() ? "https://" : "http://";
+$host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : "";
+if(is_cli()){
+   $config['base_url'] = 'test.scarfonictech.com';
+}
+else if(stristr($host, "localhost") !== FALSE || (stristr($host, '192.168.') !== FALSE) || (stristr($host, '127.0.0') !== FALSE)){
+   $config['base_url'] = $protocol.$host."/codeigniter-ultimate-starter/" .  PUBLIC_FOLDER;
+}
+else{
+    $allowed_hosts = ['test.scarfonictech.com', 'www.test.scarfonictech.com'];
+    $config['base_url'] = in_array($host, $allowed_hosts) ? $protocol.$host."/" : "we-do-not-recognise-this-host.com";
+}
 
 /*
 |--------------------------------------------------------------------------
@@ -35,7 +74,7 @@ $config['base_url'] = '';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -89,6 +128,20 @@ $config['language']	= 'english';
 | See http://php.net/htmlspecialchars for a list of supported charsets.
 |
 */
+/*************************************************  
+ *
+ * Dynamic setup based 
+ *
+ * @since		0.0.1
+ * @var			string (callback function)
+ *
+ * @todo		Dynamic charset based on database
+ * @todo		Call the value based on server setup
+ * @todo		Server fallback value
+ * @url			https://medium.com/@amirsanni/dynamically-setting-base-url-in-codeigniter-3-8179d72ddd84
+ * @exampe		$config['base_url'] = 'http://localhost:8080/codeigniter-ultimate-starter/';
+ * 
+ ************************************************/
 $config['charset'] = 'UTF-8';
 
 /*
@@ -98,9 +151,22 @@ $config['charset'] = 'UTF-8';
 |
 | If you would like to use the 'hooks' feature you must enable it by
 | setting this variable to TRUE (boolean).  See the user guide for details.
-|
+| 
+| 
 */
-$config['enable_hooks'] = FALSE;
+/*************************************************  
+ *
+ * Values default in the constant.php with 0644
+ * 
+ * @subpackage		environment_mode
+ * @subpackage		maintenance_mode
+ * @link			../../hooks/hooks.php
+ * @example			$config['enable_hooks'] = FALSE;
+ * 
+ * @todo			Enable only specific hooks in codeigniter based on the environment setup
+ * 
+ ************************************************/
+$config['enable_hooks'] = TRUE;
 
 /*
 |--------------------------------------------------------------------------
@@ -114,7 +180,14 @@ $config['enable_hooks'] = FALSE;
 | https://codeigniter.com/user_guide/general/creating_libraries.html
 |
 */
-$config['subclass_prefix'] = 'MY_';
+/*************************************************  
+ *
+ * Values default in the constant.php with base on the setup
+ * 
+ * @var constant
+ * 
+ ************************************************/
+$config['subclass_prefix'] = SUBCLASS_PREFIX;
 
 /*
 |--------------------------------------------------------------------------
@@ -136,7 +209,7 @@ $config['subclass_prefix'] = 'MY_';
 | Note: This will NOT disable or override the CodeIgniter-specific
 |	autoloading (application/config/autoload.php)
 */
-$config['composer_autoload'] = FALSE;
+$config['composer_autoload'] = TRUE;
 
 /*
 |--------------------------------------------------------------------------
@@ -223,7 +296,7 @@ $config['allow_get_array'] = TRUE;
 | your log files will fill up very fast.
 |
 */
-$config['log_threshold'] = 0;
+$config['log_threshold'] = 4;
 
 /*
 |--------------------------------------------------------------------------
@@ -260,7 +333,14 @@ $config['log_file_extension'] = '';
 | IMPORTANT: This MUST be an integer (no quotes) and you MUST use octal
 |            integer notation (i.e. 0700, 0644, etc.)
 */
-$config['log_file_permissions'] = 0644;
+/*************************************************  
+ *
+ * Values default in the constant.php with 0644
+ * 
+ * @var constant
+ * 
+ ************************************************/
+$config['log_file_permissions'] = FILE_READ_MODE;
 
 /*
 |--------------------------------------------------------------------------
@@ -519,5 +599,38 @@ $config['rewrite_short_tags'] = FALSE;
 |
 | Comma-separated:	'10.0.1.200,192.168.5.0/24'
 | Array:		array('10.0.1.200', '192.168.5.0/24')
+|
+| @subpackage	    maintenance_mode
+| @description		Need to determine on what are the proxy ip need especially on PAAS
+|					,AWS or dynamic IP generated on the load balancer
+| @author			Francisco Abayon
+| @link				../../hooks/hooks.php
+| @url 				https://forum.codeigniter.com/archive/index.php?thread-64427.html
+| @url			 	https://expressionengine.com/forums/archive/topic/185751/amazon-load-balancing-and-codeigniter-configproxy_ips#925678
+| @example			$config['proxy_ips'] = '';
+| @since  			0.0.1
+| 
 */
-$config['proxy_ips'] = '';
+$config['proxy_ips'] = PROXY_IPS;
+
+
+/*
+|--------------------------------------------------------------------------
+| Custom Config Setup
+|--------------------------------------------------------------------------
+|
+| Need to determine on what are the proxy ip need especially on PAAS,
+| AWS or dynamic IP generated on the load balancer
+|
+| @subpackage	    logger
+| 	
+| @author			Francisco Abayon <franz.noyaba@gmail.com>
+| @since  			0.0.1 
+| @link				../../hooks/hooks.php
+| @url 				https://forum.codeigniter.com/archive/index.php?thread-64427.html
+| @url			 	https://expressionengine.com/forums/archive/topic/185751/amazon-load-balancing-and-codeigniter-configproxy_ips#925678
+*/
+$config["clv_log_folder_path"] = APPPATH . DIRECTORY_SEPARATOR . LOGS_FOLDER;
+$config["clv_log_file_pattern"] = "log-*.php";
+ //this is the name of the view file passed to CI load->view()
+$config["clv_view_folder_path"] = 'utilities'. DIRECTORY_SEPARATOR . 'logviewer'. DIRECTORY_SEPARATOR . 'html';

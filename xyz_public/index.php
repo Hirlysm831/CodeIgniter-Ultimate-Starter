@@ -1,4 +1,12 @@
 <?php
+$arr = get_defined_vars();
+/*   while (list($var,$value) = each ($_SERVER)) {
+      echo "$var => $value <br />";
+   } */
+  echo  $_SERVER['testinghere'];
+// die(var_dump($arr ));
+exit();
+
 /**
  * CodeIgniter
  *
@@ -76,7 +84,25 @@
 defined('ROOT') OR define('ROOT',realpath(__DIR__ . DIRECTORY_SEPARATOR . '..'));
 
 // It's in two places - let's be smart	
-defined('DEFAULT_ENVIRONMENT') OR define('DEFAULT_ENVIRONMENT', 'development');
+// Uncomment the below 1 line  the setup should be based on the servervariables
+// defined('DEFAULT_ENVIRONMENT') OR define('DEFAULT_ENVIRONMENT', 'development');
+if(! defined('DEFAULT_ENVIRONMENT') )
+{
+  $domain = strtolower($_SERVER['HTTP_HOST']);
+  switch($domain) {
+    case 'dev.scarfonictech.com' :
+      defined('DEFAULT_ENVIRONMENT') OR define('DEFAULT_ENVIRONMENT', 'development');
+    break;
+    case 'qa.scarfonictech.com' :
+    case 'test.scarfonictech.com' :
+      defined('DEFAULT_ENVIRONMENT') OR define('DEFAULT_ENVIRONMENT', 'testing');
+    break;
+    default :
+      defined('DEFAULT_ENVIRONMENT') OR define('DEFAULT_ENVIRONMENT', 'production');
+    break;
+  }
+}
+
 
 /***************************************************************************
  *

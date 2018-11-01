@@ -109,8 +109,41 @@ defined('APP_VERSION') 		OR define('APP_VERSION',MAJOR .'.'. MINOR .'.'. PATCH, 
 defined('ENVIRONMENT_APP_NAME_VERSION') OR define('ENVIRONMENT_APP_NAME_VERSION',ucwords(ENVIRONMENT) .':'. APP_NAME .'-'.APP_VERSION, TRUE);  // Name of the system with its corresponding version
 defined('SUBCLASS_PREFIX') 	OR define('SUBCLASS_PREFIX','xyz_');  // semantic version
 defined('PROXY_IPS') 		OR define('PROXY_IPS', $_SERVER["HTTP_X_REAL_IP"] ?? $_SERVER["HTTP_X_FORWARDED_FOR"] ?? $_SERVER["HTTP_CLIENT_IP"] ?? $_SERVER["REMOTE_ADDR"] ?? NULL, TRUE);  // Dynamic filterring data in PROXY_IP based on setup of Cloud
+
 defined('DEFAULT_TIMEZONE') OR define('DEFAULT_TIMEZONE','Asia/Urumqi' ,TRUE);  //Timezone Setup in Asia, can be used also in 'Asia/Manila'
+defined('SSL_PORT') OR define('SSL_PORT', 443 ,TRUE);  //SSL Port number 
+
 defined('PUBLIC_FOLDER') 	OR define('PUBLIC_FOLDER','xyz_public' ,TRUE);  //  Folder name of the directory in public folder
+defined('APP_FOLDER') 	OR define('APP_FOLDER','xyz_app' ,TRUE);  //  Folder name of the directory in application folder
+defined('SYS_FOLDER') 	OR define('SYS_FOLDER','xyz_sys' ,TRUE);  //  Folder name of the directory in system folder
 defined('CONFIG_FOLDER') 	OR define('CONFIG_FOLDER','config' ,TRUE);  //  Folder name of the directory in config folder
 defined('LOGS_FOLDER') 		OR define('LOGS_FOLDER','logs' ,TRUE);  // Folder name of the directory in logs
 defined('THIRD_PARTY') 		OR define('THIRD_PARTY','third_party' ,TRUE);  // Folder name of the directory in thirdy_party
+
+
+/*************************************************  
+ *
+ * Sensitive data loaded based on variables name and setup in the server
+ * 
+ * @url			https://github.com/vlucas/phpdotenv/
+ * @url			https://github.com/arrilot/dotenv-php
+ * @url			http://roopampoddar.com/2016/01/26/integrating-phpdotenv-env-files-in-codeigniter-3-0-using-hooks/
+ * @url			https://stackoverflow.com/questions/5010660/how-do-you-use-setenv-to-read-variables-in-apache
+ * @url			https://stackoverflow.com/questions/21901795/database-credentials-encryption-codeigniter
+ * @url			https://jolicode.com/blog/what-you-need-to-know-about-environment-variables-with-php
+ * @url			https://www.12factor.net/config
+ * @url			https://github.com/symfony/symfony/issues/25693
+ * @internal	When a new developer clones your codebase, they will have an additional one-time step to manually copy the
+ *				.env.example file to .env and fill-in their own values (or get any sensitive values from a project co-worker).
+ *				phpdotenv is made for development environments, and generally should not be used in production. 
+ *				In production, the actual environment variables should be set so that there is no overhead of loading the
+ *				.env file on each request. This can be achieved via an automated deployment process 
+ *				with tools like Vagrant, chef, or Puppet, or can be set manually with cloud hosts like Pagodabox and Heroku
+ *
+ * @todo		Apply and setup server variables
+ * 
+ ************************************************/
+defined('XYZ_DBHOST_DEFAULT') 		OR define('XYZ_DBHOST_DEFAULT',$_SERVER['XYZ_DBHOST_DEFAULT'] ?? ($_ENV['XYZ_DBHOST_DEFAULT'] ?? 'dbhost') ,TRUE);  // Setup variable of the default database host
+defined('XYZ_DBNAME_DEFAULT') 		OR define('XYZ_DBNAME_DEFAULT',$_SERVER['XYZ_DBNAME_DEFAULT'] ?? ($_ENV['XYZ_DBNAME_DEFAULT'] ?? 'dbname') ,TRUE);  // Setup variable of the default database name
+defined('XYZ_DBUSER_DEFAULT') 		OR define('XYZ_DBUSER_DEFAULT',$_SERVER['XYZ_DBUSER_DEFAULT'] ?? ($_ENV['XYZ_DBUSER_DEFAULT'] ?? 'dbuser') ,TRUE); // Setup variable of the default database user
+defined('XYZ_DBPASSWORD_DEFAULT') 	OR define('XYZ_DBPASSWORD_DEFAULT',$_SERVER['XYZ_DBPASSWORD_DEFAULT'] ?? ($_ENV['XYZ_DBPASSWORD_DEFAULT'] ?? 'dbpass') ,TRUE); // Setup variable of the default database password

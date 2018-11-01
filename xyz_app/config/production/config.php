@@ -54,13 +54,13 @@ date_default_timezone_set(DEFAULT_TIMEZONE);
 $protocol = is_https() ? "https://" : "http://";
 $host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : "";
 if(is_cli()){
-   $config['base_url'] = '';
+   $config['base_url'] = 'prod.scarfonictech.com';
 }
 else if(stristr($host, "localhost") !== FALSE || (stristr($host, '192.168.') !== FALSE) || (stristr($host, '127.0.0') !== FALSE)){
-   $config['base_url'] = $protocol.$host."/codeigniter-ultimate-starter/" . DIRECTORY_SEPARATOR . PUBLIC_FOLDER;
+   $config['base_url'] = $protocol.$host."/";
 }
 else{
-    $allowed_hosts = ['amirsanni.com', 'www.amirsanni.com'];
+    $allowed_hosts = ['prod.scarfonictech.com', 'www.prod.scarfonictech.com'];
     $config['base_url'] = in_array($host, $allowed_hosts) ? $protocol.$host."/" : "we-do-not-recognise-this-host.com";
 }
 
