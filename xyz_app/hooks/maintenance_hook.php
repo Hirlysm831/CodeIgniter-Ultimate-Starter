@@ -50,7 +50,6 @@ class Maintenance {
 	$user_ip  = $this->CI->input->ip_address();
 	$exemption_ip  = $this->CI->config->item('allowed_maintenance_ips');
 	$environment  = 'production';
-
 	if( ! in_array($user_ip, $exemption_ip  ) &&  ENVIRONMENT !== $environment ) {
 	  
 		$_error =& load_class('Exceptions', 'core');

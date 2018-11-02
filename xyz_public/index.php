@@ -1,4 +1,5 @@
 <?php
+// die('test00');
 // $arr = get_defined_vars();
 /*   while (list($var,$value) = each ($_SERVER)) {
       echo "$var => $value <br />";
@@ -6,7 +7,28 @@
   // echo  $_SERVER['testinghere'];
 // die(var_dump($arr ));
 // exit();
+/* $servername = "localhost";
+$username = "root";
+$password = "admin";
+// Create connection
+$conn = new mysqli($servername, $username, $password);
 
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+echo "Connected successfully"; */
+/* try {
+    $conn = new PDO("mysql:host=$servername;dbname=test", $username, $password);
+    // set the PDO error mode to exception
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "Connected successfully"; 
+    }
+catch(PDOException $e)
+    {
+    echo "Connection failed: " . $e->getMessage();
+    } */
+// die();
 /**
  * CodeIgniter
  *
