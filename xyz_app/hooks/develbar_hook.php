@@ -126,7 +126,7 @@ class Develbar
         // Initialize default options
         $config = $this->CI->config->config['develbar'];
         $this->default_options = array_merge($this->default_options, $config);
-        $this->assets_folder = APPPATH . 'third_party/DevelBar/assets/';
+        $this->assets_folder = FCPATH .'/assets/develbar/';
 
         // Load lang file if exists
         $this->load_lang_file();
@@ -143,7 +143,8 @@ class Develbar
     private function load_lang_file()
     {
         $default_language = $this->CI->config->config['language'];
-        $lang_file = APPPATH . 'third_party/DevelBar/language/' . $default_language . '/develbar_lang.php';
+        $lang_file = APPPATH . 'language/' . $default_language . '/develbar_lang.php';
+		var_dump($lang_file);
 
         if (!file_exists($lang_file)) {
             $default_language = 'english';

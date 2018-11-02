@@ -22,22 +22,24 @@ class Welcome extends CI_Controller {
 public function demo_date() {
 
 # Refference variable(pointer somewhat)			
-$a=2;
-$b=&$a; // note the & operator
-$b=3;
+// $a=2;
+// $b=&$a; // note the & operator
+// $b=3;
 	
 #codeigniter logger
 // $this->load->library('utilities/Logviewer');
 // echo  $this->logviewer->showlogs(); 
 
 #setup variable in the system, either in htaccess/web.config or manual in CICD PAAS
-echo  $ip = getenv('XYZ_DBHOST_DEV', true) ? getenv('XYZ_DBHOST_DEV', true) : getenv('XYZ_DBHOST_DEV');
+// echo  $ip = getenv('XYZ_DBHOST_DEV', true) ? getenv('XYZ_DBHOST_DEV', true) : getenv('XYZ_DBHOST_DEV');
 }	 
 	 
 	public function index()
 	{
 
 		$this->load->view('welcome_message'); 
+		// $this->load->library('utilities/Logviewer');
+// echo  $this->logviewer->showlogs(); 
 	}
 	
 
