@@ -53,7 +53,7 @@ class Develbar
     /**
      * @var string
      */
-    private $view_folder = 'develbar/';
+    private $view_folder = 'utilities/develbar/';
 
     /**
      * @var string
@@ -360,7 +360,7 @@ class Develbar
     {
         $dbs = $data = array();
         $cobjects = get_object_vars($this->CI);
-
+// @todo - customize the data to be return based on the name only
         foreach ($cobjects as $name => $cobject) {
             if (is_object($cobject)) {
                 if ($cobject instanceof CI_DB) {
@@ -373,7 +373,8 @@ class Develbar
                             'query_times' => $cobject->query_times,
                             'query_count' => $cobject->query_count,
                         );
-                        $dbs[get_class($this->CI) . ':$' . $name] = $database;
+                        // $dbs[get_class($this->CI) . ':$' . $name] = $database;
+                        $dbs[$name] = $database;
                     }
                 } elseif ($cobject instanceof CI_Model) {
                     foreach (get_object_vars($cobject) as $mname => $mobject) {
@@ -385,7 +386,8 @@ class Develbar
                                 'query_times' => $mobject->query_times,
                                 'query_count' => $mobject->query_count,
                             );
-                            $dbs[get_class($cobject) . ':$' . $mname] = $database;
+                            // $dbs[get_class($cobject) . ':$' . $mname] = $database;
+                            $dbs[$mname] = $database;
                         }
                     }
                 }
