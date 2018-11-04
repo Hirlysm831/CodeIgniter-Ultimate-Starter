@@ -181,7 +181,7 @@ switch (ENVIRONMENT)
 	 * @tutorial	https://localhost/codeigniter-ultimate-starter/public/
 	 */
 	case 'development':	
-		echo '<link rel="stylesheet" type="text/css" href="php-error.css"/>';		
+		echo '<link rel="stylesheet" type="text/css" href="assets/php-error.css"/>';		
 		ini_set('error_prepend_string',"<div class='php-error'><span class='closebtn' onclick='this.parentElement.style.display=\"none\";'>&times;</span>");
 		ini_set('error_append_string',"</div>");
 		ini_set('html_errors',1);
@@ -193,7 +193,7 @@ switch (ENVIRONMENT)
 	break;
 
 	case 'testing':	
-		echo '<link rel="stylesheet" type="text/css" href="php-error.css"/>';		
+		echo '<link rel="stylesheet" type="text/css" href="assets/php-error.css"/>';		
 		ini_set('error_prepend_string',"<div class='php-error'><span class='closebtn' onclick='this.parentElement.style.display=\"none\";'>
 				&times;</span>");
 		ini_set('error_append_string',"</div>");
