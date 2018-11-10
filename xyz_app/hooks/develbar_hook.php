@@ -144,7 +144,6 @@ class Develbar
     {
         $default_language = $this->CI->config->config['language'];
         $lang_file = APPPATH . 'language/' . $default_language . '/develbar_lang.php';
-		var_dump($lang_file);
 
         if (!file_exists($lang_file)) {
             $default_language = 'english';
