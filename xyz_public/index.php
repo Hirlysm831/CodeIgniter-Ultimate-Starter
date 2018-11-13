@@ -77,60 +77,54 @@ defined('ROOT') OR define('ROOT',realpath(__DIR__ . DIRECTORY_SEPARATOR . '..'))
 
 // It's in two places - let's be smart	
 // Uncomment the below 1 line  the setup should be based on the servervariables
-// defined('DEFAULT_ENVIRONMENT') OR define('DEFAULT_ENVIRONMENT', 'development');
-if(! defined('DEFAULT_ENVIRONMENT') )
+if(! defined('ENVIRONMENT') )
 {
-  $domain = strtolower($_SERVER['HTTP_HOST']);
-  switch($domain) {
-    case 'dev.scarfonictech.com' :
-      defined('DEFAULT_ENVIRONMENT') OR define('DEFAULT_ENVIRONMENT', 'development');
-    break;
-    case 'qa.scarfonictech.com' :
-    case 'test.scarfonictech.com' :
-      defined('DEFAULT_ENVIRONMENT') OR define('DEFAULT_ENVIRONMENT', 'testing');
-    break;
-    default :
-      defined('DEFAULT_ENVIRONMENT') OR define('DEFAULT_ENVIRONMENT', 'production');
-    break;
-  }
-}
-
-
-/***************************************************************************
- *
- * Having conditional statement for not being access via cli is set to by boolean and check
- * if being access via cli it well automatically change the environment on it and Our goal is to send:
- * 		- php index.php cron daily_tasks important_job 831 --environment production
- *		- and have it run http://xyz.com/cron/daily_tasks/important_job/831
- *		using the production environment
- *
- *
- * @todo		Create a case expression for determining the CLI or web in HTTP_HOST
- * @var			Boolean						environment act ast the trigger point
- *
- ***************************************************************************/
- 
-// detects if it is a command line request
-if ((php_sapi_name() == 'cli') or defined('STDIN'))
-{
-	$environment = DEFAULT_ENVIRONMENT;
-	if (isset($argv)) 
+	/***************************************************************************
+	 *
+	 * Having conditional statement for not being access via cli is set to by boolean and check
+	 * if being access via cli it well automatically change the environment on it and Our goal is to send:
+	 * 		- php index.php cron daily_tasks important_job 831 --environment production
+	 *		- and have it run http://xyz.com/cron/daily_tasks/important_job/831
+	 *		using the production environment
+	 *
+	 *
+	 * @todo		Create a case expression for determining the CLI or web in HTTP_HOST
+	 * @var			Boolean						environment act ast the trigger point
+	 *
+	 ***************************************************************************/
+	// detects if it is a command line request
+	if ((php_sapi_name() == 'cli') or defined('STDIN'))
 	{
-		// grab the --env argument, and the one that comes next
+		$environment = 'development';
+		if (isset($argv)) 
+		{
+			// grab the --env argument, and the one that comes next
+			$key = (array_search('--environment', $argv));
+			$environment = $argv[$key +1];
 
-		$key = (array_search('--environment', $argv));
-		$environment = $argv[$key +1];
-
-		// get rid of them so they don't get passed in to our method as parameter values
-
-		unset($argv[$key], $argv[$key +1]);
-	}  
-  	define('POINTER_ENVIRONMENT', $environment);
-} 
-
-if (!defined('POINTER_ENVIRONMENT'))
-{
-	define('ENVIRONMENT', isset($_SERVER['APP_ENVIRONMENT']) ? $_SERVER['APP_ENVIRONMENT'] : DEFAULT_ENVIRONMENT); 
+			// get rid of them so they don't get passed in to our method as parameter values
+			unset($argv[$key], $argv[$key +1]);
+		}  
+		define('ENVIRONMENT', isset($_SERVER['ENVIRONMENT']) ? $_SERVER['ENVIRONMENT'] : $environment); 
+	} 	
+	
+	// detect if it is http browsing site access
+	else
+	{
+		$domain = strtolower($_SERVER['HTTP_HOST']);
+		switch($domain) {
+		case 'dev.scarfonictech.com' :
+		  defined('ENVIRONMENT') OR define('ENVIRONMENT', 'development');
+		break;
+		case 'qa.scarfonictech.com' :
+		case 'test.scarfonictech.com' :
+		  defined('ENVIRONMENT') OR define('ENVIRONMENT', 'testing');
+		break;
+		default :
+		  defined('ENVIRONMENT') OR define('ENVIRONMENT', 'production');
+		break;
+		}	
+	}
 }
 
 /*
@@ -188,8 +182,6 @@ switch (ENVIRONMENT)
 		ini_set('display_errors',1);
 		ini_set('display_startup_errors',1);
 		error_reporting(E_ALL);
-		$system_path = ROOT . DIRECTORY_SEPARATOR . 'xyz_sys';
-		$application_folder = ROOT . DIRECTORY_SEPARATOR . 'xyz_app';
 	break;
 
 	case 'testing':	
@@ -204,8 +196,6 @@ switch (ENVIRONMENT)
 		//uncomment to check and test if the php error is capture
 		// echo $this_is_error;	
 		// require ROOT . DIRECTORY_SEPARATOR . 'error_test.php';	
-		$system_path = ROOT . DIRECTORY_SEPARATOR . 'xyz_sys';
-		$application_folder = ROOT . DIRECTORY_SEPARATOR . 'xyz_app';
 	break;
 	
 	case 'production':
@@ -227,8 +217,6 @@ switch (ENVIRONMENT)
 							& ~E_STRICT 
 							& ~E_USER_NOTICE);
 		}
-		$system_path = ROOT . DIRECTORY_SEPARATOR . 'xyz_sys';
-		$application_folder = ROOT . DIRECTORY_SEPARATOR . 'xyz_app';
 	break;
 
 	default:
@@ -253,6 +241,8 @@ switch (ENVIRONMENT)
  * This variable must contain the name of your "system" directory.
  * Set the path if it is not in the same directory as this file.
  */
+$system_path = ROOT . DIRECTORY_SEPARATOR . 'xyz_sys';
+ 
  
 /*
  *---------------------------------------------------------------
@@ -269,6 +259,7 @@ switch (ENVIRONMENT)
  *
  * NO TRAILING SLASH!
  */
+$application_folder = ROOT . DIRECTORY_SEPARATOR . 'xyz_app';
 
 /*
  *---------------------------------------------------------------
