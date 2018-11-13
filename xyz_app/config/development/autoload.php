@@ -104,6 +104,7 @@ $autoload['helper'] = array();
 |
 | 	@subpackage		maintenance_mode
 |	@var string		maintenance_config
+|	@see			xyz_app/hooks/maintenance_hook.php
 |	@example		$autoload['config'] = array();
 */
 $autoload['config'] = array('maintenance_config');

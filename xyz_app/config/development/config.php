@@ -639,7 +639,7 @@ $config['proxy_ips'] = PROXY_IPS;
 | @url 				https://forum.codeigniter.com/archive/index.php?thread-64427.html
 | @url			 	https://expressionengine.com/forums/archive/topic/185751/amazon-load-balancing-and-codeigniter-configproxy_ips#925678
 */
-$config["clv_log_folder_path"] = APPPATH . DIRECTORY_SEPARATOR . LOGS_FOLDER;
+$config["clv_log_folder_path"] = APPPATH . DIRECTORY_SEPARATOR . LOG_FOLDER;
 $config["clv_log_file_pattern"] = "log-*.php";
  //this is the name of the view file passed to CI load->view()
 $config["clv_view_folder_path"] = 'utilities'. DIRECTORY_SEPARATOR . 'logviewer'. DIRECTORY_SEPARATOR . 'html';
