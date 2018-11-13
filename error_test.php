@@ -1,2 +1,2 @@
 <?php
-// phpinfao();
+phpinfao();
