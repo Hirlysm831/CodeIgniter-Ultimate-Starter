@@ -6,6 +6,49 @@ namespace Composer\Autoload;
 
 class ComposerStaticInitd0b63a663708711714d11e157a90bd5d
 {
+    public static $prefixLengthsPsr4 = array (
+        'P' => 
+        array (
+            'Psr\\Log\\' => 8,
+            'ParagonIE\\ConstantTime\\' => 23,
+        ),
+        'M' => 
+        array (
+            'Monolog\\' => 8,
+        ),
+        'G' => 
+        array (
+            'Gelf\\' => 5,
+        ),
+        'D' => 
+        array (
+            'Dotenv\\' => 7,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
+        'ParagonIE\\ConstantTime\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src',
+        ),
+        'Monolog\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
+        'Gelf\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/graylog2/gelf-php/src/Gelf',
+        ),
+        'Dotenv\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
+        ),
+    );
+
     public static $prefixesPsr0 = array (
         'C' => 
         array (
@@ -19,6 +62,8 @@ class ComposerStaticInitd0b63a663708711714d11e157a90bd5d
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInitd0b63a663708711714d11e157a90bd5d::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitd0b63a663708711714d11e157a90bd5d::$prefixDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInitd0b63a663708711714d11e157a90bd5d::$prefixesPsr0;
 
         }, null, ClassLoader::class);

@@ -70,19 +70,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | The $query_builder variables lets you determine whether or not to load
 | the query builder class.
 */
+// @todo 	add failover database with dynamic setup
 $active_group = 'default';
 $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => 'admin',
-	'database' => 'test',
+	'hostname' => XYZ_DBHOST_DEFAULT,
+	'username' => XYZ_DBUSER_DEFAULT,
+	'password' => XYZ_DBPASSWORD_DEFAULT,
+	'database' => XYZ_DBNAME_DEFAULT,
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
-	'db_debug' => (ENVIRONMENT !== 'production'),
+	'db_debug' => TRUE,	//(ENVIRONMENT !== 'production'),
 	'cache_on' => FALSE,
 	'cachedir' => '',
 	'char_set' => 'utf8',

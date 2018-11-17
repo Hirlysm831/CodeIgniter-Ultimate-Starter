@@ -1,24 +1,38 @@
 {
-  "name" : "Scarfonic/CodeIgniterUltimate",  	
-  "description" : "All of the learnings in Codeigniter", 
-  "type": "codeigniter-library",
-  "license": "MIT",
-  "authors": [
-	{
-		"name":"Francisco Abayon",
-		"email":"franz.noyaba@gmail.com"
+    "name": "scarfonic/codeigniterultimatestarter",
+    "description": "All learnings of the codeigntier that provided in the awesome developer and epic community",
+    "type": "project",
+	"license": [
+       "LGPL-2.1-only",
+       "GPL-3.0-or-later"
+    ],
+	"support": {
+		"email": "francisco.abayon@rafi.org.ph",
+		"issues": "https://github.com/bcit-ci/CodeIgniter/wiki",
+		"forum": "https://github.com/bcit-ci/CodeIgniter/wiki",
+		"wiki": "https://github.com/bcit-ci/CodeIgniter/wiki",
+		"irc": "https://github.com/bcit-ci/CodeIgniter/wiki",
+		"source": "https://github.com/bcit-ci/CodeIgniter/wiki",
+		"docs": "https://github.com/bcit-ci/CodeIgniter/wiki",
+		"rss": "https://github.com/bcit-ci/CodeIgniter/wiki",
+		"slack": "https://codeigniterchat.slack.com"
+	},
+    "authors": [
+        {
+            "name": "Francisco Abayon",
+            "email": "franz.noyaba@gmail.com",           
+			"homepage": "https://www.scarfonictech.com/",
+            "role": "Author"
+        }
+    ],
+    "require": {
+		"php": ">=5.3",
+		"vlucas/phpdotenv": "^2.2",
+		"compwright/codeigniter-installers": "*",
+		"graylog2/gelf-php": "^1.5",
+		"monolog/monolog": "^1.23"        
+	},
+	"require-dev": {
+		"nerones/codeigniter-phpcs": "dev-master"
 	}
-  ],
-  "require": {
-    "php": ">=5.3",
-	"vlucas/phpdotenv": "^2.2",
-    "compwright/codeigniter-installers": "*",
-	"graylog2/gelf-php": "^1.5",
-	"monolog/monolog": "^1.23"        
-  },
-   "require-dev": {
-
-	"nerones/codeigniter-phpcs": "dev-master"
-
- }
 }

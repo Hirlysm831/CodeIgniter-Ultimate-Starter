@@ -57,7 +57,7 @@ if(is_cli()){
    $config['base_url'] = 'dev.scarfonictech.com';
 }
 else if(stristr($host, "localhost") !== FALSE || (stristr($host, '192.168.') !== FALSE) || (stristr($host, '127.0.0') !== FALSE)){
-   $config['base_url'] = $protocol.$host."/codeigniter-ultimate-starter/" .  PUBLIC_FOLDER;
+   $config['base_url'] = $protocol.$host;
 }
 else{
     $allowed_hosts = ['dev.scarfonictech.com', 'www.dev.scarfonictech.com'];
@@ -474,6 +474,14 @@ $config['sess_match_ip'] = FALSE;
 $config['sess_time_to_update'] = 300;
 $config['sess_regenerate_destroy'] = FALSE;
 
+// $r = implode('/', array_slice(explode('/', $_SERVER["SCRIPT_FILENAME"]),0,-1));
+// $config['sess_driver'] = 'files';
+// $config['sess_cookie_name'] = 'my_session';
+// $config['sess_expiration'] = 14400;
+// $config['sess_save_path'] = $r.'/session/';
+// $config['sess_match_ip'] = FALSE;
+// $config['sess_time_to_update'] = 600;
+// $config['sess_regenerate_destroy'] = FALSE;
 /*
 |--------------------------------------------------------------------------
 | Cookie Related Variables
@@ -621,7 +629,6 @@ $config['rewrite_short_tags'] = FALSE;
 | 
 */
 $config['proxy_ips'] = PROXY_IPS;
-
 
 /*
 |--------------------------------------------------------------------------

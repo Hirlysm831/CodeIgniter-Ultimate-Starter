@@ -75,6 +75,11 @@
 //Add global 'ROOT' and get current directory path with going up 1 level by '..'
 defined('ROOT') OR define('ROOT',realpath(__DIR__ . DIRECTORY_SEPARATOR . '..'));
 
+//Define and point the data variables based on environment option defaulted in CI3
+$development = 'development';
+$testing = 'testing';
+$production = 'production';
+
 // It's in two places - let's be smart	
 // Uncomment the below 1 line  the setup should be based on the servervariables
 if(! defined('ENVIRONMENT') )
@@ -95,7 +100,6 @@ if(! defined('ENVIRONMENT') )
 	// detects if it is a command line request
 	if ((php_sapi_name() == 'cli') or defined('STDIN'))
 	{
-		$environment = 'development';
 		if (isset($argv)) 
 		{
 			// grab the --env argument, and the one that comes next
@@ -105,24 +109,32 @@ if(! defined('ENVIRONMENT') )
 			// get rid of them so they don't get passed in to our method as parameter values
 			unset($argv[$key], $argv[$key +1]);
 		}  
-		define('ENVIRONMENT', isset($_SERVER['ENVIRONMENT']) ? $_SERVER['ENVIRONMENT'] : $environment); 
+		define('ENVIRONMENT', isset($_SERVER['ENVIRONMENT']) ? $_SERVER['ENVIRONMENT'] : $development); 
 	} 	
 	
 	// detect if it is http browsing site access
 	else
 	{
 		$domain = strtolower($_SERVER['HTTP_HOST']);
-		switch($domain) {
-		case 'dev.scarfonictech.com' :
-		  defined('ENVIRONMENT') OR define('ENVIRONMENT', 'development');
-		break;
-		case 'qa.scarfonictech.com' :
-		case 'test.scarfonictech.com' :
-		  defined('ENVIRONMENT') OR define('ENVIRONMENT', 'testing');
-		break;
-		default :
-		  defined('ENVIRONMENT') OR define('ENVIRONMENT', 'production');
-		break;
+		switch($domain) {		
+			case 'dev.scarfonictech.com' :
+			  defined('ENVIRONMENT') OR define('ENVIRONMENT', $development);
+			break;
+			
+			case 'qa.scarfonictech.com' :
+			case 'test.scarfonictech.com' :
+			  defined('ENVIRONMENT') OR define('ENVIRONMENT', $testing);
+			break;
+			
+			case 'devscarfonictech.azurewebsites.net':
+			  defined('ENVIRONMENT') OR define('ENVIRONMENT', $production);
+			break;
+			
+			default :
+				header($_SERVER["SERVER_PROTOCOL"]. '503 Service Unavailable.', TRUE, 503);
+				echo 'Domain name is not match in the setup instances.';
+				exit(3); // EXIT_CONFIG
+			break;
 		}	
 	}
 }
@@ -174,7 +186,7 @@ switch (ENVIRONMENT)
 	 * @tutorial	https://vexxhost.com/blog/handling-php-errors-your-way/
 	 * @tutorial	https://localhost/codeigniter-ultimate-starter/public/
 	 */
-	case 'development':	
+	case $development:	
 		echo '<link rel="stylesheet" type="text/css" href="assets/php-error.css"/>';		
 		ini_set('error_prepend_string',"<div class='php-error'><span class='closebtn' onclick='this.parentElement.style.display=\"none\";'>&times;</span>");
 		ini_set('error_append_string',"</div>");
@@ -184,7 +196,7 @@ switch (ENVIRONMENT)
 		error_reporting(E_ALL);
 	break;
 
-	case 'testing':	
+	case $testing:	
 		echo '<link rel="stylesheet" type="text/css" href="assets/php-error.css"/>';		
 		ini_set('error_prepend_string',"<div class='php-error'><span class='closebtn' onclick='this.parentElement.style.display=\"none\";'>
 				&times;</span>");
@@ -198,7 +210,7 @@ switch (ENVIRONMENT)
 		// require ROOT . DIRECTORY_SEPARATOR . 'error_test.php';	
 	break;
 	
-	case 'production':
+	case $production:
 		ini_set('display_errors', 0);
 		if (version_compare(PHP_VERSION, '5.3', '>='))
 		{

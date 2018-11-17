@@ -110,23 +110,25 @@ defined('ENVIRONMENT_APP_NAME_VERSION') OR define('ENVIRONMENT_APP_NAME_VERSION'
 defined('SUBCLASS_PREFIX') 	OR define('SUBCLASS_PREFIX','xyz_');  // semantic version
 defined('PROXY_IPS') 		OR define('PROXY_IPS', $_SERVER["HTTP_X_REAL_IP"] ?? $_SERVER["HTTP_X_FORWARDED_FOR"] ?? $_SERVER["HTTP_CLIENT_IP"] ?? $_SERVER["REMOTE_ADDR"] ?? NULL, TRUE);  // Dynamic filterring data in PROXY_IP based on setup of Cloud
 
+//Generic setup for application environment data
 defined('DEFAULT_TIMEZONE') OR define('DEFAULT_TIMEZONE','Asia/Urumqi' ,TRUE);  //Timezone Setup in Asia, can be used also in 'Asia/Manila'
-defined('SSL_PORT') OR define('SSL_PORT', 443 ,TRUE);  //SSL Port number 
+defined('SSL_PORT') 		OR define('SSL_PORT', 443 ,TRUE);  //SSL Port number 
 
+// Application folder name for scallable
 defined('PUBLIC_FOLDER') 	OR define('PUBLIC_FOLDER','xyz_public' ,TRUE);  //  Folder name of the directory in public folder
-defined('APP_FOLDER') 	OR define('APP_FOLDER','xyz_app' ,TRUE);  //  Folder name of the directory in application folder
-defined('SYS_FOLDER') 	OR define('SYS_FOLDER','xyz_sys' ,TRUE);  //  Folder name of the directory in system folder
-defined('CACHE_FOLDER') 	OR define('CACHE_FOLDER','config' ,TRUE);  //  Folder name of the directory in config folder
-defined('CONFIG_FOLDER') 	OR define('CONFIG_FOLDER','config' ,TRUE);  //  Folder name of the directory in config folder
-defined('CONTROLLER_FOLDER') 	OR define('CONTROLLER_FOLDER','config' ,TRUE);  //  Folder name of the directory in config folder
-defined('CORE_FOLDER') 		OR define('CORE_FOLDER','config' ,TRUE);  //  Folder name of the directory in config folder
-defined('HELPER_FOLDER') 	OR define('HELPER_FOLDER','config' ,TRUE);  //  Folder name of the directory in config folder
-defined('HOOK_FOLDER') 		OR define('HOOK_FOLDER','config' ,TRUE);  //  Folder name of the directory in config folder
-defined('LANGUAGE_FOLDER') 	OR define('LANGUAGE_FOLDER','config' ,TRUE);  //  Folder name of the directory in config folder
-defined('LOG_FOLDER') 		OR define('LOG_FOLDER','logs' ,TRUE);  // Folder name of the directory in logs
-defined('MIGRATION_FOLDER')	OR define('MIGRATION_FOLDER','logs' ,TRUE);  // Folder name of the directory in logs
-defined('VENDOR_FOLDER') 	OR define('VENDOR_FOLDER','logs' ,TRUE);  // Folder name of the directory in logs
-defined('THIRD_PARTY_FOLDER') 	OR define('THIRD_PARTY_FOLDER','third_party' ,TRUE);  // Folder name of the directory in thirdy_party
+defined('APP_FOLDER') 		OR define('APP_FOLDER','xyz_app' ,TRUE);  //  Folder name of the directory in application folder
+defined('SYS_FOLDER') 		OR define('SYS_FOLDER','xyz_sys' ,TRUE);  //  Folder name of the directory in system folder
+defined('CACHE_FOLDER') 	 OR define('CACHE_FOLDER','cache' ,TRUE);  //  Folder name of the directory in cache folder
+defined('CONFIG_FOLDER') 	 OR define('CONFIG_FOLDER','config' ,TRUE);  //  Folder name of the directory in config folder
+defined('CONTROLLER_FOLDER') OR define('CONTROLLER_FOLDER','controller' ,TRUE);  //  Folder name of the directory in controller folder
+defined('CORE_FOLDER') 		 OR define('CORE_FOLDER','core' ,TRUE);  //  Folder name of the directory in core folder
+defined('HELPER_FOLDER') 	 OR define('HELPER_FOLDER','helper' ,TRUE);  //  Folder name of the directory in helper folder
+defined('HOOK_FOLDER') 		 OR define('HOOK_FOLDER','hook' ,TRUE);  //  Folder name of the directory in hook folder
+defined('LANGUAGE_FOLDER') 	 OR define('LANGUAGE_FOLDER','language' ,TRUE);  //  Folder name of the directory in language folder
+defined('LOG_FOLDER') 		 OR define('LOG_FOLDER','logs' ,TRUE);  // Folder name of the directory in logs
+defined('MIGRATION_FOLDER')	 OR define('MIGRATION_FOLDER','migration' ,TRUE);  // Folder name of the directory in migration
+defined('VENDOR_FOLDER') 	 OR define('VENDOR_FOLDER','vendor' ,TRUE);  // Folder name of the directory in vendor or the composer
+defined('THIRD_PARTY_FOLDER') OR define('THIRD_PARTY_FOLDER','third_party' ,TRUE);  // Folder name of the directory in thirdy_party
 
 
 /*************************************************  
@@ -151,7 +153,7 @@ defined('THIRD_PARTY_FOLDER') 	OR define('THIRD_PARTY_FOLDER','third_party' ,TRU
  * @todo		Apply and setup server variables
  * 
  ************************************************/
-defined('XYZ_DBHOST_DEFAULT') 		OR define('XYZ_DBHOST_DEFAULT',$_SERVER['XYZ_DBHOST_DEFAULT'] ?? ($_ENV['XYZ_DBHOST_DEFAULT'] ?? 'dbhost') ,TRUE);  // Setup variable of the default database host
-defined('XYZ_DBNAME_DEFAULT') 		OR define('XYZ_DBNAME_DEFAULT',$_SERVER['XYZ_DBNAME_DEFAULT'] ?? ($_ENV['XYZ_DBNAME_DEFAULT'] ?? 'dbname') ,TRUE);  // Setup variable of the default database name
-defined('XYZ_DBUSER_DEFAULT') 		OR define('XYZ_DBUSER_DEFAULT',$_SERVER['XYZ_DBUSER_DEFAULT'] ?? ($_ENV['XYZ_DBUSER_DEFAULT'] ?? 'dbuser') ,TRUE); // Setup variable of the default database user
-defined('XYZ_DBPASSWORD_DEFAULT') 	OR define('XYZ_DBPASSWORD_DEFAULT',$_SERVER['XYZ_DBPASSWORD_DEFAULT'] ?? ($_ENV['XYZ_DBPASSWORD_DEFAULT'] ?? 'dbpass') ,TRUE); // Setup variable of the default database password
+defined('XYZ_DBHOST_DEFAULT') 		OR define('XYZ_DBHOST_DEFAULT',$_SERVER['XYZ_DBHOST_DEFAULT'] ?? ($_ENV['XYZ_DBHOST_DEFAULT'] ?? 'localhost') ,TRUE);  // Setup variable of the default database host
+defined('XYZ_DBNAME_DEFAULT') 		OR define('XYZ_DBNAME_DEFAULT',$_SERVER['XYZ_DBNAME_DEFAULT'] ?? ($_ENV['XYZ_DBNAME_DEFAULT'] ?? 'test') ,TRUE);  // Setup variable of the default database name
+defined('XYZ_DBUSER_DEFAULT') 		OR define('XYZ_DBUSER_DEFAULT',$_SERVER['XYZ_DBUSER_DEFAULT'] ?? ($_ENV['XYZ_DBUSER_DEFAULT'] ?? 'root') ,TRUE); // Setup variable of the default database user
+defined('XYZ_DBPASSWORD_DEFAULT') 	OR define('XYZ_DBPASSWORD_DEFAULT',$_SERVER['XYZ_DBPASSWORD_DEFAULT'] ?? ($_ENV['XYZ_DBPASSWORD_DEFAULT'] ?? 'admin') ,TRUE); // Setup variable of the default database password
