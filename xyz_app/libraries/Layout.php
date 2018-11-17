@@ -23,7 +23,16 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-
+/***************************************************************************
+*
+* @subpackage		develbar
+* @access			Public
+* @return			Methods in loader library API with header, body and footer
+* @link				sample in the views(welcome message, just a comment leaved)
+* @link				sample in the controller(example.php)
+* @todo				go back to this class and understand deeper values in the property and method
+*
+***************************************************************************/
 class Layout
 {
 
