@@ -30,9 +30,9 @@
 		"vlucas/phpdotenv": "^2.2",
 		"compwright/codeigniter-installers": "*",
 		"graylog2/gelf-php": "^1.5",
-		"monolog/monolog": "^1.23"        
+		"monolog/monolog": "^1.23"
 	},
 	"require-dev": {
-		"nerones/codeigniter-phpcs": "dev-master"
+	
 	}
 }

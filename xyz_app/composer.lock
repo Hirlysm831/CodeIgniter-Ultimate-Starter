@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b1f3a9ceb6f113e1187e40b46a5624fc",
+    "content-hash": "55424496632b0aaa3cfd68b57c52152d",
     "packages": [
         {
             "name": "compwright/codeigniter-installers",
@@ -352,41 +352,10 @@
             "time": "2018-07-29T20:33:41+00:00"
         }
     ],
-    "packages-dev": [
-        {
-            "name": "nerones/codeigniter-phpcs",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nerones/CodeIgniter-for-PHP_CodeSniffer.git",
-                "reference": "5bf888b33af0eb9aa3c9f4a196b0c5017ea0d440"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nerones/CodeIgniter-for-PHP_CodeSniffer/zipball/5bf888b33af0eb9aa3c9f4a196b0c5017ea0d440",
-                "reference": "5bf888b33af0eb9aa3c9f4a196b0c5017ea0d440",
-                "shasum": ""
-            },
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Thomas ERNEST",
-                    "email": "thomas.ernest@gmail.com"
-                }
-            ],
-            "description": "Rules for codeigniter",
-            "time": "2017-08-22T16:47:00+00:00"
-        }
-    ],
+    "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "nerones/codeigniter-phpcs": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

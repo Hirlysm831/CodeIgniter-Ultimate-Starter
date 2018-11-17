@@ -192,36 +192,6 @@
         ]
     },
     {
-        "name": "nerones/codeigniter-phpcs",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/nerones/CodeIgniter-for-PHP_CodeSniffer.git",
-            "reference": "5bf888b33af0eb9aa3c9f4a196b0c5017ea0d440"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/nerones/CodeIgniter-for-PHP_CodeSniffer/zipball/5bf888b33af0eb9aa3c9f4a196b0c5017ea0d440",
-            "reference": "5bf888b33af0eb9aa3c9f4a196b0c5017ea0d440",
-            "shasum": ""
-        },
-        "time": "2017-08-22T16:47:00+00:00",
-        "type": "library",
-        "installation-source": "source",
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Thomas ERNEST",
-                "email": "thomas.ernest@gmail.com"
-            }
-        ],
-        "description": "Rules for codeigniter"
-    },
-    {
         "name": "paragonie/constant_time_encoding",
         "version": "v2.2.2",
         "version_normalized": "2.2.2.0",
