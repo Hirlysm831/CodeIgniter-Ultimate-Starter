@@ -6,6 +6,8 @@
  * @license    MIT License
  * @copyright  2015 Kenji Suzuki
  * @link       https://github.com/kenjis/codeigniter3-filename-checker
+ * @todo 		Display this one by default in testing and development environment
+ *
  */
 
 class Check extends CI_Controller
