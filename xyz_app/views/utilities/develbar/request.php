@@ -1,3 +1,16 @@
+<?php
+/***************************************************************************
+*
+* @subpackage		develbar
+* @return			Methods in loader hooks for custom profiling(develbar)
+* @see				../../../config/ENVIRONMENT/hooks.php
+* @todo				refactor the code in the views
+* @todo				create another template
+* @todo				enhance with language loader
+*
+***************************************************************************/
+
+?>
 <img src="<?php echo $icon ?>" title="<?php echo lang('request') ?>"
      alt="<?php echo lang('request') ?>"/> <?php echo lang('request') . ' : ' . $controller . '/' . $action ?>
 <div class="detail request">

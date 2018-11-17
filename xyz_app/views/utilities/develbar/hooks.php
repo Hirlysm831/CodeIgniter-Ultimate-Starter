@@ -1,3 +1,16 @@
+<?php
+/***************************************************************************
+*
+* @subpackage		develbar
+* @return			Methods in loader hooks for custom profiling(develbar)
+* @see				../../../config/ENVIRONMENT/hooks.php
+* @todo				refactor the code in the views
+* @todo				create another template
+* @todo				enhance with language loader
+*
+***************************************************************************/
+
+?>
 <img src="<?php echo $icon ?>" title="<?php echo lang('hooks') ?>"
      alt="<?php echo lang('hooks') ?>"/> <?php echo($total_hooks > 0 ? lang('hooks') . ' (' . $total_hooks . ')' : 'N/A') ?>
 <?php if(count($loaded_hooks)): ?>

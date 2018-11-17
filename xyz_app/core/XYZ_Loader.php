@@ -4,7 +4,8 @@
 * @subpackage		develbar
 * @access			Public
 * @return			Methods in loader hooks for custom profiling(develbar)
-* @review			go back to this class and understand deeper values in the property and method
+* @see				../../config/ENVIRONMENT/hooks.php
+* @todo				go back to this class and understand deeper values in the property and method
 *
 ***************************************************************************/
 class XYZ_Loader extends CI_Loader

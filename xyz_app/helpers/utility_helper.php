@@ -1,5 +1,12 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
-
+/***************************************************************************
+*
+* @subpackage		develbar
+* @return			Methods in loader hooks for custom profiling(develbar)
+* @see				../config/ENVIRONMENT/hooks.php
+* @todo				go back to this class and understand deeper values in the property and method
+*
+***************************************************************************/
 // ------------------------------------------------------------------------
 
 if (!function_exists('image_base64_encode')) {

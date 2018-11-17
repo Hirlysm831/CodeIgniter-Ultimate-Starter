@@ -1,3 +1,16 @@
+<?php
+/***************************************************************************
+*
+* @subpackage		develbar
+* @return			Methods in loader hooks for custom profiling(develbar)
+* @see				../../../config/ENVIRONMENT/hooks.php
+* @todo				refactor the code in the views
+* @todo				create another template
+* @todo				enhance with language loader
+*
+***************************************************************************/
+
+?>
 <script type="text/javascript">
     var cidvl_siteurl = '<?php echo site_url(); ?>';
 </script>

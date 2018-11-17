@@ -1,4 +1,13 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
+/***************************************************************************
+*
+* @subpackage		develbar
+* @return			custom text return based on the language selected
+* @see				../../config/ENVIRONMENT/hooks.php
+* @todo				add more choice of words
+* @todo				nested and sprint language
+*
+***************************************************************************/
 
 $lang['version_not_supported'] = "Versione CodeIgniter non è supportata da DevelBar, controlla prego %s per l'aggiornamento.";
 $lang['sec'] = 'sec';

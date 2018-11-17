@@ -1,5 +1,13 @@
 <?php defined('BASEPATH') or die('No direct script access.');
-
+/***************************************************************************
+*
+* @subpackage		develbar
+* @return			Methods in loader hooks for custom profiling(develbar)
+* @see				./hooks.php
+* @todo				go back to this class and understand deeper values in the property and method
+* @todo				setup this when using CURL and SSL custom added
+*
+***************************************************************************/
 /*
 |--------------------------------------------------------------------------
 | Developer's Toolbar

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Class DevelBarProfiler
  *
@@ -30,6 +29,7 @@
  * @license    http://opensource.org/licenses/MIT	MIT License
  * @link    https://github.com/JCSama/CodeIgniter-develbar
  * @since    Version 0.1
+ * @see				../../config/ENVIRONMENT/hooks.php
  * @filesource
  */
 class DevelBarProfiler extends CI_Controller

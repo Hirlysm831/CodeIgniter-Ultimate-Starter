@@ -83,6 +83,11 @@ $hook['post_controller_constructor'][] = array(
  * @since			0.0.1	
  * @link			../../hooks/develbar_hook.php
  * @link			../../core/XYZ_Loader.php
+ * @link			./config/environment/develbar.php
+ * @link			../../controller/utilites/devlbarprofiler.php
+ * @link			../../helper/utility_helper.php
+ * @link			../../views/utilities/develbar/*.php
+ * @link			../../language/~/develbar.php(english,french,german,italian,turkish)
  * @url 			https://github.com/JCSama/CodeIgniter-develbar
  *
  * @todo			create page independent same on the screenshot provided
@@ -90,6 +95,7 @@ $hook['post_controller_constructor'][] = array(
  * @todo			Make 777 the folder of cache to make the profiling work properly
  * @todo			Organized the develprofiler controller to be in the propery utilities folder
  * @todo			Cleanup the Third party folder, must be specify the proper standard of the codeigniter
+ * @todo			add another language for the develbar return
  *
  ***************************************************************************/
 $hook['display_override'][] = array(

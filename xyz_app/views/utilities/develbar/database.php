@@ -1,3 +1,18 @@
+<?php
+/***************************************************************************
+*
+* @subpackage		develbar
+* @return			Methods in loader hooks for custom profiling(develbar)
+* @see				../../../config/ENVIRONMENT/hooks.php
+* @todo				refactor the code in the views
+* @todo				create another template
+* @todo				enhance with language loader
+* @todo				clean up the comments and error
+* @todo				Customize the  SQL query return
+*
+***************************************************************************/
+
+?>
 <img src="<?php echo $icon ?>" title="<?php echo lang('database') ?>"
      alt="<?php echo lang('database') ?>"/> <?php echo(count($dbs) ? lang('database') : 'N/A') ?>
 <?php if(count($dbs)): ?>
@@ -7,6 +22,7 @@
     $global_execution_time = 0;
     foreach ($dbs as $name => $db):
         if (count($db['queries'])) {
+			// customize printing and fixing the error return in latest version of codeigniter and php 7+
             // echo '-' . $db['db']['hostname'] . '#' . lang('database') . ' : ' . $db['db']['database'] . '<br/>';
 			  echo lang('database') . '-' . $db['db']['hostname'] .': ' . $db['db']['database']  .' # ' . lang('no_queries').'<br/>';
             $total_execution_time = 0;
@@ -34,6 +50,7 @@
             </p>';
         }
         else{
+			// customize printing and fixing the error return in latest version of codeigniter and php 7+
             // echo '-' . $db->db->hostname . '#' . lang('database') . ' : ' . $db->db->database .' : ' . lang('no_queries').'<br/>';
             echo lang('database') . '-' . $db['hostname'] .': ' . $db['database'] .' # ' . lang('no_queries').'<br/>';
 
