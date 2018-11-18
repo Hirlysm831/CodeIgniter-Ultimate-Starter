@@ -4,7 +4,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 /*************************************************  
  *
  * Set PHP Timezone for standard and unity and we should not rely on php.ini only.
- * but it may cause a problem in the shared hosting in the future
+ * but it may cause a problem in the shared hosting in the future.
+ * Set your timezone (codes listed at http://php.net/manual/en/timezones.php)
+ * Delete the following line if you've already defined a timezone elsewhere.
  *
  * @category	php.ini
  * @since		0.0.1

@@ -30,6 +30,8 @@ public function demo_date() {
 // $this->load->library('utilities/Logviewer');
 // echo  $this->logviewer->showlogs(); 
 
+// echo store_hours();
+
 #setup variable in the system, either in htaccess/web.config or manual in CICD PAAS
 // echo  $ip = getenv('XYZ_DBHOST_DEV', true) ? getenv('XYZ_DBHOST_DEV', true) : getenv('XYZ_DBHOST_DEV');
 }	 
@@ -37,9 +39,10 @@ public function demo_date() {
 	public function index()
 	{
 
-		$this->load->view('welcome_message'); 
+		// $this->load->view('welcome_message'); 
 		// $this->load->library('utilities/Logviewer');
 // echo  $this->logviewer->showlogs(); 
+
 	}
 	
 
