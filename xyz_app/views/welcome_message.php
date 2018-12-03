@@ -83,6 +83,27 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</div>
 
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
+	<?php
+	
+	// foreach ($menus as $menus) {
+    // echo('<li><a href="' . $menus['link'] . '">' . $nav['name'] . '</a></li>');
+// }
+	?>
+	
+<?php	
+foreach ($menus as $menuitem => $menu){ ?>
+			<div class="menuAlign">
+				<a href=""><?php echo "$menuitem"; ?></a> &nbsp <?php echo "$$menu[price]"; ?><br></br>
+			</div> <!-- menuALign-->
+<?php		
+} 
+
+
+
+
+echo $key;
+?>
+
 </div>
 
 </body>

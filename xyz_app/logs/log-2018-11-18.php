@@ -1569,3 +1569,932 @@ ERROR - 2018-11-18 21:10:53 --> Severity: Warning --> touch(): Unable to create 
 ERROR - 2018-11-18 21:10:53 --> Severity: Warning --> session_write_close(): Failed to write session data using user defined save handler. (session.save_path: /tmp) Unknown 0
 INFO - 2018-11-18 21:10:53 --> Development:xxxxxxxxxxx-0.0.1 maintenance_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
 INFO - 2018-11-18 21:10:53 --> Development:xxxxxxxxxxx-0.0.1 ssl_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-11-18 21:19:52 --> Config Class Initialized
+INFO - 2018-11-18 21:19:52 --> Hooks Class Initialized
+DEBUG - 2018-11-18 21:19:52 --> UTF-8 Support Enabled
+INFO - 2018-11-18 21:19:52 --> Utf8 Class Initialized
+INFO - 2018-11-18 21:19:52 --> URI Class Initialized
+DEBUG - 2018-11-18 21:19:52 --> No URI present. Default controller set.
+INFO - 2018-11-18 21:19:52 --> Router Class Initialized
+INFO - 2018-11-18 21:19:52 --> Output Class Initialized
+INFO - 2018-11-18 21:19:52 --> Security Class Initialized
+DEBUG - 2018-11-18 21:19:52 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-11-18 21:19:52 --> Input Class Initialized
+INFO - 2018-11-18 21:19:52 --> Language Class Initialized
+INFO - 2018-11-18 21:19:52 --> Loader Class Initialized
+DEBUG - 2018-11-18 21:19:52 --> Config file loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\config/development\maintenance_config.php
+INFO - 2018-11-18 21:19:52 --> Helper loaded: storehours_helper
+INFO - 2018-11-18 21:19:52 --> Database Driver Class Initialized
+INFO - 2018-11-18 21:19:52 --> Email Class Initialized
+DEBUG - 2018-11-18 21:19:52 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-11-18 21:19:52 --> Session: Class initialized using 'files' driver.
+INFO - 2018-11-18 21:19:52 --> Controller Class Initialized
+INFO - 2018-11-18 21:19:52 --> Development:xxxxxxxxxxx-0.0.1 is executing maintenance_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hooks by dev.scarfonictech.com with the unit name FABAYON$
+.
+DEBUG - 2018-11-18 21:19:52 --> While Development:xxxxxxxxxxx-0.0.1 is in maintenance mode, it was successfully  access by dev.scarfonictech.com using the unit name FABAYON$
+.
+INFO - 2018-11-18 21:19:52 --> Development:xxxxxxxxxxx-0.0.1 is executing ssl_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hooks by dev.scarfonictech.com with the unit name FABAYON$
+.
+INFO - 2018-11-18 21:19:52 --> Helper loaded: url_helper
+DEBUG - 2018-11-18 21:19:53 --> Development:xxxxxxxxxxx-0.0.1dev.scarfonictech.com with the unit name FABAYON$
+ is accessing with SSL Request.
+ERROR - 2018-11-18 21:19:53 --> Severity: Notice --> Undefined variable: navs D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php 88
+ERROR - 2018-11-18 21:19:53 --> Severity: Warning --> Invalid argument supplied for foreach() D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php 88
+INFO - 2018-11-18 21:19:53 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php
+DEBUG - 2018-11-18 21:19:53 --> Config file loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\config/development\develbar.php
+INFO - 2018-11-18 21:19:53 --> Helper loaded: utility_helper
+INFO - 2018-11-18 21:19:53 --> Helper loaded: language_helper
+INFO - 2018-11-18 21:19:53 --> Helper loaded: text_helper
+INFO - 2018-11-18 21:19:53 --> Language file loaded: language/english/develbar_lang.php
+DEBUG - 2018-11-18 21:19:53 --> DevelBar Class Initialized !
+INFO - 2018-11-18 21:19:53 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/benchmarks.php
+INFO - 2018-11-18 21:19:53 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/memory_usage.php
+INFO - 2018-11-18 21:19:53 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/request.php
+INFO - 2018-11-18 21:19:53 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/database.php
+INFO - 2018-11-18 21:19:53 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/hooks.php
+INFO - 2018-11-18 21:19:53 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/ajax.php
+INFO - 2018-11-18 21:19:53 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/libraries.php
+INFO - 2018-11-18 21:19:53 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/helpers.php
+INFO - 2018-11-18 21:19:53 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/views.php
+INFO - 2018-11-18 21:19:53 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/config.php
+INFO - 2018-11-18 21:19:53 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/session.php
+INFO - 2018-11-18 21:19:53 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/models.php
+INFO - 2018-11-18 21:19:53 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/css/develbar.css
+INFO - 2018-11-18 21:19:53 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/js/develbar.js
+INFO - 2018-11-18 21:19:53 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/develbar.php
+INFO - 2018-11-18 21:19:53 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/js/ajax.js
+INFO - 2018-11-18 21:19:53 --> Final output sent to browser
+DEBUG - 2018-11-18 21:19:53 --> Total execution time: 0.8364
+INFO - 2018-11-18 21:19:53 --> Development:xxxxxxxxxxx-0.0.1 maintenance_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-11-18 21:19:53 --> Development:xxxxxxxxxxx-0.0.1 ssl_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-11-18 21:21:23 --> Config Class Initialized
+INFO - 2018-11-18 21:21:23 --> Hooks Class Initialized
+DEBUG - 2018-11-18 21:21:23 --> UTF-8 Support Enabled
+INFO - 2018-11-18 21:21:23 --> Utf8 Class Initialized
+INFO - 2018-11-18 21:21:23 --> URI Class Initialized
+DEBUG - 2018-11-18 21:21:23 --> No URI present. Default controller set.
+INFO - 2018-11-18 21:21:23 --> Router Class Initialized
+INFO - 2018-11-18 21:21:23 --> Output Class Initialized
+INFO - 2018-11-18 21:21:23 --> Security Class Initialized
+DEBUG - 2018-11-18 21:21:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-11-18 21:21:23 --> Input Class Initialized
+INFO - 2018-11-18 21:21:23 --> Language Class Initialized
+INFO - 2018-11-18 21:21:23 --> Loader Class Initialized
+DEBUG - 2018-11-18 21:21:23 --> Config file loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\config/development\maintenance_config.php
+INFO - 2018-11-18 21:21:23 --> Helper loaded: storehours_helper
+INFO - 2018-11-18 21:21:24 --> Database Driver Class Initialized
+INFO - 2018-11-18 21:21:24 --> Email Class Initialized
+DEBUG - 2018-11-18 21:21:24 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-11-18 21:21:24 --> Session: Class initialized using 'files' driver.
+INFO - 2018-11-18 21:21:24 --> Controller Class Initialized
+INFO - 2018-11-18 21:21:24 --> Development:xxxxxxxxxxx-0.0.1 is executing maintenance_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hooks by dev.scarfonictech.com with the unit name FABAYON$
+.
+DEBUG - 2018-11-18 21:21:24 --> While Development:xxxxxxxxxxx-0.0.1 is in maintenance mode, it was successfully  access by dev.scarfonictech.com using the unit name FABAYON$
+.
+INFO - 2018-11-18 21:21:24 --> Development:xxxxxxxxxxx-0.0.1 is executing ssl_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hooks by dev.scarfonictech.com with the unit name FABAYON$
+.
+INFO - 2018-11-18 21:21:24 --> Helper loaded: url_helper
+DEBUG - 2018-11-18 21:21:24 --> Development:xxxxxxxxxxx-0.0.1dev.scarfonictech.com with the unit name FABAYON$
+ is accessing with SSL Request.
+ERROR - 2018-11-18 21:21:24 --> Severity: Notice --> Undefined variable: menu D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php 93
+ERROR - 2018-11-18 21:21:24 --> Severity: Warning --> Invalid argument supplied for foreach() D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php 93
+INFO - 2018-11-18 21:21:24 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php
+DEBUG - 2018-11-18 21:21:24 --> Config file loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\config/development\develbar.php
+INFO - 2018-11-18 21:21:25 --> Helper loaded: utility_helper
+INFO - 2018-11-18 21:21:25 --> Helper loaded: language_helper
+INFO - 2018-11-18 21:21:25 --> Helper loaded: text_helper
+INFO - 2018-11-18 21:21:25 --> Language file loaded: language/english/develbar_lang.php
+DEBUG - 2018-11-18 21:21:25 --> DevelBar Class Initialized !
+INFO - 2018-11-18 21:21:25 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/benchmarks.php
+INFO - 2018-11-18 21:21:25 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/memory_usage.php
+INFO - 2018-11-18 21:21:25 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/request.php
+INFO - 2018-11-18 21:21:25 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/database.php
+INFO - 2018-11-18 21:21:25 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/hooks.php
+INFO - 2018-11-18 21:21:25 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/ajax.php
+INFO - 2018-11-18 21:21:25 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/libraries.php
+INFO - 2018-11-18 21:21:25 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/helpers.php
+INFO - 2018-11-18 21:21:25 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/views.php
+INFO - 2018-11-18 21:21:25 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/config.php
+INFO - 2018-11-18 21:21:25 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/session.php
+INFO - 2018-11-18 21:21:25 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/models.php
+INFO - 2018-11-18 21:21:25 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/css/develbar.css
+INFO - 2018-11-18 21:21:25 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/js/develbar.js
+INFO - 2018-11-18 21:21:25 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/develbar.php
+INFO - 2018-11-18 21:21:25 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/js/ajax.js
+INFO - 2018-11-18 21:21:25 --> Final output sent to browser
+DEBUG - 2018-11-18 21:21:25 --> Total execution time: 1.2261
+ERROR - 2018-11-18 21:21:25 --> Severity: Warning --> touch(): Unable to create file /tmp\ci_sessionoevv4puamde81vamvv0ancjf1b6gbepf because No such file or directory D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_sys\libraries\Session\drivers\Session_files_driver.php 248
+ERROR - 2018-11-18 21:21:25 --> Severity: Warning --> session_write_close(): Failed to write session data using user defined save handler. (session.save_path: /tmp) Unknown 0
+INFO - 2018-11-18 21:21:25 --> Development:xxxxxxxxxxx-0.0.1 maintenance_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-11-18 21:21:25 --> Development:xxxxxxxxxxx-0.0.1 ssl_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-11-18 21:22:04 --> Config Class Initialized
+INFO - 2018-11-18 21:22:04 --> Hooks Class Initialized
+DEBUG - 2018-11-18 21:22:04 --> UTF-8 Support Enabled
+INFO - 2018-11-18 21:22:04 --> Utf8 Class Initialized
+INFO - 2018-11-18 21:22:04 --> URI Class Initialized
+DEBUG - 2018-11-18 21:22:04 --> No URI present. Default controller set.
+INFO - 2018-11-18 21:22:04 --> Router Class Initialized
+INFO - 2018-11-18 21:22:04 --> Output Class Initialized
+INFO - 2018-11-18 21:22:04 --> Security Class Initialized
+DEBUG - 2018-11-18 21:22:04 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-11-18 21:22:04 --> Input Class Initialized
+INFO - 2018-11-18 21:22:04 --> Language Class Initialized
+INFO - 2018-11-18 21:22:04 --> Loader Class Initialized
+DEBUG - 2018-11-18 21:22:04 --> Config file loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\config/development\maintenance_config.php
+INFO - 2018-11-18 21:22:04 --> Helper loaded: storehours_helper
+INFO - 2018-11-18 21:22:04 --> Database Driver Class Initialized
+INFO - 2018-11-18 21:22:04 --> Email Class Initialized
+DEBUG - 2018-11-18 21:22:04 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-11-18 21:22:04 --> Session: Class initialized using 'files' driver.
+INFO - 2018-11-18 21:22:04 --> Controller Class Initialized
+INFO - 2018-11-18 21:22:05 --> Development:xxxxxxxxxxx-0.0.1 is executing maintenance_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hooks by dev.scarfonictech.com with the unit name FABAYON$
+.
+DEBUG - 2018-11-18 21:22:05 --> While Development:xxxxxxxxxxx-0.0.1 is in maintenance mode, it was successfully  access by dev.scarfonictech.com using the unit name FABAYON$
+.
+INFO - 2018-11-18 21:22:05 --> Development:xxxxxxxxxxx-0.0.1 is executing ssl_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hooks by dev.scarfonictech.com with the unit name FABAYON$
+.
+INFO - 2018-11-18 21:22:05 --> Helper loaded: url_helper
+DEBUG - 2018-11-18 21:22:05 --> Development:xxxxxxxxxxx-0.0.1dev.scarfonictech.com with the unit name FABAYON$
+ is accessing with SSL Request.
+ERROR - 2018-11-18 21:22:05 --> Severity: Notice --> Undefined variable: data D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php 93
+ERROR - 2018-11-18 21:22:05 --> Severity: Warning --> Invalid argument supplied for foreach() D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php 93
+INFO - 2018-11-18 21:22:05 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php
+DEBUG - 2018-11-18 21:22:05 --> Config file loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\config/development\develbar.php
+INFO - 2018-11-18 21:22:05 --> Helper loaded: utility_helper
+INFO - 2018-11-18 21:22:05 --> Helper loaded: language_helper
+INFO - 2018-11-18 21:22:05 --> Helper loaded: text_helper
+INFO - 2018-11-18 21:22:05 --> Language file loaded: language/english/develbar_lang.php
+DEBUG - 2018-11-18 21:22:05 --> DevelBar Class Initialized !
+INFO - 2018-11-18 21:22:05 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/benchmarks.php
+INFO - 2018-11-18 21:22:05 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/memory_usage.php
+INFO - 2018-11-18 21:22:05 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/request.php
+INFO - 2018-11-18 21:22:05 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/database.php
+INFO - 2018-11-18 21:22:05 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/hooks.php
+INFO - 2018-11-18 21:22:05 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/ajax.php
+INFO - 2018-11-18 21:22:05 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/libraries.php
+INFO - 2018-11-18 21:22:05 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/helpers.php
+INFO - 2018-11-18 21:22:05 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/views.php
+INFO - 2018-11-18 21:22:05 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/config.php
+INFO - 2018-11-18 21:22:05 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/session.php
+INFO - 2018-11-18 21:22:05 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/models.php
+INFO - 2018-11-18 21:22:05 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/css/develbar.css
+INFO - 2018-11-18 21:22:05 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/js/develbar.js
+INFO - 2018-11-18 21:22:05 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/develbar.php
+INFO - 2018-11-18 21:22:05 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/js/ajax.js
+INFO - 2018-11-18 21:22:05 --> Final output sent to browser
+DEBUG - 2018-11-18 21:22:05 --> Total execution time: 1.0333
+ERROR - 2018-11-18 21:22:05 --> Severity: Warning --> touch(): Unable to create file /tmp\ci_sessionoevv4puamde81vamvv0ancjf1b6gbepf because No such file or directory D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_sys\libraries\Session\drivers\Session_files_driver.php 248
+ERROR - 2018-11-18 21:22:05 --> Severity: Warning --> session_write_close(): Failed to write session data using user defined save handler. (session.save_path: /tmp) Unknown 0
+INFO - 2018-11-18 21:22:05 --> Development:xxxxxxxxxxx-0.0.1 maintenance_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-11-18 21:22:05 --> Development:xxxxxxxxxxx-0.0.1 ssl_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-11-18 21:23:50 --> Config Class Initialized
+INFO - 2018-11-18 21:23:50 --> Hooks Class Initialized
+DEBUG - 2018-11-18 21:23:50 --> UTF-8 Support Enabled
+INFO - 2018-11-18 21:23:50 --> Utf8 Class Initialized
+INFO - 2018-11-18 21:23:50 --> URI Class Initialized
+DEBUG - 2018-11-18 21:23:50 --> No URI present. Default controller set.
+INFO - 2018-11-18 21:23:50 --> Router Class Initialized
+INFO - 2018-11-18 21:23:50 --> Output Class Initialized
+INFO - 2018-11-18 21:23:50 --> Security Class Initialized
+DEBUG - 2018-11-18 21:23:50 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-11-18 21:23:50 --> Input Class Initialized
+INFO - 2018-11-18 21:23:50 --> Language Class Initialized
+INFO - 2018-11-18 21:23:50 --> Loader Class Initialized
+DEBUG - 2018-11-18 21:23:50 --> Config file loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\config/development\maintenance_config.php
+INFO - 2018-11-18 21:23:50 --> Helper loaded: storehours_helper
+INFO - 2018-11-18 21:23:50 --> Database Driver Class Initialized
+INFO - 2018-11-18 21:23:50 --> Email Class Initialized
+DEBUG - 2018-11-18 21:23:50 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-11-18 21:23:50 --> Session: Class initialized using 'files' driver.
+INFO - 2018-11-18 21:23:50 --> Controller Class Initialized
+INFO - 2018-11-18 21:23:50 --> Development:xxxxxxxxxxx-0.0.1 is executing maintenance_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hooks by dev.scarfonictech.com with the unit name FABAYON$
+.
+DEBUG - 2018-11-18 21:23:51 --> While Development:xxxxxxxxxxx-0.0.1 is in maintenance mode, it was successfully  access by dev.scarfonictech.com using the unit name FABAYON$
+.
+INFO - 2018-11-18 21:23:51 --> Development:xxxxxxxxxxx-0.0.1 is executing ssl_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hooks by dev.scarfonictech.com with the unit name FABAYON$
+.
+INFO - 2018-11-18 21:23:51 --> Helper loaded: url_helper
+DEBUG - 2018-11-18 21:23:51 --> Development:xxxxxxxxxxx-0.0.1dev.scarfonictech.com with the unit name FABAYON$
+ is accessing with SSL Request.
+ERROR - 2018-11-18 21:23:51 --> Severity: Notice --> Undefined variable: data D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php 93
+ERROR - 2018-11-18 21:23:51 --> Severity: Warning --> Invalid argument supplied for foreach() D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php 93
+INFO - 2018-11-18 21:23:51 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php
+DEBUG - 2018-11-18 21:23:51 --> Config file loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\config/development\develbar.php
+INFO - 2018-11-18 21:23:51 --> Helper loaded: utility_helper
+INFO - 2018-11-18 21:23:51 --> Helper loaded: language_helper
+INFO - 2018-11-18 21:23:51 --> Helper loaded: text_helper
+INFO - 2018-11-18 21:23:51 --> Language file loaded: language/english/develbar_lang.php
+DEBUG - 2018-11-18 21:23:51 --> DevelBar Class Initialized !
+INFO - 2018-11-18 21:23:51 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/benchmarks.php
+INFO - 2018-11-18 21:23:51 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/memory_usage.php
+INFO - 2018-11-18 21:23:51 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/request.php
+INFO - 2018-11-18 21:23:51 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/database.php
+INFO - 2018-11-18 21:23:51 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/hooks.php
+INFO - 2018-11-18 21:23:51 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/ajax.php
+INFO - 2018-11-18 21:23:51 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/libraries.php
+INFO - 2018-11-18 21:23:51 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/helpers.php
+INFO - 2018-11-18 21:23:51 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/views.php
+INFO - 2018-11-18 21:23:51 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/config.php
+INFO - 2018-11-18 21:23:51 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/session.php
+INFO - 2018-11-18 21:23:51 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/models.php
+INFO - 2018-11-18 21:23:51 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/css/develbar.css
+INFO - 2018-11-18 21:23:51 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/js/develbar.js
+INFO - 2018-11-18 21:23:51 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/develbar.php
+INFO - 2018-11-18 21:23:51 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/js/ajax.js
+INFO - 2018-11-18 21:23:51 --> Final output sent to browser
+DEBUG - 2018-11-18 21:23:51 --> Total execution time: 0.9334
+ERROR - 2018-11-18 21:23:51 --> Severity: Warning --> touch(): Unable to create file /tmp\ci_sessionoevv4puamde81vamvv0ancjf1b6gbepf because No such file or directory D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_sys\libraries\Session\drivers\Session_files_driver.php 248
+ERROR - 2018-11-18 21:23:51 --> Severity: Warning --> session_write_close(): Failed to write session data using user defined save handler. (session.save_path: /tmp) Unknown 0
+INFO - 2018-11-18 21:23:51 --> Development:xxxxxxxxxxx-0.0.1 maintenance_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-11-18 21:23:51 --> Development:xxxxxxxxxxx-0.0.1 ssl_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-11-18 21:24:30 --> Config Class Initialized
+INFO - 2018-11-18 21:24:30 --> Hooks Class Initialized
+DEBUG - 2018-11-18 21:24:30 --> UTF-8 Support Enabled
+INFO - 2018-11-18 21:24:30 --> Utf8 Class Initialized
+INFO - 2018-11-18 21:24:30 --> URI Class Initialized
+DEBUG - 2018-11-18 21:24:30 --> No URI present. Default controller set.
+INFO - 2018-11-18 21:24:30 --> Router Class Initialized
+INFO - 2018-11-18 21:24:30 --> Output Class Initialized
+INFO - 2018-11-18 21:24:30 --> Security Class Initialized
+DEBUG - 2018-11-18 21:24:30 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-11-18 21:24:30 --> Input Class Initialized
+INFO - 2018-11-18 21:24:30 --> Language Class Initialized
+INFO - 2018-11-18 21:24:30 --> Loader Class Initialized
+DEBUG - 2018-11-18 21:24:30 --> Config file loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\config/development\maintenance_config.php
+INFO - 2018-11-18 21:24:30 --> Helper loaded: storehours_helper
+INFO - 2018-11-18 21:24:30 --> Database Driver Class Initialized
+INFO - 2018-11-18 21:24:30 --> Email Class Initialized
+DEBUG - 2018-11-18 21:24:30 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-11-18 21:24:30 --> Session: Class initialized using 'files' driver.
+INFO - 2018-11-18 21:24:30 --> Controller Class Initialized
+INFO - 2018-11-18 21:24:31 --> Development:xxxxxxxxxxx-0.0.1 is executing maintenance_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hooks by dev.scarfonictech.com with the unit name FABAYON$
+.
+DEBUG - 2018-11-18 21:24:31 --> While Development:xxxxxxxxxxx-0.0.1 is in maintenance mode, it was successfully  access by dev.scarfonictech.com using the unit name FABAYON$
+.
+INFO - 2018-11-18 21:24:31 --> Development:xxxxxxxxxxx-0.0.1 is executing ssl_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hooks by dev.scarfonictech.com with the unit name FABAYON$
+.
+INFO - 2018-11-18 21:24:31 --> Helper loaded: url_helper
+DEBUG - 2018-11-18 21:24:31 --> Development:xxxxxxxxxxx-0.0.1dev.scarfonictech.com with the unit name FABAYON$
+ is accessing with SSL Request.
+ERROR - 2018-11-18 21:24:32 --> Severity: Notice --> Undefined variable: menu D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php 93
+ERROR - 2018-11-18 21:24:32 --> Severity: Warning --> Invalid argument supplied for foreach() D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php 93
+INFO - 2018-11-18 21:24:32 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php
+DEBUG - 2018-11-18 21:24:32 --> Config file loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\config/development\develbar.php
+INFO - 2018-11-18 21:24:32 --> Helper loaded: utility_helper
+INFO - 2018-11-18 21:24:32 --> Helper loaded: language_helper
+INFO - 2018-11-18 21:24:32 --> Helper loaded: text_helper
+INFO - 2018-11-18 21:24:32 --> Language file loaded: language/english/develbar_lang.php
+DEBUG - 2018-11-18 21:24:32 --> DevelBar Class Initialized !
+INFO - 2018-11-18 21:24:32 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/benchmarks.php
+INFO - 2018-11-18 21:24:32 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/memory_usage.php
+INFO - 2018-11-18 21:24:32 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/request.php
+INFO - 2018-11-18 21:24:32 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/database.php
+INFO - 2018-11-18 21:24:32 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/hooks.php
+INFO - 2018-11-18 21:24:32 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/ajax.php
+INFO - 2018-11-18 21:24:32 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/libraries.php
+INFO - 2018-11-18 21:24:32 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/helpers.php
+INFO - 2018-11-18 21:24:32 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/views.php
+INFO - 2018-11-18 21:24:32 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/config.php
+INFO - 2018-11-18 21:24:32 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/session.php
+INFO - 2018-11-18 21:24:32 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/models.php
+INFO - 2018-11-18 21:24:32 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/css/develbar.css
+INFO - 2018-11-18 21:24:32 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/js/develbar.js
+INFO - 2018-11-18 21:24:32 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/develbar.php
+INFO - 2018-11-18 21:24:32 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/js/ajax.js
+INFO - 2018-11-18 21:24:32 --> Final output sent to browser
+DEBUG - 2018-11-18 21:24:32 --> Total execution time: 1.2950
+ERROR - 2018-11-18 21:24:32 --> Severity: Warning --> touch(): Unable to create file /tmp\ci_sessionoevv4puamde81vamvv0ancjf1b6gbepf because No such file or directory D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_sys\libraries\Session\drivers\Session_files_driver.php 248
+ERROR - 2018-11-18 21:24:32 --> Severity: Warning --> session_write_close(): Failed to write session data using user defined save handler. (session.save_path: /tmp) Unknown 0
+INFO - 2018-11-18 21:24:32 --> Development:xxxxxxxxxxx-0.0.1 maintenance_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-11-18 21:24:32 --> Development:xxxxxxxxxxx-0.0.1 ssl_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-11-18 21:27:49 --> Config Class Initialized
+INFO - 2018-11-18 21:27:49 --> Hooks Class Initialized
+DEBUG - 2018-11-18 21:27:49 --> UTF-8 Support Enabled
+INFO - 2018-11-18 21:27:49 --> Utf8 Class Initialized
+INFO - 2018-11-18 21:27:49 --> URI Class Initialized
+DEBUG - 2018-11-18 21:27:49 --> No URI present. Default controller set.
+INFO - 2018-11-18 21:27:49 --> Router Class Initialized
+INFO - 2018-11-18 21:27:49 --> Output Class Initialized
+INFO - 2018-11-18 21:27:49 --> Security Class Initialized
+DEBUG - 2018-11-18 21:27:49 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-11-18 21:27:49 --> Input Class Initialized
+INFO - 2018-11-18 21:27:49 --> Language Class Initialized
+INFO - 2018-11-18 21:27:49 --> Loader Class Initialized
+DEBUG - 2018-11-18 21:27:49 --> Config file loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\config/development\maintenance_config.php
+INFO - 2018-11-18 21:27:49 --> Helper loaded: storehours_helper
+INFO - 2018-11-18 21:27:49 --> Database Driver Class Initialized
+INFO - 2018-11-18 21:27:49 --> Email Class Initialized
+DEBUG - 2018-11-18 21:27:49 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-11-18 21:27:49 --> Session: Class initialized using 'files' driver.
+INFO - 2018-11-18 21:27:49 --> Controller Class Initialized
+INFO - 2018-11-18 21:27:49 --> Development:xxxxxxxxxxx-0.0.1 is executing maintenance_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hooks by dev.scarfonictech.com with the unit name FABAYON$
+.
+DEBUG - 2018-11-18 21:27:49 --> While Development:xxxxxxxxxxx-0.0.1 is in maintenance mode, it was successfully  access by dev.scarfonictech.com using the unit name FABAYON$
+.
+INFO - 2018-11-18 21:27:50 --> Development:xxxxxxxxxxx-0.0.1 is executing ssl_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hooks by dev.scarfonictech.com with the unit name FABAYON$
+.
+INFO - 2018-11-18 21:27:50 --> Helper loaded: url_helper
+DEBUG - 2018-11-18 21:27:50 --> Development:xxxxxxxxxxx-0.0.1dev.scarfonictech.com with the unit name FABAYON$
+ is accessing with SSL Request.
+ERROR - 2018-11-18 21:27:50 --> Severity: Notice --> Undefined variable: menu D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php 93
+ERROR - 2018-11-18 21:27:50 --> Severity: Warning --> Invalid argument supplied for foreach() D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php 93
+INFO - 2018-11-18 21:27:50 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php
+DEBUG - 2018-11-18 21:27:50 --> Config file loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\config/development\develbar.php
+INFO - 2018-11-18 21:27:50 --> Helper loaded: utility_helper
+INFO - 2018-11-18 21:27:50 --> Helper loaded: language_helper
+INFO - 2018-11-18 21:27:50 --> Helper loaded: text_helper
+INFO - 2018-11-18 21:27:50 --> Language file loaded: language/english/develbar_lang.php
+DEBUG - 2018-11-18 21:27:50 --> DevelBar Class Initialized !
+INFO - 2018-11-18 21:27:50 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/benchmarks.php
+INFO - 2018-11-18 21:27:50 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/memory_usage.php
+INFO - 2018-11-18 21:27:50 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/request.php
+INFO - 2018-11-18 21:27:50 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/database.php
+INFO - 2018-11-18 21:27:50 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/hooks.php
+INFO - 2018-11-18 21:27:50 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/ajax.php
+INFO - 2018-11-18 21:27:50 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/libraries.php
+INFO - 2018-11-18 21:27:50 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/helpers.php
+INFO - 2018-11-18 21:27:50 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/views.php
+INFO - 2018-11-18 21:27:50 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/config.php
+INFO - 2018-11-18 21:27:50 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/session.php
+INFO - 2018-11-18 21:27:50 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/models.php
+INFO - 2018-11-18 21:27:50 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/css/develbar.css
+INFO - 2018-11-18 21:27:50 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/js/develbar.js
+INFO - 2018-11-18 21:27:50 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/develbar.php
+INFO - 2018-11-18 21:27:50 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/js/ajax.js
+INFO - 2018-11-18 21:27:50 --> Final output sent to browser
+DEBUG - 2018-11-18 21:27:50 --> Total execution time: 1.2965
+INFO - 2018-11-18 21:27:50 --> Development:xxxxxxxxxxx-0.0.1 maintenance_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-11-18 21:27:50 --> Development:xxxxxxxxxxx-0.0.1 ssl_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-11-18 21:28:01 --> Config Class Initialized
+INFO - 2018-11-18 21:28:01 --> Hooks Class Initialized
+DEBUG - 2018-11-18 21:28:01 --> UTF-8 Support Enabled
+INFO - 2018-11-18 21:28:01 --> Utf8 Class Initialized
+INFO - 2018-11-18 21:28:01 --> URI Class Initialized
+DEBUG - 2018-11-18 21:28:01 --> No URI present. Default controller set.
+INFO - 2018-11-18 21:28:01 --> Router Class Initialized
+INFO - 2018-11-18 21:28:01 --> Output Class Initialized
+INFO - 2018-11-18 21:28:01 --> Security Class Initialized
+DEBUG - 2018-11-18 21:28:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-11-18 21:28:01 --> Input Class Initialized
+INFO - 2018-11-18 21:28:01 --> Language Class Initialized
+INFO - 2018-11-18 21:28:01 --> Loader Class Initialized
+DEBUG - 2018-11-18 21:28:01 --> Config file loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\config/development\maintenance_config.php
+INFO - 2018-11-18 21:28:01 --> Helper loaded: storehours_helper
+INFO - 2018-11-18 21:28:01 --> Database Driver Class Initialized
+INFO - 2018-11-18 21:28:01 --> Email Class Initialized
+DEBUG - 2018-11-18 21:28:01 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-11-18 21:28:01 --> Session: Class initialized using 'files' driver.
+INFO - 2018-11-18 21:28:01 --> Controller Class Initialized
+INFO - 2018-11-18 21:28:01 --> Development:xxxxxxxxxxx-0.0.1 is executing maintenance_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hooks by dev.scarfonictech.com with the unit name FABAYON$
+.
+DEBUG - 2018-11-18 21:28:01 --> While Development:xxxxxxxxxxx-0.0.1 is in maintenance mode, it was successfully  access by dev.scarfonictech.com using the unit name FABAYON$
+.
+INFO - 2018-11-18 21:28:02 --> Development:xxxxxxxxxxx-0.0.1 is executing ssl_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hooks by dev.scarfonictech.com with the unit name FABAYON$
+.
+INFO - 2018-11-18 21:28:02 --> Helper loaded: url_helper
+DEBUG - 2018-11-18 21:28:02 --> Development:xxxxxxxxxxx-0.0.1dev.scarfonictech.com with the unit name FABAYON$
+ is accessing with SSL Request.
+ERROR - 2018-11-18 21:28:02 --> Severity: Notice --> Undefined variable: menu D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php 93
+ERROR - 2018-11-18 21:28:02 --> Severity: Warning --> Invalid argument supplied for foreach() D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php 93
+INFO - 2018-11-18 21:28:02 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php
+DEBUG - 2018-11-18 21:28:02 --> Config file loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\config/development\develbar.php
+INFO - 2018-11-18 21:28:02 --> Helper loaded: utility_helper
+INFO - 2018-11-18 21:28:02 --> Helper loaded: language_helper
+INFO - 2018-11-18 21:28:02 --> Helper loaded: text_helper
+INFO - 2018-11-18 21:28:02 --> Language file loaded: language/english/develbar_lang.php
+DEBUG - 2018-11-18 21:28:02 --> DevelBar Class Initialized !
+INFO - 2018-11-18 21:28:02 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/benchmarks.php
+INFO - 2018-11-18 21:28:02 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/memory_usage.php
+INFO - 2018-11-18 21:28:02 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/request.php
+INFO - 2018-11-18 21:28:02 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/database.php
+INFO - 2018-11-18 21:28:02 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/hooks.php
+INFO - 2018-11-18 21:28:02 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/ajax.php
+INFO - 2018-11-18 21:28:02 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/libraries.php
+INFO - 2018-11-18 21:28:02 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/helpers.php
+INFO - 2018-11-18 21:28:02 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/views.php
+INFO - 2018-11-18 21:28:02 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/config.php
+INFO - 2018-11-18 21:28:02 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/session.php
+INFO - 2018-11-18 21:28:02 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/models.php
+INFO - 2018-11-18 21:28:02 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/css/develbar.css
+INFO - 2018-11-18 21:28:02 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/js/develbar.js
+INFO - 2018-11-18 21:28:02 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/develbar.php
+INFO - 2018-11-18 21:28:02 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/js/ajax.js
+INFO - 2018-11-18 21:28:02 --> Final output sent to browser
+DEBUG - 2018-11-18 21:28:02 --> Total execution time: 0.9955
+ERROR - 2018-11-18 21:28:02 --> Severity: Warning --> touch(): Unable to create file /tmp\ci_sessionprh1ugrh9nppirm3c593kmnlia3uiljc because No such file or directory D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_sys\libraries\Session\drivers\Session_files_driver.php 248
+ERROR - 2018-11-18 21:28:02 --> Severity: Warning --> session_write_close(): Failed to write session data using user defined save handler. (session.save_path: /tmp) Unknown 0
+INFO - 2018-11-18 21:28:02 --> Development:xxxxxxxxxxx-0.0.1 maintenance_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-11-18 21:28:02 --> Development:xxxxxxxxxxx-0.0.1 ssl_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-11-18 21:28:43 --> Config Class Initialized
+INFO - 2018-11-18 21:28:43 --> Hooks Class Initialized
+DEBUG - 2018-11-18 21:28:43 --> UTF-8 Support Enabled
+INFO - 2018-11-18 21:28:43 --> Utf8 Class Initialized
+INFO - 2018-11-18 21:28:43 --> URI Class Initialized
+DEBUG - 2018-11-18 21:28:43 --> No URI present. Default controller set.
+INFO - 2018-11-18 21:28:43 --> Router Class Initialized
+INFO - 2018-11-18 21:28:43 --> Output Class Initialized
+INFO - 2018-11-18 21:28:43 --> Security Class Initialized
+DEBUG - 2018-11-18 21:28:43 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-11-18 21:28:43 --> Input Class Initialized
+INFO - 2018-11-18 21:28:43 --> Language Class Initialized
+INFO - 2018-11-18 21:28:43 --> Loader Class Initialized
+DEBUG - 2018-11-18 21:28:43 --> Config file loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\config/development\maintenance_config.php
+INFO - 2018-11-18 21:28:43 --> Helper loaded: storehours_helper
+INFO - 2018-11-18 21:28:43 --> Database Driver Class Initialized
+INFO - 2018-11-18 21:28:43 --> Email Class Initialized
+DEBUG - 2018-11-18 21:28:43 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-11-18 21:28:43 --> Session: Class initialized using 'files' driver.
+INFO - 2018-11-18 21:28:43 --> Controller Class Initialized
+INFO - 2018-11-18 21:28:44 --> Development:xxxxxxxxxxx-0.0.1 is executing maintenance_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hooks by dev.scarfonictech.com with the unit name FABAYON$
+.
+DEBUG - 2018-11-18 21:28:44 --> While Development:xxxxxxxxxxx-0.0.1 is in maintenance mode, it was successfully  access by dev.scarfonictech.com using the unit name FABAYON$
+.
+INFO - 2018-11-18 21:28:44 --> Development:xxxxxxxxxxx-0.0.1 is executing ssl_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hooks by dev.scarfonictech.com with the unit name FABAYON$
+.
+INFO - 2018-11-18 21:28:44 --> Helper loaded: url_helper
+DEBUG - 2018-11-18 21:28:44 --> Development:xxxxxxxxxxx-0.0.1dev.scarfonictech.com with the unit name FABAYON$
+ is accessing with SSL Request.
+INFO - 2018-11-18 21:28:44 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php
+DEBUG - 2018-11-18 21:28:44 --> Config file loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\config/development\develbar.php
+INFO - 2018-11-18 21:28:44 --> Helper loaded: utility_helper
+INFO - 2018-11-18 21:28:44 --> Helper loaded: language_helper
+INFO - 2018-11-18 21:28:44 --> Helper loaded: text_helper
+INFO - 2018-11-18 21:28:44 --> Language file loaded: language/english/develbar_lang.php
+DEBUG - 2018-11-18 21:28:44 --> DevelBar Class Initialized !
+INFO - 2018-11-18 21:28:44 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/benchmarks.php
+INFO - 2018-11-18 21:28:44 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/memory_usage.php
+INFO - 2018-11-18 21:28:44 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/request.php
+INFO - 2018-11-18 21:28:44 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/database.php
+INFO - 2018-11-18 21:28:44 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/hooks.php
+INFO - 2018-11-18 21:28:44 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/ajax.php
+INFO - 2018-11-18 21:28:44 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/libraries.php
+INFO - 2018-11-18 21:28:44 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/helpers.php
+INFO - 2018-11-18 21:28:44 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/views.php
+INFO - 2018-11-18 21:28:44 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/config.php
+INFO - 2018-11-18 21:28:44 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/session.php
+INFO - 2018-11-18 21:28:44 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/models.php
+INFO - 2018-11-18 21:28:44 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/css/develbar.css
+INFO - 2018-11-18 21:28:44 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/js/develbar.js
+INFO - 2018-11-18 21:28:44 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/develbar.php
+INFO - 2018-11-18 21:28:44 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/js/ajax.js
+INFO - 2018-11-18 21:28:44 --> Final output sent to browser
+DEBUG - 2018-11-18 21:28:44 --> Total execution time: 0.9702
+ERROR - 2018-11-18 21:28:44 --> Severity: Warning --> touch(): Unable to create file /tmp\ci_sessionprh1ugrh9nppirm3c593kmnlia3uiljc because No such file or directory D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_sys\libraries\Session\drivers\Session_files_driver.php 248
+ERROR - 2018-11-18 21:28:44 --> Severity: Warning --> session_write_close(): Failed to write session data using user defined save handler. (session.save_path: /tmp) Unknown 0
+INFO - 2018-11-18 21:28:44 --> Development:xxxxxxxxxxx-0.0.1 maintenance_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-11-18 21:28:44 --> Development:xxxxxxxxxxx-0.0.1 ssl_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-11-18 21:29:39 --> Config Class Initialized
+INFO - 2018-11-18 21:29:39 --> Hooks Class Initialized
+DEBUG - 2018-11-18 21:29:39 --> UTF-8 Support Enabled
+INFO - 2018-11-18 21:29:39 --> Utf8 Class Initialized
+INFO - 2018-11-18 21:29:39 --> URI Class Initialized
+DEBUG - 2018-11-18 21:29:39 --> No URI present. Default controller set.
+INFO - 2018-11-18 21:29:39 --> Router Class Initialized
+INFO - 2018-11-18 21:29:39 --> Output Class Initialized
+INFO - 2018-11-18 21:29:39 --> Security Class Initialized
+DEBUG - 2018-11-18 21:29:39 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-11-18 21:29:39 --> Input Class Initialized
+INFO - 2018-11-18 21:29:39 --> Language Class Initialized
+INFO - 2018-11-18 21:29:39 --> Loader Class Initialized
+DEBUG - 2018-11-18 21:29:39 --> Config file loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\config/development\maintenance_config.php
+INFO - 2018-11-18 21:29:39 --> Helper loaded: storehours_helper
+INFO - 2018-11-18 21:29:39 --> Database Driver Class Initialized
+INFO - 2018-11-18 21:29:39 --> Email Class Initialized
+DEBUG - 2018-11-18 21:29:39 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-11-18 21:29:39 --> Session: Class initialized using 'files' driver.
+INFO - 2018-11-18 21:29:39 --> Controller Class Initialized
+INFO - 2018-11-18 21:29:39 --> Development:xxxxxxxxxxx-0.0.1 is executing maintenance_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hooks by dev.scarfonictech.com with the unit name FABAYON$
+.
+DEBUG - 2018-11-18 21:29:39 --> While Development:xxxxxxxxxxx-0.0.1 is in maintenance mode, it was successfully  access by dev.scarfonictech.com using the unit name FABAYON$
+.
+INFO - 2018-11-18 21:29:40 --> Development:xxxxxxxxxxx-0.0.1 is executing ssl_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hooks by dev.scarfonictech.com with the unit name FABAYON$
+.
+INFO - 2018-11-18 21:29:40 --> Helper loaded: url_helper
+DEBUG - 2018-11-18 21:29:40 --> Development:xxxxxxxxxxx-0.0.1dev.scarfonictech.com with the unit name FABAYON$
+ is accessing with SSL Request.
+INFO - 2018-11-18 21:29:40 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php
+DEBUG - 2018-11-18 21:29:40 --> Config file loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\config/development\develbar.php
+INFO - 2018-11-18 21:29:40 --> Helper loaded: utility_helper
+INFO - 2018-11-18 21:29:40 --> Helper loaded: language_helper
+INFO - 2018-11-18 21:29:40 --> Helper loaded: text_helper
+INFO - 2018-11-18 21:29:40 --> Language file loaded: language/english/develbar_lang.php
+DEBUG - 2018-11-18 21:29:40 --> DevelBar Class Initialized !
+INFO - 2018-11-18 21:29:40 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/benchmarks.php
+INFO - 2018-11-18 21:29:40 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/memory_usage.php
+INFO - 2018-11-18 21:29:40 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/request.php
+INFO - 2018-11-18 21:29:40 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/database.php
+INFO - 2018-11-18 21:29:40 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/hooks.php
+INFO - 2018-11-18 21:29:40 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/ajax.php
+INFO - 2018-11-18 21:29:40 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/libraries.php
+INFO - 2018-11-18 21:29:40 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/helpers.php
+INFO - 2018-11-18 21:29:40 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/views.php
+INFO - 2018-11-18 21:29:40 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/config.php
+INFO - 2018-11-18 21:29:40 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/session.php
+INFO - 2018-11-18 21:29:40 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/models.php
+INFO - 2018-11-18 21:29:40 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/css/develbar.css
+INFO - 2018-11-18 21:29:40 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/js/develbar.js
+INFO - 2018-11-18 21:29:40 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/develbar.php
+INFO - 2018-11-18 21:29:40 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/js/ajax.js
+INFO - 2018-11-18 21:29:40 --> Final output sent to browser
+DEBUG - 2018-11-18 21:29:40 --> Total execution time: 1.1270
+ERROR - 2018-11-18 21:29:40 --> Severity: Warning --> touch(): Unable to create file /tmp\ci_sessionprh1ugrh9nppirm3c593kmnlia3uiljc because No such file or directory D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_sys\libraries\Session\drivers\Session_files_driver.php 248
+ERROR - 2018-11-18 21:29:40 --> Severity: Warning --> session_write_close(): Failed to write session data using user defined save handler. (session.save_path: /tmp) Unknown 0
+INFO - 2018-11-18 21:29:40 --> Development:xxxxxxxxxxx-0.0.1 maintenance_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-11-18 21:29:40 --> Development:xxxxxxxxxxx-0.0.1 ssl_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-11-18 21:31:05 --> Config Class Initialized
+INFO - 2018-11-18 21:31:05 --> Hooks Class Initialized
+DEBUG - 2018-11-18 21:31:05 --> UTF-8 Support Enabled
+INFO - 2018-11-18 21:31:05 --> Utf8 Class Initialized
+INFO - 2018-11-18 21:31:05 --> URI Class Initialized
+DEBUG - 2018-11-18 21:31:05 --> No URI present. Default controller set.
+INFO - 2018-11-18 21:31:05 --> Router Class Initialized
+INFO - 2018-11-18 21:31:05 --> Output Class Initialized
+INFO - 2018-11-18 21:31:05 --> Security Class Initialized
+DEBUG - 2018-11-18 21:31:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-11-18 21:31:05 --> Input Class Initialized
+INFO - 2018-11-18 21:31:05 --> Language Class Initialized
+INFO - 2018-11-18 21:31:05 --> Loader Class Initialized
+DEBUG - 2018-11-18 21:31:05 --> Config file loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\config/development\maintenance_config.php
+INFO - 2018-11-18 21:31:05 --> Helper loaded: storehours_helper
+INFO - 2018-11-18 21:31:05 --> Database Driver Class Initialized
+INFO - 2018-11-18 21:31:05 --> Email Class Initialized
+DEBUG - 2018-11-18 21:31:05 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-11-18 21:31:05 --> Session: Class initialized using 'files' driver.
+INFO - 2018-11-18 21:31:05 --> Controller Class Initialized
+INFO - 2018-11-18 21:31:05 --> Development:xxxxxxxxxxx-0.0.1 is executing maintenance_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hooks by dev.scarfonictech.com with the unit name FABAYON$
+.
+DEBUG - 2018-11-18 21:31:05 --> While Development:xxxxxxxxxxx-0.0.1 is in maintenance mode, it was successfully  access by dev.scarfonictech.com using the unit name FABAYON$
+.
+INFO - 2018-11-18 21:31:06 --> Development:xxxxxxxxxxx-0.0.1 is executing ssl_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hooks by dev.scarfonictech.com with the unit name FABAYON$
+.
+INFO - 2018-11-18 21:31:06 --> Helper loaded: url_helper
+DEBUG - 2018-11-18 21:31:06 --> Development:xxxxxxxxxxx-0.0.1dev.scarfonictech.com with the unit name FABAYON$
+ is accessing with SSL Request.
+INFO - 2018-11-18 21:31:06 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php
+DEBUG - 2018-11-18 21:31:06 --> Config file loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\config/development\develbar.php
+INFO - 2018-11-18 21:31:06 --> Helper loaded: utility_helper
+INFO - 2018-11-18 21:31:06 --> Helper loaded: language_helper
+INFO - 2018-11-18 21:31:06 --> Helper loaded: text_helper
+INFO - 2018-11-18 21:31:06 --> Language file loaded: language/english/develbar_lang.php
+DEBUG - 2018-11-18 21:31:06 --> DevelBar Class Initialized !
+INFO - 2018-11-18 21:31:06 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/benchmarks.php
+INFO - 2018-11-18 21:31:06 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/memory_usage.php
+INFO - 2018-11-18 21:31:06 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/request.php
+INFO - 2018-11-18 21:31:06 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/database.php
+INFO - 2018-11-18 21:31:06 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/hooks.php
+INFO - 2018-11-18 21:31:06 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/ajax.php
+INFO - 2018-11-18 21:31:06 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/libraries.php
+INFO - 2018-11-18 21:31:06 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/helpers.php
+INFO - 2018-11-18 21:31:06 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/views.php
+INFO - 2018-11-18 21:31:06 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/config.php
+INFO - 2018-11-18 21:31:06 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/session.php
+INFO - 2018-11-18 21:31:06 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/models.php
+INFO - 2018-11-18 21:31:06 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/css/develbar.css
+INFO - 2018-11-18 21:31:06 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/js/develbar.js
+INFO - 2018-11-18 21:31:06 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/develbar.php
+INFO - 2018-11-18 21:31:06 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/js/ajax.js
+INFO - 2018-11-18 21:31:06 --> Final output sent to browser
+DEBUG - 2018-11-18 21:31:06 --> Total execution time: 1.1886
+ERROR - 2018-11-18 21:31:06 --> Severity: Warning --> touch(): Unable to create file /tmp\ci_sessionprh1ugrh9nppirm3c593kmnlia3uiljc because No such file or directory D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_sys\libraries\Session\drivers\Session_files_driver.php 248
+ERROR - 2018-11-18 21:31:06 --> Severity: Warning --> session_write_close(): Failed to write session data using user defined save handler. (session.save_path: /tmp) Unknown 0
+INFO - 2018-11-18 21:31:06 --> Development:xxxxxxxxxxx-0.0.1 maintenance_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-11-18 21:31:06 --> Development:xxxxxxxxxxx-0.0.1 ssl_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-11-18 21:31:14 --> Config Class Initialized
+INFO - 2018-11-18 21:31:14 --> Hooks Class Initialized
+DEBUG - 2018-11-18 21:31:14 --> UTF-8 Support Enabled
+INFO - 2018-11-18 21:31:14 --> Utf8 Class Initialized
+INFO - 2018-11-18 21:31:14 --> URI Class Initialized
+DEBUG - 2018-11-18 21:31:14 --> No URI present. Default controller set.
+INFO - 2018-11-18 21:31:14 --> Router Class Initialized
+INFO - 2018-11-18 21:31:14 --> Output Class Initialized
+INFO - 2018-11-18 21:31:14 --> Security Class Initialized
+DEBUG - 2018-11-18 21:31:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-11-18 21:31:14 --> Input Class Initialized
+INFO - 2018-11-18 21:31:14 --> Language Class Initialized
+INFO - 2018-11-18 21:31:14 --> Loader Class Initialized
+DEBUG - 2018-11-18 21:31:14 --> Config file loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\config/development\maintenance_config.php
+INFO - 2018-11-18 21:31:14 --> Helper loaded: storehours_helper
+INFO - 2018-11-18 21:31:14 --> Database Driver Class Initialized
+INFO - 2018-11-18 21:31:14 --> Email Class Initialized
+DEBUG - 2018-11-18 21:31:14 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-11-18 21:31:14 --> Session: Class initialized using 'files' driver.
+INFO - 2018-11-18 21:31:14 --> Controller Class Initialized
+INFO - 2018-11-18 21:31:14 --> Development:xxxxxxxxxxx-0.0.1 is executing maintenance_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hooks by dev.scarfonictech.com with the unit name FABAYON$
+.
+DEBUG - 2018-11-18 21:31:15 --> While Development:xxxxxxxxxxx-0.0.1 is in maintenance mode, it was successfully  access by dev.scarfonictech.com using the unit name FABAYON$
+.
+INFO - 2018-11-18 21:31:15 --> Development:xxxxxxxxxxx-0.0.1 is executing ssl_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hooks by dev.scarfonictech.com with the unit name FABAYON$
+.
+INFO - 2018-11-18 21:31:15 --> Helper loaded: url_helper
+DEBUG - 2018-11-18 21:31:15 --> Development:xxxxxxxxxxx-0.0.1dev.scarfonictech.com with the unit name FABAYON$
+ is accessing with SSL Request.
+ERROR - 2018-11-18 21:31:15 --> Severity: Notice --> Undefined index: price D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php 95
+ERROR - 2018-11-18 21:31:15 --> Severity: Notice --> Undefined index: price D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php 95
+ERROR - 2018-11-18 21:31:15 --> Severity: Notice --> Undefined index: price D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php 95
+ERROR - 2018-11-18 21:31:15 --> Severity: Notice --> Undefined index: price D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php 95
+INFO - 2018-11-18 21:31:15 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php
+DEBUG - 2018-11-18 21:31:15 --> Config file loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\config/development\develbar.php
+INFO - 2018-11-18 21:31:15 --> Helper loaded: utility_helper
+INFO - 2018-11-18 21:31:15 --> Helper loaded: language_helper
+INFO - 2018-11-18 21:31:15 --> Helper loaded: text_helper
+INFO - 2018-11-18 21:31:15 --> Language file loaded: language/english/develbar_lang.php
+DEBUG - 2018-11-18 21:31:15 --> DevelBar Class Initialized !
+INFO - 2018-11-18 21:31:15 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/benchmarks.php
+INFO - 2018-11-18 21:31:15 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/memory_usage.php
+INFO - 2018-11-18 21:31:15 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/request.php
+INFO - 2018-11-18 21:31:15 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/database.php
+INFO - 2018-11-18 21:31:15 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/hooks.php
+INFO - 2018-11-18 21:31:15 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/ajax.php
+INFO - 2018-11-18 21:31:15 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/libraries.php
+INFO - 2018-11-18 21:31:15 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/helpers.php
+INFO - 2018-11-18 21:31:15 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/views.php
+INFO - 2018-11-18 21:31:15 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/config.php
+INFO - 2018-11-18 21:31:15 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/session.php
+INFO - 2018-11-18 21:31:15 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/models.php
+INFO - 2018-11-18 21:31:15 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/css/develbar.css
+INFO - 2018-11-18 21:31:15 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/js/develbar.js
+INFO - 2018-11-18 21:31:15 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/develbar.php
+INFO - 2018-11-18 21:31:15 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/js/ajax.js
+INFO - 2018-11-18 21:31:15 --> Final output sent to browser
+DEBUG - 2018-11-18 21:31:15 --> Total execution time: 0.9979
+ERROR - 2018-11-18 21:31:15 --> Severity: Warning --> touch(): Unable to create file /tmp\ci_sessionprh1ugrh9nppirm3c593kmnlia3uiljc because No such file or directory D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_sys\libraries\Session\drivers\Session_files_driver.php 248
+ERROR - 2018-11-18 21:31:15 --> Severity: Warning --> session_write_close(): Failed to write session data using user defined save handler. (session.save_path: /tmp) Unknown 0
+INFO - 2018-11-18 21:31:15 --> Development:xxxxxxxxxxx-0.0.1 maintenance_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-11-18 21:31:15 --> Development:xxxxxxxxxxx-0.0.1 ssl_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-11-18 21:31:23 --> Config Class Initialized
+INFO - 2018-11-18 21:31:23 --> Hooks Class Initialized
+DEBUG - 2018-11-18 21:31:23 --> UTF-8 Support Enabled
+INFO - 2018-11-18 21:31:23 --> Utf8 Class Initialized
+INFO - 2018-11-18 21:31:23 --> URI Class Initialized
+DEBUG - 2018-11-18 21:31:23 --> No URI present. Default controller set.
+INFO - 2018-11-18 21:31:23 --> Router Class Initialized
+INFO - 2018-11-18 21:31:23 --> Output Class Initialized
+INFO - 2018-11-18 21:31:23 --> Security Class Initialized
+DEBUG - 2018-11-18 21:31:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-11-18 21:31:23 --> Input Class Initialized
+INFO - 2018-11-18 21:31:23 --> Language Class Initialized
+INFO - 2018-11-18 21:31:23 --> Loader Class Initialized
+DEBUG - 2018-11-18 21:31:23 --> Config file loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\config/development\maintenance_config.php
+INFO - 2018-11-18 21:31:23 --> Helper loaded: storehours_helper
+INFO - 2018-11-18 21:31:23 --> Database Driver Class Initialized
+INFO - 2018-11-18 21:31:23 --> Email Class Initialized
+DEBUG - 2018-11-18 21:31:23 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-11-18 21:31:23 --> Session: Class initialized using 'files' driver.
+INFO - 2018-11-18 21:31:23 --> Controller Class Initialized
+INFO - 2018-11-18 21:31:24 --> Development:xxxxxxxxxxx-0.0.1 is executing maintenance_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hooks by dev.scarfonictech.com with the unit name FABAYON$
+.
+DEBUG - 2018-11-18 21:31:24 --> While Development:xxxxxxxxxxx-0.0.1 is in maintenance mode, it was successfully  access by dev.scarfonictech.com using the unit name FABAYON$
+.
+INFO - 2018-11-18 21:31:24 --> Development:xxxxxxxxxxx-0.0.1 is executing ssl_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hooks by dev.scarfonictech.com with the unit name FABAYON$
+.
+INFO - 2018-11-18 21:31:24 --> Helper loaded: url_helper
+DEBUG - 2018-11-18 21:31:24 --> Development:xxxxxxxxxxx-0.0.1dev.scarfonictech.com with the unit name FABAYON$
+ is accessing with SSL Request.
+INFO - 2018-11-18 21:31:24 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php
+DEBUG - 2018-11-18 21:31:24 --> Config file loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\config/development\develbar.php
+INFO - 2018-11-18 21:31:24 --> Helper loaded: utility_helper
+INFO - 2018-11-18 21:31:24 --> Helper loaded: language_helper
+INFO - 2018-11-18 21:31:24 --> Helper loaded: text_helper
+INFO - 2018-11-18 21:31:24 --> Language file loaded: language/english/develbar_lang.php
+DEBUG - 2018-11-18 21:31:24 --> DevelBar Class Initialized !
+INFO - 2018-11-18 21:31:24 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/benchmarks.php
+INFO - 2018-11-18 21:31:24 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/memory_usage.php
+INFO - 2018-11-18 21:31:24 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/request.php
+INFO - 2018-11-18 21:31:24 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/database.php
+INFO - 2018-11-18 21:31:24 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/hooks.php
+INFO - 2018-11-18 21:31:24 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/ajax.php
+INFO - 2018-11-18 21:31:24 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/libraries.php
+INFO - 2018-11-18 21:31:24 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/helpers.php
+INFO - 2018-11-18 21:31:24 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/views.php
+INFO - 2018-11-18 21:31:24 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/config.php
+INFO - 2018-11-18 21:31:24 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/session.php
+INFO - 2018-11-18 21:31:24 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/models.php
+INFO - 2018-11-18 21:31:24 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/css/develbar.css
+INFO - 2018-11-18 21:31:24 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/js/develbar.js
+INFO - 2018-11-18 21:31:24 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/develbar.php
+INFO - 2018-11-18 21:31:24 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/js/ajax.js
+INFO - 2018-11-18 21:31:24 --> Final output sent to browser
+DEBUG - 2018-11-18 21:31:24 --> Total execution time: 0.9834
+ERROR - 2018-11-18 21:31:24 --> Severity: Warning --> touch(): Unable to create file /tmp\ci_sessionprh1ugrh9nppirm3c593kmnlia3uiljc because No such file or directory D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_sys\libraries\Session\drivers\Session_files_driver.php 248
+ERROR - 2018-11-18 21:31:24 --> Severity: Warning --> session_write_close(): Failed to write session data using user defined save handler. (session.save_path: /tmp) Unknown 0
+INFO - 2018-11-18 21:31:24 --> Development:xxxxxxxxxxx-0.0.1 maintenance_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-11-18 21:31:24 --> Development:xxxxxxxxxxx-0.0.1 ssl_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-11-18 21:54:56 --> Config Class Initialized
+INFO - 2018-11-18 21:54:56 --> Hooks Class Initialized
+DEBUG - 2018-11-18 21:54:56 --> UTF-8 Support Enabled
+INFO - 2018-11-18 21:54:56 --> Utf8 Class Initialized
+INFO - 2018-11-18 21:54:56 --> URI Class Initialized
+DEBUG - 2018-11-18 21:54:56 --> No URI present. Default controller set.
+INFO - 2018-11-18 21:54:56 --> Router Class Initialized
+INFO - 2018-11-18 21:54:56 --> Output Class Initialized
+INFO - 2018-11-18 21:54:56 --> Security Class Initialized
+DEBUG - 2018-11-18 21:54:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-11-18 21:54:56 --> Input Class Initialized
+INFO - 2018-11-18 21:54:56 --> Language Class Initialized
+INFO - 2018-11-18 21:54:56 --> Loader Class Initialized
+DEBUG - 2018-11-18 21:54:56 --> Config file loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\config/development\maintenance_config.php
+INFO - 2018-11-18 21:54:56 --> Helper loaded: storehours_helper
+INFO - 2018-11-18 21:54:56 --> Database Driver Class Initialized
+INFO - 2018-11-18 21:54:56 --> Email Class Initialized
+DEBUG - 2018-11-18 21:54:56 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-11-18 21:54:56 --> Session: Class initialized using 'files' driver.
+INFO - 2018-11-18 21:54:56 --> Controller Class Initialized
+INFO - 2018-11-18 21:54:56 --> Development:xxxxxxxxxxx-0.0.1 is executing maintenance_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hooks by dev.scarfonictech.com with the unit name FABAYON$
+.
+DEBUG - 2018-11-18 21:54:57 --> While Development:xxxxxxxxxxx-0.0.1 is in maintenance mode, it was successfully  access by dev.scarfonictech.com using the unit name FABAYON$
+.
+INFO - 2018-11-18 21:54:57 --> Development:xxxxxxxxxxx-0.0.1 is executing ssl_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hooks by dev.scarfonictech.com with the unit name FABAYON$
+.
+INFO - 2018-11-18 21:54:57 --> Helper loaded: url_helper
+DEBUG - 2018-11-18 21:54:57 --> Development:xxxxxxxxxxx-0.0.1dev.scarfonictech.com with the unit name FABAYON$
+ is accessing with SSL Request.
+DEBUG - 2018-11-18 21:54:57 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2018-11-18 21:54:57 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2018-11-18 21:54:57 --> Encryption Class Initialized
+ERROR - 2018-11-18 21:54:57 --> Severity: Notice --> Undefined property: XYZ_Loader::$encryption D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php 103
+ERROR - 2018-11-18 21:54:57 --> Severity: error --> Exception: Call to a member function create_key() on null D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php 103
+INFO - 2018-11-18 21:54:57 --> Development:xxxxxxxxxxx-0.0.1 maintenance_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-11-18 21:54:57 --> Development:xxxxxxxxxxx-0.0.1 ssl_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-11-18 21:55:36 --> Config Class Initialized
+INFO - 2018-11-18 21:55:36 --> Hooks Class Initialized
+DEBUG - 2018-11-18 21:55:36 --> UTF-8 Support Enabled
+INFO - 2018-11-18 21:55:36 --> Utf8 Class Initialized
+INFO - 2018-11-18 21:55:36 --> URI Class Initialized
+DEBUG - 2018-11-18 21:55:36 --> No URI present. Default controller set.
+INFO - 2018-11-18 21:55:36 --> Router Class Initialized
+INFO - 2018-11-18 21:55:36 --> Output Class Initialized
+INFO - 2018-11-18 21:55:36 --> Security Class Initialized
+DEBUG - 2018-11-18 21:55:36 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-11-18 21:55:36 --> Input Class Initialized
+INFO - 2018-11-18 21:55:36 --> Language Class Initialized
+INFO - 2018-11-18 21:55:36 --> Loader Class Initialized
+DEBUG - 2018-11-18 21:55:36 --> Config file loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\config/development\maintenance_config.php
+INFO - 2018-11-18 21:55:36 --> Helper loaded: storehours_helper
+INFO - 2018-11-18 21:55:36 --> Database Driver Class Initialized
+INFO - 2018-11-18 21:55:36 --> Email Class Initialized
+DEBUG - 2018-11-18 21:55:36 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-11-18 21:55:36 --> Session: Class initialized using 'files' driver.
+INFO - 2018-11-18 21:55:36 --> Controller Class Initialized
+INFO - 2018-11-18 21:55:37 --> Development:xxxxxxxxxxx-0.0.1 is executing maintenance_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hooks by dev.scarfonictech.com with the unit name FABAYON$
+.
+DEBUG - 2018-11-18 21:55:37 --> While Development:xxxxxxxxxxx-0.0.1 is in maintenance mode, it was successfully  access by dev.scarfonictech.com using the unit name FABAYON$
+.
+INFO - 2018-11-18 21:55:37 --> Development:xxxxxxxxxxx-0.0.1 is executing ssl_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hooks by dev.scarfonictech.com with the unit name FABAYON$
+.
+INFO - 2018-11-18 21:55:37 --> Helper loaded: url_helper
+DEBUG - 2018-11-18 21:55:37 --> Development:xxxxxxxxxxx-0.0.1dev.scarfonictech.com with the unit name FABAYON$
+ is accessing with SSL Request.
+DEBUG - 2018-11-18 21:55:37 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2018-11-18 21:55:37 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2018-11-18 21:55:37 --> Encryption Class Initialized
+INFO - 2018-11-18 21:55:37 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php
+DEBUG - 2018-11-18 21:55:37 --> Config file loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\config/development\develbar.php
+INFO - 2018-11-18 21:55:37 --> Helper loaded: utility_helper
+INFO - 2018-11-18 21:55:37 --> Helper loaded: language_helper
+INFO - 2018-11-18 21:55:37 --> Helper loaded: text_helper
+INFO - 2018-11-18 21:55:37 --> Language file loaded: language/english/develbar_lang.php
+DEBUG - 2018-11-18 21:55:37 --> DevelBar Class Initialized !
+INFO - 2018-11-18 21:55:37 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/benchmarks.php
+INFO - 2018-11-18 21:55:37 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/memory_usage.php
+INFO - 2018-11-18 21:55:37 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/request.php
+INFO - 2018-11-18 21:55:37 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/database.php
+INFO - 2018-11-18 21:55:37 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/hooks.php
+INFO - 2018-11-18 21:55:37 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/ajax.php
+INFO - 2018-11-18 21:55:37 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/libraries.php
+INFO - 2018-11-18 21:55:37 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/helpers.php
+INFO - 2018-11-18 21:55:37 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/views.php
+INFO - 2018-11-18 21:55:37 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/config.php
+INFO - 2018-11-18 21:55:37 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/session.php
+INFO - 2018-11-18 21:55:37 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/models.php
+INFO - 2018-11-18 21:55:37 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/css/develbar.css
+INFO - 2018-11-18 21:55:38 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/js/develbar.js
+INFO - 2018-11-18 21:55:38 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/develbar.php
+INFO - 2018-11-18 21:55:38 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/js/ajax.js
+INFO - 2018-11-18 21:55:38 --> Final output sent to browser
+DEBUG - 2018-11-18 21:55:38 --> Total execution time: 1.3775
+ERROR - 2018-11-18 21:55:38 --> Severity: Warning --> touch(): Unable to create file /tmp\ci_sessionoe9lpgk9u39c83r2d7di3h9fksii5dh8 because No such file or directory D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_sys\libraries\Session\drivers\Session_files_driver.php 248
+ERROR - 2018-11-18 21:55:38 --> Severity: Warning --> session_write_close(): Failed to write session data using user defined save handler. (session.save_path: /tmp) Unknown 0
+INFO - 2018-11-18 21:55:38 --> Development:xxxxxxxxxxx-0.0.1 maintenance_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-11-18 21:55:38 --> Development:xxxxxxxxxxx-0.0.1 ssl_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-11-18 21:55:39 --> Config Class Initialized
+INFO - 2018-11-18 21:55:39 --> Hooks Class Initialized
+DEBUG - 2018-11-18 21:55:39 --> UTF-8 Support Enabled
+INFO - 2018-11-18 21:55:39 --> Utf8 Class Initialized
+INFO - 2018-11-18 21:55:39 --> URI Class Initialized
+DEBUG - 2018-11-18 21:55:39 --> No URI present. Default controller set.
+INFO - 2018-11-18 21:55:39 --> Router Class Initialized
+INFO - 2018-11-18 21:55:39 --> Output Class Initialized
+INFO - 2018-11-18 21:55:39 --> Security Class Initialized
+DEBUG - 2018-11-18 21:55:39 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-11-18 21:55:39 --> Input Class Initialized
+INFO - 2018-11-18 21:55:39 --> Language Class Initialized
+INFO - 2018-11-18 21:55:39 --> Loader Class Initialized
+DEBUG - 2018-11-18 21:55:39 --> Config file loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\config/development\maintenance_config.php
+INFO - 2018-11-18 21:55:39 --> Helper loaded: storehours_helper
+INFO - 2018-11-18 21:55:39 --> Database Driver Class Initialized
+INFO - 2018-11-18 21:55:39 --> Email Class Initialized
+DEBUG - 2018-11-18 21:55:39 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-11-18 21:55:39 --> Session: Class initialized using 'files' driver.
+INFO - 2018-11-18 21:55:39 --> Controller Class Initialized
+INFO - 2018-11-18 21:55:40 --> Development:xxxxxxxxxxx-0.0.1 is executing maintenance_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hooks by dev.scarfonictech.com with the unit name FABAYON$
+.
+DEBUG - 2018-11-18 21:55:40 --> While Development:xxxxxxxxxxx-0.0.1 is in maintenance mode, it was successfully  access by dev.scarfonictech.com using the unit name FABAYON$
+.
+INFO - 2018-11-18 21:55:40 --> Development:xxxxxxxxxxx-0.0.1 is executing ssl_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hooks by dev.scarfonictech.com with the unit name FABAYON$
+.
+INFO - 2018-11-18 21:55:40 --> Helper loaded: url_helper
+DEBUG - 2018-11-18 21:55:40 --> Development:xxxxxxxxxxx-0.0.1dev.scarfonictech.com with the unit name FABAYON$
+ is accessing with SSL Request.
+DEBUG - 2018-11-18 21:55:40 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2018-11-18 21:55:40 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2018-11-18 21:55:40 --> Encryption Class Initialized
+INFO - 2018-11-18 21:55:40 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php
+DEBUG - 2018-11-18 21:55:40 --> Config file loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\config/development\develbar.php
+INFO - 2018-11-18 21:55:40 --> Helper loaded: utility_helper
+INFO - 2018-11-18 21:55:40 --> Helper loaded: language_helper
+INFO - 2018-11-18 21:55:40 --> Helper loaded: text_helper
+INFO - 2018-11-18 21:55:40 --> Language file loaded: language/english/develbar_lang.php
+DEBUG - 2018-11-18 21:55:40 --> DevelBar Class Initialized !
+INFO - 2018-11-18 21:55:40 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/benchmarks.php
+INFO - 2018-11-18 21:55:40 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/memory_usage.php
+INFO - 2018-11-18 21:55:40 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/request.php
+INFO - 2018-11-18 21:55:40 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/database.php
+INFO - 2018-11-18 21:55:40 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/hooks.php
+INFO - 2018-11-18 21:55:40 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/ajax.php
+INFO - 2018-11-18 21:55:40 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/libraries.php
+INFO - 2018-11-18 21:55:40 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/helpers.php
+INFO - 2018-11-18 21:55:40 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/views.php
+INFO - 2018-11-18 21:55:40 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/config.php
+INFO - 2018-11-18 21:55:40 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/session.php
+INFO - 2018-11-18 21:55:40 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/models.php
+INFO - 2018-11-18 21:55:40 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/css/develbar.css
+INFO - 2018-11-18 21:55:41 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/js/develbar.js
+INFO - 2018-11-18 21:55:41 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/develbar.php
+INFO - 2018-11-18 21:55:41 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/js/ajax.js
+INFO - 2018-11-18 21:55:41 --> Final output sent to browser
+DEBUG - 2018-11-18 21:55:41 --> Total execution time: 1.2051
+ERROR - 2018-11-18 21:55:41 --> Severity: Warning --> touch(): Unable to create file /tmp\ci_sessionoe9lpgk9u39c83r2d7di3h9fksii5dh8 because No such file or directory D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_sys\libraries\Session\drivers\Session_files_driver.php 248
+ERROR - 2018-11-18 21:55:41 --> Severity: Warning --> session_write_close(): Failed to write session data using user defined save handler. (session.save_path: /tmp) Unknown 0
+INFO - 2018-11-18 21:55:41 --> Development:xxxxxxxxxxx-0.0.1 maintenance_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-11-18 21:55:41 --> Development:xxxxxxxxxxx-0.0.1 ssl_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-11-18 21:55:42 --> Config Class Initialized
+INFO - 2018-11-18 21:55:42 --> Hooks Class Initialized
+DEBUG - 2018-11-18 21:55:42 --> UTF-8 Support Enabled
+INFO - 2018-11-18 21:55:42 --> Utf8 Class Initialized
+INFO - 2018-11-18 21:55:42 --> URI Class Initialized
+DEBUG - 2018-11-18 21:55:42 --> No URI present. Default controller set.
+INFO - 2018-11-18 21:55:42 --> Router Class Initialized
+INFO - 2018-11-18 21:55:42 --> Output Class Initialized
+INFO - 2018-11-18 21:55:42 --> Security Class Initialized
+DEBUG - 2018-11-18 21:55:42 --> Global POST, GET and COOKIE data sanitized
+INFO - 2018-11-18 21:55:42 --> Input Class Initialized
+INFO - 2018-11-18 21:55:42 --> Language Class Initialized
+INFO - 2018-11-18 21:55:42 --> Loader Class Initialized
+DEBUG - 2018-11-18 21:55:42 --> Config file loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\config/development\maintenance_config.php
+INFO - 2018-11-18 21:55:42 --> Helper loaded: storehours_helper
+INFO - 2018-11-18 21:55:42 --> Database Driver Class Initialized
+INFO - 2018-11-18 21:55:42 --> Email Class Initialized
+DEBUG - 2018-11-18 21:55:42 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2018-11-18 21:55:42 --> Session: Class initialized using 'files' driver.
+INFO - 2018-11-18 21:55:42 --> Controller Class Initialized
+INFO - 2018-11-18 21:55:42 --> Development:xxxxxxxxxxx-0.0.1 is executing maintenance_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hooks by dev.scarfonictech.com with the unit name FABAYON$
+.
+DEBUG - 2018-11-18 21:55:42 --> While Development:xxxxxxxxxxx-0.0.1 is in maintenance mode, it was successfully  access by dev.scarfonictech.com using the unit name FABAYON$
+.
+INFO - 2018-11-18 21:55:42 --> Development:xxxxxxxxxxx-0.0.1 is executing ssl_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hooks by dev.scarfonictech.com with the unit name FABAYON$
+.
+INFO - 2018-11-18 21:55:42 --> Helper loaded: url_helper
+DEBUG - 2018-11-18 21:55:43 --> Development:xxxxxxxxxxx-0.0.1dev.scarfonictech.com with the unit name FABAYON$
+ is accessing with SSL Request.
+DEBUG - 2018-11-18 21:55:43 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2018-11-18 21:55:43 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2018-11-18 21:55:43 --> Encryption Class Initialized
+INFO - 2018-11-18 21:55:43 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\welcome_message.php
+DEBUG - 2018-11-18 21:55:43 --> Config file loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\config/development\develbar.php
+INFO - 2018-11-18 21:55:43 --> Helper loaded: utility_helper
+INFO - 2018-11-18 21:55:43 --> Helper loaded: language_helper
+INFO - 2018-11-18 21:55:43 --> Helper loaded: text_helper
+INFO - 2018-11-18 21:55:43 --> Language file loaded: language/english/develbar_lang.php
+DEBUG - 2018-11-18 21:55:43 --> DevelBar Class Initialized !
+INFO - 2018-11-18 21:55:43 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/benchmarks.php
+INFO - 2018-11-18 21:55:43 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/memory_usage.php
+INFO - 2018-11-18 21:55:43 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/request.php
+INFO - 2018-11-18 21:55:43 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/database.php
+INFO - 2018-11-18 21:55:43 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/hooks.php
+INFO - 2018-11-18 21:55:43 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/ajax.php
+INFO - 2018-11-18 21:55:43 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/libraries.php
+INFO - 2018-11-18 21:55:43 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/helpers.php
+INFO - 2018-11-18 21:55:43 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/views.php
+INFO - 2018-11-18 21:55:43 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/config.php
+INFO - 2018-11-18 21:55:43 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/session.php
+INFO - 2018-11-18 21:55:43 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/models.php
+INFO - 2018-11-18 21:55:43 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/css/develbar.css
+INFO - 2018-11-18 21:55:43 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/js/develbar.js
+INFO - 2018-11-18 21:55:43 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\views\utilities/develbar/develbar.php
+INFO - 2018-11-18 21:55:43 --> File loaded: D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_public\/assets/develbar/js/ajax.js
+INFO - 2018-11-18 21:55:43 --> Final output sent to browser
+DEBUG - 2018-11-18 21:55:43 --> Total execution time: 1.2595
+ERROR - 2018-11-18 21:55:43 --> Severity: Warning --> touch(): Unable to create file /tmp\ci_sessionoe9lpgk9u39c83r2d7di3h9fksii5dh8 because No such file or directory D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_sys\libraries\Session\drivers\Session_files_driver.php 248
+ERROR - 2018-11-18 21:55:43 --> Severity: Warning --> session_write_close(): Failed to write session data using user defined save handler. (session.save_path: /tmp) Unknown 0
+INFO - 2018-11-18 21:55:43 --> Development:xxxxxxxxxxx-0.0.1 maintenance_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
+INFO - 2018-11-18 21:55:43 --> Development:xxxxxxxxxxx-0.0.1 ssl_hook file in D:\Local Repository\CodeIgniter-Ultimate-Starter\xyz_app\hook was executed completely.
